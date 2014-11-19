@@ -7,17 +7,35 @@ var sys = Promise.promisifyAll(require('sys'));
 
 var LISTINGS_FILE = 'data/listings.csv';
 
+function getDestCode(url) {
+  var dest = '';
+  if (url.length) {
+    var m = url.match(/CodeDest=(.+)&NoMLS=/);
+    if (m.length > 1) {
+      dest = m[1];
+    }
+  }
+  return dest;
+}
+
 function extractIds() {
-  var mls_ids = [];
+  var H = {}
   var stream = fs.createReadStream(LISTINGS_FILE);
   var csvStream = csv({ headers: true })
-      .on("data", function(data){
-        mls_ids.push('MT' + data.MlsNumber);
+      .on("data", function(data) {
+        var dest = getDestCode(data.PasserelleUrl);
+        if (dest.length > 0) {
+          H[dest] = H[dest] || [];
+          H[dest].push('MT' + data.MlsNumber);
+        }
       })
       .on("end", function() {
-        mls_ids.forEach(function (id) {
-          console.log(id);
-        });
+        for (var dest in H) {
+          var fileName = 'ids/' + dest + '.txt';
+          H[dest].forEach(function (id) {
+            fs.appendFileSync(fileName, id + '\n');
+          });
+        }
       });
   stream.pipe(csvStream);
 }
@@ -36,7 +54,7 @@ function fetchExtraDetails() {
   });
 }
 
-fetchExtraDetails();
+extractIds();
 
 function fetchRemax(id) {
   //var id = 'MT28773784';
