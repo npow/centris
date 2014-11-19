@@ -6,36 +6,40 @@ var json2csv = require('json2csv');
 var sys = Promise.promisifyAll(require('sys'));
 
 var LISTINGS_FILE = 'data/listings.csv';
-var mls_ids = [];
-var L = [];
-var stream = fs.createReadStream(LISTINGS_FILE);
-var csvStream = csv({ headers: true })
-    .on("data", function(data){
-      mls_ids.push('MT' + data.MlsNumber);
-    })
-    .on("end", function() {
-      var sequencer = Promise.resolve();
-      mls_ids.forEach(function (id, i) {
-        sequencer = sequencer.then(function () {
-          return fetchRemax(id);
+
+function extractIds() {
+  var mls_ids = [];
+  var stream = fs.createReadStream(LISTINGS_FILE);
+  var csvStream = csv({ headers: true })
+      .on("data", function(data){
+        mls_ids.push('MT' + data.MlsNumber);
+      })
+      .on("end", function() {
+        mls_ids.forEach(function (id) {
+          console.log(id);
         });
       });
-      sequencer.then(function () {
-        console.log('DONE');
-        json2csv({ data: L, fields: Object.keys(L[0]) }, function(err, csv) {
-          if (err) console.log(err);
-          fs.writeFile('data/extra_data.csv', csv, function(err) {
-            if (err) throw err;
-            console.log('DONE');
-          });
-        });
-      });
+  stream.pipe(csvStream);
+}
+
+function fetchExtraDetails() {
+  var mls_ids = fs.readFileSync('data/mls_ids.txt').toString().split('\n');
+  var sequencer = Promise.resolve();
+  mls_ids.forEach(function (id, i) {
+    if (id.length === 0) return;
+    sequencer = sequencer.then(function () {
+      return fetchRemax(id);
     });
-stream.pipe(csvStream);
+  });
+  sequencer.then(function () {
+    console.log('DONE');
+  });
+}
+
+fetchExtraDetails();
 
 function fetchRemax(id) {
   //var id = 'MT28773784';
-  console.log(id);
   var url = 'http://www.remax-quebec.com/en/MLSRedirect.rmx?sia=' + id;
   return jsdom.envAsync(url, ["http://code.jquery.com/jquery.js"])
     .then(function (window) {
@@ -63,14 +67,14 @@ function fetchRemax(id) {
       var data = { MlsNumber: id.substring(2) };
       for (var field in fields) {
         var key = fields[field];
-        data[key] = '';
         var res = $('td:contains("' + field + '")');
-        if (res && res.next()) {
-          data[key] = res.next().text();
+        if (res && res.next() && res.next().text().trim().length) {
+          data[key] = res.next().text().trim();
         }
       }
-      if (Object.keys(data).length === 1) {
-        L.push(data);
+      console.log(id);
+      if (Object.keys(data).length > 1) {
+        fs.writeFileSync('extra_data/' + id + '.json', JSON.stringify(data));
       }
     });
 }
