@@ -7,6 +7,8 @@ var sys = Promise.promisifyAll(require('sys'));
 
 var LISTINGS_FILE = 'data/listings.csv';
 
+fetchExtraDetails('ids/REMAX.txt');
+
 function getDestCode(url) {
   var dest = '';
   if (url.length) {
@@ -40,11 +42,17 @@ function extractIds() {
   stream.pipe(csvStream);
 }
 
-function fetchExtraDetails() {
-  var mls_ids = fs.readFileSync('data/mls_ids.txt').toString().split('\n');
+function fetchExtraDetails(fileName) {
+  var mls_ids = fs.readFileSync(fileName).toString().split('\n');
+  mls_ids.pop();
+  //mls_ids.reverse();
+  return Promise.all(mls_ids.map(function (x) { return fetchRemax(x); }))
+                .then(function () {
+                  console.log('DONE');
+                });
+  /*
   var sequencer = Promise.resolve();
   mls_ids.forEach(function (id, i) {
-    if (id.length === 0) return;
     sequencer = sequencer.then(function () {
       return fetchRemax(id);
     });
@@ -52,12 +60,15 @@ function fetchExtraDetails() {
   sequencer.then(function () {
     console.log('DONE');
   });
+  */
 }
-
-extractIds();
 
 function fetchRemax(id) {
   //var id = 'MT28773784';
+  if (fs.existsSync('extra_data/' + id + '.json')) {
+    console.log(id);
+    return Promise.resolve();
+  }
   var url = 'http://www.remax-quebec.com/en/MLSRedirect.rmx?sia=' + id;
   return jsdom.envAsync(url, ["http://code.jquery.com/jquery.js"])
     .then(function (window) {
@@ -94,7 +105,11 @@ function fetchRemax(id) {
       if (Object.keys(data).length > 1) {
         fs.writeFileSync('extra_data/' + id + '.json', JSON.stringify(data));
       }
-    });
+  })
+  .error(function () {
+    console.log('Failed to fetch: ' + id);
+    return Promise.resolve();
+  });
 }
 
 /*
