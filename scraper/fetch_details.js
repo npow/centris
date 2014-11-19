@@ -5,9 +5,14 @@ var jsdom = Promise.promisifyAll(require('jsdom'));
 var json2csv = require('json2csv');
 var sys = Promise.promisifyAll(require('sys'));
 
+var DEST_CODE = process.argv[2];
+console.log(DEST_CODE);
 var LISTINGS_FILE = 'data/listings.csv';
+var ID_FILE = 'ids/' + DEST_CODE + '.txt';
+var ERROR_FILE = DEST_CODE + '_errors.txt';
+var ERRORS = fs.readFileSync(ERROR_FILE).toString().split('\n');
 
-fetchExtraDetails('ids/REMAX.txt');
+fetchExtraDetails(ID_FILE);
 
 function getDestCode(url) {
   var dest = '';
@@ -65,7 +70,7 @@ function fetchExtraDetails(fileName) {
 
 function fetchRemax(id) {
   //var id = 'MT28773784';
-  if (fs.existsSync('extra_data/' + id + '.json')) {
+  if (ERRORS.indexOf(id) > -1 || fs.existsSync('extra_data/' + id + '.json')) {
     console.log(id);
     return Promise.resolve();
   }
@@ -107,7 +112,7 @@ function fetchRemax(id) {
       }
   })
   .error(function () {
-    console.log('Failed to fetch: ' + id);
+    fs.appendFileSync(ERROR_FILE, id+'\n');
     return Promise.resolve();
   });
 }
