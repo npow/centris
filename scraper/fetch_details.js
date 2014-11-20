@@ -13,7 +13,7 @@ var ID_FILE = 'ids/' + DEST_CODE + '.txt';
 var ERROR_FILE = DEST_CODE + '_errors.txt';
 var ERRORS = fs.readFileSync(ERROR_FILE).toString().split('\n');
 
-//fetchROYALLEPAGE('MT10770453');
+//fetchVIACAPITALE('MT25383698');
 fetchExtraDetails(ID_FILE);
 
 function strip(s, sep) {
@@ -76,7 +76,7 @@ function fetchExtraDetails(fileName) {
 }
 
 function fetch(id) {
-  var code = DEST_CODE === 'EGPTECH' ? 'REMAX' : DEST_CODE;
+  var code = DEST_CODE === 'EGPTECH' ? 'ROYALLEPAGE' : DEST_CODE;
   if (ERRORS.indexOf(id) > -1 || fs.existsSync('extra_data/' + DEST_CODE + '/' + id + '.json')) {
     console.log(id);
     return Promise.resolve();
@@ -87,6 +87,84 @@ function fetch(id) {
   } else {
     throw 'Unknown dest code: ' + DEST_CODE;
   }
+}
+
+function fetchVIACAPITALE(id) {
+  //var id = 'MT18238598';
+  var url = 'http://redirect.viacapitale.com/no/' + id + '/?en=';
+  return jsdom.envAsync(url, ["http://code.jquery.com/jquery.js"])
+    .then(function (window) {
+      var $ = window.$;
+      // missing: FloorCovering, Insurance, View
+      var fields = {
+        'Land area :': 'Area',
+        'Building:': 'BuildingAssessment',
+        'Building :': 'BuildingAssessment',
+        'Year of construction': 'YearBuilt',
+        'Building area :': 'LivingArea',
+        'Living area :': 'LivingArea',
+        'Garage :': 'Garage',
+        'Heating energy :': 'HeatingEnergy',
+        'Heating system :': 'HeatingSystem',
+        'Land:': 'LotAssessment',
+        'Land :': 'LotAssessment',
+        'Depth of land :': 'LotDepth',
+        'Frontage land :': 'LotFrontage',
+        'Condo fees': 'CondoFees', //
+        'Municipal Taxes': 'MunicipalTax',
+        'Parking :': 'Parking',
+        'Swimming pool:': 'Pool',
+        'Proximity :': 'Proximity',
+        'School taxes': 'SchoolTax',
+        'Water supply :': 'WaterSupply',
+        'Sewage system :': 'SewageSystem',
+        'Topography :': 'Topography',
+        'Zoning :': 'Zoning'
+      };
+      var data = { MlsNumber: id.substring(2) };
+      for (var field in fields) {
+        var key = fields[field];
+        var res = $('div:contains("' + field + '")');
+        if (['YearBuilt'].indexOf(key) > -1) {
+          if (res && res.length > 0 && res.last()) {
+            var value = res.last().next().text().replace(/\n/g, '').replace(/ +(?= )/g,'').trim();
+            value = value.substring(value.indexOf(':')+1).trim();
+            if (value.length > 0) {
+              data[key] = value;
+            }
+          }
+        } else if (['BuildingAssessment', 'LotAssessment', 'MunicipalTax', 'SchoolTax'].indexOf(key) > -1) {
+          if (res && res.length > 0 && res.last()) {
+            var value = res.last().children().last().text().trim();
+            if (field.indexOf(':') > -1 || ['MunicipalTax', 'SchoolTax'].indexOf(key) > -1) {
+              value = res.last().text().trim();
+            }
+            value = value.substring(value.indexOf(':')+1).trim();
+            if (value.length > 0) {
+              data[key] = value;
+            }
+          }
+        } else {
+          if (res && res.length > 0 && res.last()) {
+            var value = res.last().parent().text().replace(/\n/g, '').replace(/ +(?= )/g,'').trim();
+            value = value.substring(value.indexOf(':')+1).trim();
+            if (value.length > 0) {
+              data[key] = value;
+            }
+          }
+        }
+      }
+      console.log(id);
+      if (Object.keys(data).length > 1) {
+        fs.writeFileSync('extra_data/' + DEST_CODE + '/' + id + '.json', JSON.stringify(data));
+      }
+
+      window.close();
+  })
+  .error(function () {
+    fs.appendFileSync(ERROR_FILE, id+'\n');
+    return Promise.resolve();
+  });
 }
 
 function fetchROYALLEPAGE(id) {
@@ -140,7 +218,6 @@ function fetchROYALLEPAGE(id) {
     fs.appendFileSync(ERROR_FILE, id+'\n');
     return Promise.resolve();
   });
-
 }
 
 function fetchC21(id) {
