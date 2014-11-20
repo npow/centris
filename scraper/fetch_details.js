@@ -13,8 +13,8 @@ var ID_FILE = 'ids/' + DEST_CODE + '.txt';
 var ERROR_FILE = DEST_CODE + '_errors.txt';
 var ERRORS = fs.readFileSync(ERROR_FILE).toString().split('\n');
 
+//fetchROYALLEPAGE('MT10770453');
 fetchExtraDetails(ID_FILE);
-//fetchC21('MT27529831');
 
 function strip(s, sep) {
   return s.split('\t').map(function (x) { return x.trim(); }).filter(function (x) { return x.length > 0; }).join(', ');
@@ -87,6 +87,61 @@ function fetch(id) {
   } else {
     throw 'Unknown dest code: ' + DEST_CODE;
   }
+}
+
+function fetchROYALLEPAGE(id) {
+  //var id = 'MT13434401';
+  var url = 'http://www-p.royallepage.ca/search/MLS-P/' + id;
+  return jsdom.envAsync(url, ["http://code.jquery.com/jquery.js"])
+    .then(function (window) {
+      var $ = window.$;
+      // missing: FloorCovering, Area, Insurance, Topography
+      var fields = {
+        'Building Assessment:': 'BuildingAssessment',
+        'Built in': 'YearBuilt',
+        'Floor Space (approx):': 'LivingArea',
+        'Garage:': 'Garage',
+        'Heating Energy:': 'HeatingEnergy',
+        'Heating System:': 'HeatingSystem',
+        'Lot Assessment:': 'LotAssessment',
+        'Lot Depth:': 'LotDepth',
+        'Lot Frontage:': 'LotFrontage',
+        'Lot Size:': 'Area',
+        'Maintenance Fees': 'CondoFees',
+        'Municipal Tax:': 'MunicipalTax',
+        'Parking:': 'Parking',
+        'Pool:': 'Pool',
+        'Proximity:': 'Proximity',
+        'School Tax:': 'SchoolTax',
+        'Water Supply:': 'WaterSupply',
+        'View:': 'View',
+        'Sewage System:': 'SewageSystem',
+        'Zoning:': 'Zoning'
+      };
+      var data = { MlsNumber: id.substring(2) };
+      for (var field in fields) {
+        var key = fields[field];
+        var res = $('li:contains("' + field + '")');
+        if (res && res.length > 0 && res.next()) {
+          var value = res.next().text().trim();
+          if (value.length > 0) {
+            data[key] = value;
+          }
+        }
+      }
+      console.log(id);
+      if (Object.keys(data).length > 1) {
+        fs.writeFileSync('extra_data/' + DEST_CODE + '/' + id + '.json', JSON.stringify(data));
+        console.log(JSON.stringify(data));
+      }
+
+      window.close();
+  })
+  .error(function () {
+    fs.appendFileSync(ERROR_FILE, id+'\n');
+    return Promise.resolve();
+  });
+
 }
 
 function fetchC21(id) {
