@@ -133,7 +133,6 @@ function fetchSUTTON(id) {
       }
       
       window.close();
-      global.gc();
   })
   .error(function () {
     fs.appendFileSync(ERROR_FILE, id+'\n');
