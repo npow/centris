@@ -131,6 +131,9 @@ function fetchSUTTON(id) {
       if (Object.keys(data).length > 1) {
         fs.writeFileSync('extra_data/' + DEST_CODE + '/' + id + '.json', JSON.stringify(data));
       }
+      
+      window.close();
+      global.gc();
   })
   .error(function () {
     fs.appendFileSync(ERROR_FILE, id+'\n');
