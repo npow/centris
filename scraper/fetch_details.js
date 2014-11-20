@@ -14,7 +14,11 @@ var ERROR_FILE = DEST_CODE + '_errors.txt';
 var ERRORS = fs.readFileSync(ERROR_FILE).toString().split('\n');
 
 fetchExtraDetails(ID_FILE);
-//fetchSutton('MT27529831');
+//fetchC21('MT27529831');
+
+function strip(s, sep) {
+  return s.split('\t').map(function (x) { return x.trim(); }).filter(function (x) { return x.length > 0; }).join(', ');
+}
 
 function getDestCode(url) {
   var dest = '';
@@ -73,6 +77,10 @@ function fetchExtraDetails(fileName) {
 
 function fetch(id) {
   var code = DEST_CODE === 'EGPTECH' ? 'REMAX' : DEST_CODE;
+  if (ERRORS.indexOf(id) > -1 || fs.existsSync('extra_data/' + DEST_CODE + '/' + id + '.json')) {
+    console.log(id);
+    return Promise.resolve();
+  }
   var fn = eval('fetch' + code);
   if (fn) {
     return fn(id);
@@ -81,16 +89,76 @@ function fetch(id) {
   }
 }
 
+function fetchC21(id) {
+  //var id = 'MT13434401';
+  var url = 'http://www.century21.ca/' + id;
+  return jsdom.envAsync(url, ["http://code.jquery.com/jquery.js"])
+    .then(function (window) {
+      var $ = window.$;
+      // missing: FloorCovering, Area, Insurance, Topography
+      var fields = {
+        'Living Area:': 'LivingArea',
+        'Year Built:': 'YearBuilt',
+        'Municipal:': 'MunicipalTax',
+        'School:': 'SchoolTax',
+        'Lot:': 'LotAssessment',
+        'Building:': 'BuildingAssessment',
+        'Condo Fees:': 'CondoFees',
+
+        'Garage': 'Garage',
+        'Heating Energy': 'HeatingEnergy',
+        'Heating System': 'HeatingSystem',
+        'Parking': 'Parking',
+        'Pool': 'Pool',
+        'Proximity': 'Proximity', // TODO: Handle multiple rows
+        'Sewage System': 'SewageSystem',
+        'View': 'View',
+        'Water Supply': 'WaterSupply',
+        'Zoning': 'Zoning'
+      };
+      var data = { MlsNumber: id.substring(2) };
+      for (var field in fields) {
+        var key = fields[field];
+        if (['Zoning', 'Water Supply', 'View', 'SewageSystem', 'Proximity', 'Pool', 'Parking', 'HeatingSystem', 'HeatingEnergy', 'Garage'].indexOf(key) > -1) {
+          var res = $('td:contains("' + field + '")');
+          if (res && res.length > 0 && res.parent()) {
+            var value = res.parent().next().text().split('\n').map(function (x) { return strip(x); }).filter(function (x) { return x.length > 0; }).join(', ');
+
+            if (value.length > 0) {
+              data[key] = value;
+            }
+          }
+        } else {
+          var res = $('td:contains("' + field + '")');
+          if (res && res.next()) {
+            var value = res.next().text().split('\n').map(function (x) { return strip(x); }).filter(function (x) { return x.length > 0; }).join(', ');
+            if (value.length > 0) {
+              data[key] = value;
+            }
+          }
+        }
+      }
+      console.log(id);
+      if (Object.keys(data).length > 1) {
+        fs.writeFileSync('extra_data/' + DEST_CODE + '/' + id + '.json', JSON.stringify(data));
+      }
+
+      window.close();
+  })
+  .error(function () {
+    fs.appendFileSync(ERROR_FILE, id+'\n');
+    return Promise.resolve();
+  });
+
+}
+
 function fetchSUTTON(id) {
   //var id = 'MT27529831';
-  if (ERRORS.indexOf(id) > -1 || fs.existsSync('extra_data/' + DEST_CODE + '/' + id + '.json')) {
-    console.log(id);
-    return Promise.resolve();
-  }
   var url = 'http://www.suttonquebec.com/property/sutton-quebec-real-estate-details.html?no_inscription=' + id;
   return jsdom.envAsync(url, ["http://code.jquery.com/jquery.js"])
     .then(function (window) {
       var $ = window.$;
+      // missing: FloorCovering, Area, Insurance, Topography, Pool
       var fields = {
         'year of constr.:': 'YearBuilt',
         'Parking': 'Parking',
@@ -103,7 +171,7 @@ function fetchSUTTON(id) {
         'Bulding dim.': 'LivingArea',
         'Municipal Taxes': 'MunicipalTax',
         'School taxes': 'SchoolTax',
-        'Heating system': 'HeatingEnergy',
+        'Heating system': 'HeatingSystem',
         'Municipal evaluation': 'MunicipalAssessment',
       };
       var data = { MlsNumber: id.substring(2) };
@@ -142,14 +210,11 @@ function fetchSUTTON(id) {
 
 function fetchREMAX(id) {
   //var id = 'MT28773784';
-  if (ERRORS.indexOf(id) > -1 || fs.existsSync('extra_data/' + DEST_CODE + '/' + id + '.json')) {
-    console.log(id);
-    return Promise.resolve();
-  }
   var url = 'http://www.remax-quebec.com/en/MLSRedirect.rmx?sia=' + id;
   return jsdom.envAsync(url, ["http://code.jquery.com/jquery.js"])
     .then(function (window) {
       var $ = window.$;
+      // missing: HeatingSystem
       var fields = {
         'Year built :': 'YearBuilt',
         'Garage :': 'Garage',
