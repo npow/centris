@@ -14,6 +14,7 @@ var ERROR_FILE = DEST_CODE + '_errors.txt';
 var ERRORS = fs.readFileSync(ERROR_FILE).toString().split('\n');
 
 fetchExtraDetails(ID_FILE);
+//fetchSutton('MT27529831');
 
 function getDestCode(url) {
   var dest = '';
@@ -53,7 +54,7 @@ function fetchExtraDetails(fileName) {
   mls_ids.pop();
   //mls_ids.reverse();
   if (ENABLE_PARALLEL_FETCH) {
-    return Promise.all(mls_ids.map(function (x) { return fetchRemax(x); }))
+    return Promise.all(mls_ids.map(function (x) { return fetch(x); }))
                   .then(function () {
                     console.log('DONE');
                   });
@@ -61,7 +62,7 @@ function fetchExtraDetails(fileName) {
     var sequencer = Promise.resolve();
     mls_ids.forEach(function (id, i) {
       sequencer = sequencer.then(function () {
-        return fetchRemax(id);
+        return fetch(id);
       });
     });
     sequencer.then(function () {
@@ -70,9 +71,76 @@ function fetchExtraDetails(fileName) {
   }
 }
 
-function fetchRemax(id) {
+function fetch(id) {
+  var code = DEST_CODE === 'EGPTECH' ? 'REMAX' : DEST_CODE;
+  var fn = eval('fetch' + code);
+  if (fn) {
+    return fn(id);
+  } else {
+    throw 'Unknown dest code: ' + DEST_CODE;
+  }
+}
+
+function fetchSUTTON(id) {
+  //var id = 'MT27529831';
+  if (ERRORS.indexOf(id) > -1 || fs.existsSync('extra_data/' + DEST_CODE + '/' + id + '.json')) {
+    console.log(id);
+    return Promise.resolve();
+  }
+  var url = 'http://www.suttonquebec.com/property/sutton-quebec-real-estate-details.html?no_inscription=' + id;
+  return jsdom.envAsync(url, ["http://code.jquery.com/jquery.js"])
+    .then(function (window) {
+      var $ = window.$;
+      var fields = {
+        'year of constr.:': 'YearBuilt',
+        'Parking': 'Parking',
+        'Sewage system': 'SewageSystem',
+        'Zoning': 'Zoning',
+        'View': 'View',
+        'Garage': 'Garage',
+        'Proximity': 'Proximity',
+        'Water supply': 'WaterSupply',
+        'Bulding dim.': 'LivingArea',
+        'Municipal Taxes': 'MunicipalTax',
+        'School taxes': 'SchoolTax',
+        'Heating system': 'HeatingEnergy',
+        'Municipal evaluation': 'MunicipalAssessment',
+      };
+      var data = { MlsNumber: id.substring(2) };
+      for (var field in fields) {
+        var key = fields[field];
+        if (key === 'MunicipalAssessment') {
+          var res = $('div:contains("' + field + '")');
+          if (res.length > 0 && res.last()) {
+            var value = res.last().text().split('\n')[2].trim().replace(/ \([0-9]+\)/, '');
+            if (value.length > 0) {
+              data[key] = value;
+            }
+          }
+        } else {
+          var res = $('td:contains("' + field + '")');
+          if (res && res.next()) {
+            var value = res.next().text().split('\n').map(function (x) { return x.trim(); }).filter(function (x) { return x.length > 0; }).join(', ');
+            if (value.length > 0) {
+              data[key] = value;
+            }
+          }
+        }
+      }
+      console.log(id);
+      if (Object.keys(data).length > 1) {
+        fs.writeFileSync('extra_data/' + DEST_CODE + '/' + id + '.json', JSON.stringify(data));
+      }
+  })
+  .error(function () {
+    fs.appendFileSync(ERROR_FILE, id+'\n');
+    return Promise.resolve();
+  });
+}
+
+function fetchREMAX(id) {
   //var id = 'MT28773784';
-  if (ERRORS.indexOf(id) > -1 || fs.existsSync('extra_data/' + id + '.json')) {
+  if (ERRORS.indexOf(id) > -1 || fs.existsSync('extra_data/' + DEST_CODE + '/' + id + '.json')) {
     console.log(id);
     return Promise.resolve();
   }
@@ -110,7 +178,7 @@ function fetchRemax(id) {
       }
       console.log(id);
       if (Object.keys(data).length > 1) {
-        fs.writeFileSync('extra_data/' + id + '.json', JSON.stringify(data));
+        fs.writeFileSync('extra_data/' + DEST_CODE + '/' + id + '.json', JSON.stringify(data));
       }
   })
   .error(function () {
