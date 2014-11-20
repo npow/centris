@@ -132,7 +132,6 @@ function fetchROYALLEPAGE(id) {
       console.log(id);
       if (Object.keys(data).length > 1) {
         fs.writeFileSync('extra_data/' + DEST_CODE + '/' + id + '.json', JSON.stringify(data));
-        console.log(JSON.stringify(data));
       }
 
       window.close();
