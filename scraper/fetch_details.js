@@ -5,6 +5,7 @@ var jsdom = Promise.promisifyAll(require('jsdom'));
 var json2csv = require('json2csv');
 var sys = Promise.promisifyAll(require('sys'));
 
+var ENABLE_PARALLEL_FETCH = false;
 var DEST_CODE = process.argv[2];
 console.log(DEST_CODE);
 var LISTINGS_FILE = 'data/listings.csv';
@@ -51,21 +52,22 @@ function fetchExtraDetails(fileName) {
   var mls_ids = fs.readFileSync(fileName).toString().split('\n');
   mls_ids.pop();
   //mls_ids.reverse();
-  return Promise.all(mls_ids.map(function (x) { return fetchRemax(x); }))
-                .then(function () {
-                  console.log('DONE');
-                });
-  /*
-  var sequencer = Promise.resolve();
-  mls_ids.forEach(function (id, i) {
-    sequencer = sequencer.then(function () {
-      return fetchRemax(id);
+  if (ENABLE_PARALLEL_FETCH) {
+    return Promise.all(mls_ids.map(function (x) { return fetchRemax(x); }))
+                  .then(function () {
+                    console.log('DONE');
+                  });
+  } else {
+    var sequencer = Promise.resolve();
+    mls_ids.forEach(function (id, i) {
+      sequencer = sequencer.then(function () {
+        return fetchRemax(id);
+      });
     });
-  });
-  sequencer.then(function () {
-    console.log('DONE');
-  });
-  */
+    sequencer.then(function () {
+      console.log('DONE');
+    });
+  }
 }
 
 function fetchRemax(id) {
