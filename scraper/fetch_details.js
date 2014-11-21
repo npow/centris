@@ -4,6 +4,7 @@ var fs = Promise.promisifyAll(require('fs'));
 var jsdom = Promise.promisifyAll(require('jsdom'));
 var json2csv = require('json2csv');
 var sys = Promise.promisifyAll(require('sys'));
+var request = Promise.promisifyAll(require('request'));
 
 var ENABLE_PARALLEL_FETCH = false;
 var DEST_CODE = process.argv[2];
@@ -13,7 +14,7 @@ var ID_FILE = 'ids/' + DEST_CODE + '.txt';
 var ERROR_FILE = DEST_CODE + '_errors.txt';
 var ERRORS = fs.readFileSync(ERROR_FILE).toString().split('\n');
 
-//fetchVIACAPITALE('MT25383698');
+//fetchMELLOR('MT28854690');
 fetchExtraDetails(ID_FILE);
 
 function strip(s, sep) {
@@ -87,6 +88,45 @@ function fetch(id) {
   } else {
     throw 'Unknown dest code: ' + DEST_CODE;
   }
+}
+
+function fetchMELLOR(id) {
+  //var id = 'MT28474580';
+  var url = 'http://www.mellorgroup.ca/PropertyDetails?MLS=' + id.substring(2);
+  return request.getAsync({
+    url: url,
+    headers: {
+      'Accept': 'application/json, text/javascript, */*; q=0.01',
+      'Content-Type': 'application/json; charset=UTF-8',
+      'Host': 'www.mellorgroup.ca',
+      'Origin': 'http://www.mellorgroup.ca',
+      'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/38.0.2125.111 Safari/537.36',
+    }
+  }).get(1).then(function (html) {
+    return jsdom.envAsync(html, ["http://code.jquery.com/jquery.js"])
+      .then(function (window) {
+        var $ = window.$;
+        var data = {};
+        [].forEach.call($('script'), function (x) {
+          if (x.innerHTML.indexOf('__Noesis_Resources__') > -1) {
+            eval(x.innerHTML);
+            data = JSON.parse(__Noesis_Resources__.Settings.SerializedInscription);
+          }
+        });
+        data.MlsNumber = id.substring(2);
+
+        console.log(id);
+        if (Object.keys(data).length > 1) {
+          fs.writeFileSync('extra_data/' + DEST_CODE + '/' + id + '.json', JSON.stringify(data));
+        }
+
+        window.close();
+    })
+    .error(function () {
+      fs.appendFileSync(ERROR_FILE, id+'\n');
+      return Promise.resolve();
+    });
+  });
 }
 
 function fetchVIACAPITALE(id) {
