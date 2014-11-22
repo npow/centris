@@ -78,7 +78,7 @@ function fetchExtraDetails(fileName) {
 
 function fetch(id) {
   var code = DEST_CODE === 'EGPTECH' ? 'ROYALLEPAGE' : DEST_CODE;
-  if (ERRORS.indexOf(id) > -1 || fs.existsSync('extra_data/' + DEST_CODE + '/' + id + '.json')) {
+  if (ERRORS.indexOf(id) > -1) {// || fs.existsSync('extra_data/' + DEST_CODE + '/' + id + '.json')) {
     console.log(id);
     return Promise.resolve();
   }
@@ -268,6 +268,7 @@ function fetchC21(id) {
       var $ = window.$;
       // missing: FloorCovering, Area, Insurance, Topography
       var fields = {
+        'Building Size:': 'LivingArea',
         'Living Area:': 'LivingArea',
         'Lot Area:': 'Area',
         'Year Built:': 'YearBuilt',
