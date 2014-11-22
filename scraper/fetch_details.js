@@ -14,7 +14,7 @@ var ID_FILE = 'ids/' + DEST_CODE + '.txt';
 var ERROR_FILE = DEST_CODE + '_errors.txt';
 var ERRORS = fs.readFileSync(ERROR_FILE).toString().split('\n');
 
-//fetchSUTTON('MT25144213');
+//fetchC21('MT27015351');
 fetchExtraDetails(ID_FILE);
 
 function strip(s, sep) {
@@ -78,7 +78,7 @@ function fetchExtraDetails(fileName) {
 
 function fetch(id) {
   var code = DEST_CODE === 'EGPTECH' ? 'ROYALLEPAGE' : DEST_CODE;
-  if (ERRORS.indexOf(id) > -1) {// || fs.existsSync('extra_data/' + DEST_CODE + '/' + id + '.json')) {
+  if (ERRORS.indexOf(id) > -1 || fs.existsSync('extra_data/' + DEST_CODE + '/' + id + '.json')) {
     console.log(id);
     return Promise.resolve();
   }
@@ -271,6 +271,7 @@ function fetchC21(id) {
         'Building Size:': 'LivingArea',
         'Living Area:': 'LivingArea',
         'Lot Area:': 'Area',
+        'Lot Size:': 'Area',
         'Year Built:': 'YearBuilt',
         'Municipal:': 'MunicipalTax',
         'School:': 'SchoolTax',
