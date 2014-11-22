@@ -3,6 +3,7 @@
 # vim: tabstop=2 expandtab shiftwidth=2 softtabstop=2
 
 from __future__ import division
+import math
 import numpy as np
 import pandas as pd
 import scipy
@@ -47,4 +48,4 @@ clf = Pipeline([
 clf.fit(X_train, Y_train)
 preds = clf.predict(X_test).astype(float)
 
-print 'MSE: ', metrics.mean_squared_error(preds, Y_test)
+print 'RMSE: ', math.sqrt(metrics.mean_squared_error(preds, Y_test))
