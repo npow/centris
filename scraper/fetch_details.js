@@ -269,6 +269,7 @@ function fetchC21(id) {
       // missing: FloorCovering, Area, Insurance, Topography
       var fields = {
         'Living Area:': 'LivingArea',
+        'Lot Area:': 'Area',
         'Year Built:': 'YearBuilt',
         'Municipal:': 'MunicipalTax',
         'School:': 'SchoolTax',
