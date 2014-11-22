@@ -14,7 +14,7 @@ var ID_FILE = 'ids/' + DEST_CODE + '.txt';
 var ERROR_FILE = DEST_CODE + '_errors.txt';
 var ERRORS = fs.readFileSync(ERROR_FILE).toString().split('\n');
 
-//fetchMELLOR('MT28854690');
+//fetchSUTTON('MT25144213');
 fetchExtraDetails(ID_FILE);
 
 function strip(s, sep) {
@@ -341,6 +341,8 @@ function fetchSUTTON(id) {
         'Proximity': 'Proximity',
         'Water supply': 'WaterSupply',
         'Bulding dim.': 'LivingArea',
+        'Livable surface': 'LivingArea',
+        'Lot surface': 'Area',
         'Municipal Taxes': 'MunicipalTax',
         'School taxes': 'SchoolTax',
         'Heating system': 'HeatingSystem',
