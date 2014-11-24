@@ -62,13 +62,19 @@ for col in ['COP', 'AP', 'LS', 'MA']:#, 'PPR', '2X', '3X', '4X', '5X', 'AU', 'UN
   print 'Y.shape: ', Y.shape
 
   Y = Y.reshape(Y.shape[0])
-  X_train, X_test, Y_train, Y_test = train_test_split(X, Y, test_size=0.1, random_state=42)
+  skf = KFold(n=X.shape[0], n_folds=10, shuffle=True, random_state=42)
+  L = []
+  for train_indices, test_indices in skf:
+    X_train, Y_train = X[train_indices], Y[train_indices]
+    X_test, Y_test = X[test_indices], Y[test_indices]
 
-  clf = Pipeline([
-      ('scaler', StandardScaler()),
-      ('svm', SVR())
-  ])
-  clf.fit(X_train, Y_train)
-  preds = clf.predict(X_test).astype(float)
+    clf = Pipeline([
+#        ('scaler', StandardScaler()),
+        ('svm', Ridge(alpha=1, normalize=True))
+    ])
+    clf.fit(X_train, Y_train)
+    preds = clf.predict(X_test).astype(float)
 
-  print 'RMSE: ', math.sqrt(metrics.mean_squared_error(preds, Y_test))
+    rmse = math.sqrt(metrics.mean_squared_error(preds, Y_test))
+    L.append(rmse)
+  print np.array(L).mean()
