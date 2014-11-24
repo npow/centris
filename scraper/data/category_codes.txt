@@ -1,0 +1,38 @@
+COP: AP (Apartment), LS (Loft/Studio), MA (Condo/Loft, House) -- Townhouse
+FER: FE (Farm)
+PCI: C (Commercial), I (Industrial), VE (Bulk, block sale)
+PPR: 2X (Duplex), 3X (Triplex), 4X (Quadruplex), 5X (Quintuplex), AU (Revenue Property)
+TER: TE, TR (Land) 
+UNI: ME/MEM (Single family, 2 or more storeys), MM (Single family, mobile home), MPM (Single family, split level), PP (single family, bungalow)
+
+COP 7699
+AP 7386
+LS 129
+MA 186
+
+FER 2
+FE 2
+
+PCI 720
+C 286
+I 46
+VE 390
+
+PPR 2588
+2X 1191
+3X 650
+4X 237
+5X 127
+AU 387
+
+TER 141
+TE 18
+TR 124
+
+UNI 3523
+ME 2363
+MEM 28
+MM 12
+MPM 326
+PP 798
+
