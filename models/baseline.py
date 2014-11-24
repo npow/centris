@@ -71,7 +71,20 @@ for col in ['COP', 'AP', 'LS', 'MA']:#, 'PPR', '2X', '3X', '4X', '5X', 'AU', 'UN
 
     clf = Pipeline([
         ('scaler', StandardScaler()),
-        ('svm', Ridge(alpha=1, normalize=False))
+#        ('clf', AdaBoostRegressor()),
+#        ('clf', ARDRegression()),
+#        ('clf', BaggingRegressor()),
+#        ('clf', BayesianRidge()),
+#        ('clf', ElasticNet()),
+#        ('clf', ExtraTreesRegressor()),
+#        ('clf', GradientBoostingRegressor()),
+#        ('clf', KNeighborsRegressor(n_neighbors=5)),
+#        ('clf', Lasso()),
+#        ('clf', LinearRegression()),
+#        ('clf', PassiveAggressiveRegressor()),
+        ('clf', RandomForestRegressor()),
+#        ('clf', Ridge(alpha=0.5, normalize=False)),
+#        ('clf', SVR()),
     ])
     clf.fit(X_train, Y_train)
     preds = clf.predict(X_test).astype(float)
