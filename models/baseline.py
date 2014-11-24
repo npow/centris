@@ -70,8 +70,8 @@ for col in ['COP', 'AP', 'LS', 'MA']:#, 'PPR', '2X', '3X', '4X', '5X', 'AU', 'UN
     X_test, Y_test = X[test_indices], Y[test_indices]
 
     clf = Pipeline([
-#        ('scaler', StandardScaler()),
-        ('svm', Ridge(alpha=1, normalize=True))
+        ('scaler', StandardScaler()),
+        ('svm', Ridge(alpha=1, normalize=False))
     ])
     clf.fit(X_train, Y_train)
     preds = clf.predict(X_test).astype(float)
