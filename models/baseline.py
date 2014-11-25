@@ -35,12 +35,20 @@ data.to_csv('all_data.csv')
 for col in ['COP', 'AP', 'LS', 'MA']:#, 'PPR', '2X', '3X', '4X', '5X', 'AU', 'UNI', 'MEM']:
   print "*" * 80
   print col
+
+
   #X=data[['LivingArea']]
   #X = data[['LivingArea','WalkScore', 'NbPieces', 'NbChambres', 'NbSallesEaux', 'NbSallesBains', 'NbFoyerPoele', 'NbEquipements', 'NbGarages', 'NbStationnements', 'NbPiscines', 'NbBordEaux']]
   X = data.drop(['MlsNumber', 'Lat', 'Lng', 'BuyPrice'], axis=1, inplace=False)
   Y = data[['BuyPrice']]
+
+  X = X[data[col]==1]
+  Y = Y[data[col]==1]
+  print 'X.shape: ', X.shape
+  print 'Y.shape: ', Y.shape
   #print X.columns.values
   # filter rows with NaN
+
   mask = ~np.isnan(X).any(axis=1)
   X = X[mask]
   print X.shape
@@ -66,11 +74,9 @@ for col in ['COP', 'AP', 'LS', 'MA']:#, 'PPR', '2X', '3X', '4X', '5X', 'AU', 'UN
   mask = np.abs(Y['BuyPrice']-Y['BuyPrice'].median()) <= (3*Y['BuyPrice'].std())
   X = X[mask]
   Y = Y[mask]
+  X = np.array(X)
+  Y=np.array(Y)
 
-  X = np.array(X[data[col]==1])
-  Y = np.array(Y[data[col]==1])
-  print 'X.shape: ', X.shape
-  print 'Y.shape: ', Y.shape
 
   Y = Y.reshape(Y.shape[0])
   skf = KFold(n=X.shape[0], n_folds=10, shuffle=True, random_state=42)
@@ -79,23 +85,24 @@ for col in ['COP', 'AP', 'LS', 'MA']:#, 'PPR', '2X', '3X', '4X', '5X', 'AU', 'UN
     X_train, Y_train = X[train_indices], Y[train_indices]
     X_test, Y_test = X[test_indices], Y[test_indices]
 
-#    clf = Pipeline([
-#        ('scaler', StandardScaler()),
-#        ('clf', AdaBoostRegressor()),
-#        ('clf', ARDRegression()),
-#        ('clf', BaggingRegressor()),
-#        ('clf', BayesianRidge()),
-#        ('clf', ElasticNet()),
-#        ('clf', ExtraTreesRegressor()),
-#        ('clf', GradientBoostingRegressor()),
-#        ('clf', KNeighborsRegressor(n_neighbors=5)),
-#        ('clf', Lasso()),
-#        ('clf', LinearRegression()),
-#        ('clf', PassiveAggressiveRegressor()),
-#        ('clf', RandomForestRegressor()),
-#        ('clf', Ridge(alpha=0.5, normalize=False)),
-#        ('clf', SVR()),
-#    ])
+    clf = Pipeline([
+       ('scaler', StandardScaler()),
+       # ('clf', AdaBoostRegressor()),
+       # ('clf', ARDRegression()),
+       # ('clf', BaggingRegressor()),
+       # ('clf', BayesianRidge()),
+       # ('clf', ElasticNet()),
+       # ('clf', ExtraTreesRegressor()),
+        ('clf', GradientBoostingRegressor()),
+       # ('clf', KNeighborsRegressor(n_neighbors=5)),
+       # ('clf', Lasso()),
+       # ('clf', LinearRegression()),
+       # ('clf', PassiveAggressiveRegressor()),
+       # ('clf', RandomForestRegressor()),
+       # ('clf', Ridge(alpha=0.5, normalize=False)),
+       # ('clf', SVR()),
+   ])
+    """
     scaler = StandardScaler()
     X_train = scaler.fit_transform(X_train)
     X_test = scaler.transform(X_test)
@@ -109,14 +116,15 @@ for col in ['COP', 'AP', 'LS', 'MA']:#, 'PPR', '2X', '3X', '4X', '5X', 'AU', 'UN
     clf = GradientBoostingRegressor()
     print "HMM: ", clf1_train.shape
     print "ASDF: ", Y_train.shape
-    clf.fit(clf1_train, Y_train)
-    preds = clf.predict(clf1_test).astype(float)
+    """
+    clf.fit(X_train, Y_train)
+    preds = clf.predict(X_test).astype(float)
 
     rmse = math.sqrt(metrics.mean_squared_error(preds, Y_test))
     print rmse
     L.append(rmse)
-    #plt.plot(Y_test,preds,'ro')
-    #plt.show()
-    #break
+    plt.plot(Y_test,preds,'ro')
+    plt.show()
+    break
   print np.array(L).mean()
 
