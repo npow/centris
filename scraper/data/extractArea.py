@@ -27,12 +27,17 @@ def convert_to_sf(raw_value):
 
 data = pd.read_csv('extra_data.csv')
 #print data
+#extract 'Area' field as well and convert to squared feet
 i=0
 for row in data.values:
+	
 	row[1]=convert_to_sf(str(row[1]))
+	#row[17]=convert_to_sf(str(row[17]))
+	#data['Area'][i]=row[17]
 	#print 'this is item ' + str(data['LivingArea'][i])
 	data['LivingArea'][i]=row[1]
 	i=i+1
 	
 
 data.to_csv('post_extra_data.csv')
+
