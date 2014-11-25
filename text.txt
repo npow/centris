@@ -1,2 +1,0 @@
-Git test for pushing onto repo
-Ok, getting the hang of it!
