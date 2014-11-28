@@ -1,4 +1,16 @@
-##### Requirements
+# Requirements
+
+## Classifier
+
+* [anaconda](http://continuum.io/downloads)
+
+##### Dependencies
+```
+# conda update scikit-learn numpy
+# pip install pybrain pandas
+```
+
+## Scraper
 
 * [nodejs](http://nodejs.org/)
 
