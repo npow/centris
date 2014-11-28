@@ -9,6 +9,9 @@ import numpy as np
 import pandas as pd
 import scipy
 import sys
+from pybrain.datasets.supervised import SupervisedDataSet
+from pybrain.tools.shortcuts import buildNetwork
+from pybrain.supervised.trainers import BackpropTrainer
 from scipy.stats.stats import pearsonr
 from sklearn.base import BaseEstimator, TransformerMixin
 #from nolearn.dbn import DBN
@@ -26,6 +29,7 @@ from sklearn.tree import *
 from sklearn import metrics
 np.random.seed(42)
 
+USE_NEURALNET = True
 USE_CALIBRATION = False
 GENERATE_PLOTS = False
 
@@ -74,6 +78,7 @@ for col in ['AP']:#, 'COP', 'AP', 'LS', 'MA']:#, 'PPR', '2X', '3X', '4X', '5X', 
   X = X[mask]
   Y = Y[mask]
 
+  columns = X.columns.values
   X = np.array(X)
   Y = np.array(Y)
   Y = Y.reshape(Y.shape[0])
@@ -86,63 +91,80 @@ for col in ['AP']:#, 'COP', 'AP', 'LS', 'MA']:#, 'PPR', '2X', '3X', '4X', '5X', 
     X_train, Y_train = X[train_indices], Y[train_indices]
     X_test, Y_test = X[test_indices], Y[test_indices]
 
-    for clf_type in [GradientBoostingRegressor]:#[AdaBoostRegressor, BaggingRegressor, BayesianRidge, ElasticNet, ExtraTreesRegressor, GradientBoostingRegressor, KNeighborsRegressor, Lasso, LinearRegression, PassiveAggressiveRegressor, RandomForestRegressor, Ridge, SVR]:
-      if USE_CALIBRATION:
-        scaler = StandardScaler()
-        X_train_scaled = scaler.fit_transform(X_train)
-        X_test_scaled = scaler.transform(X_test)
+    if USE_CALIBRATION:
+      scaler = StandardScaler()
+      X_train_scaled = scaler.fit_transform(X_train)
+      X_test_scaled = scaler.transform(X_test)
 
-        clf1 = clf_type()
-        clf1.fit(X_train_scaled, Y_train)
-        clf1_train = clf1.predict(X_train_scaled)
-        clf1_test = clf1.predict(X_test_scaled)
+      clf1 = GradientBoostingRegressor()
+      clf1.fit(X_train_scaled, Y_train)
+      clf1_train = clf1.predict(X_train_scaled)
+      clf1_test = clf1.predict(X_test_scaled)
 
-        clf1_train = clf1_train.reshape((clf1_train.shape[0],1))
-        clf1_test = clf1_test.reshape((clf1_test.shape[0],1))
+      clf1_train = clf1_train.reshape((clf1_train.shape[0],1))
+      clf1_test = clf1_test.reshape((clf1_test.shape[0],1))
 
-        clf1_train = np.concatenate([clf1_train, X_train_scaled], axis=1)
-        clf1_test = np.concatenate([clf1_test, X_test_scaled], axis=1)
+      clf1_train = np.concatenate([clf1_train, X_train_scaled], axis=1)
+      clf1_test = np.concatenate([clf1_test, X_test_scaled], axis=1)
 
-        clf = clf_type()
-        clf.fit(clf1_train, Y_train)
-        preds = clf.predict(clf1_test).astype(float)
-      else:
-        clf = Pipeline([
-           ('scaler', StandardScaler()),
-           # ('clf', AdaBoostRegressor()),
-           # ('clf', ARDRegression()),
-           # ('clf', BaggingRegressor()),
-           # ('clf', BayesianRidge()),
-           # ('clf', ElasticNet()),
-           # ('clf', ExtraTreesRegressor()),
-            ('clf', GradientBoostingRegressor()),
-           # ('clf', KNeighborsRegressor(n_neighbors=5)),
-           # ('clf', Lasso()),
-           # ('clf', LinearRegression()),
-           # ('clf', PassiveAggressiveRegressor()),
-           # ('clf', RandomForestRegressor()),
-           # ('clf', Ridge(alpha=0.5, normalize=False)),
-           # ('clf', SVR()),
-        ])
-        clf.fit(X_train, Y_train)
-        preds = clf.predict(X_test).astype(float)
+      clf = GradientBoostingRegressor()
+      clf.fit(clf1_train, Y_train)
+      preds = clf.predict(clf1_test).astype(float)
+    elif USE_NEURALNET:
+      Y_train, Y_test = Y_train.reshape(-1, 1), Y_test.reshape(-1, 1)
+      hidden_size = 100
 
-      rmse = math.sqrt(metrics.mean_squared_error(preds, Y_test))
-      corr = pearsonr(preds, Y_test)
-      diff = np.array([abs(p-a)/a for (p,a) in zip(preds,Y_test)]).mean()
-      
-      print str(clf_type), rmse, corr
-      L_rmse.append(rmse)
-      L_corr.append(corr[0])
-      L_diff.append(diff)
+      train_ds = SupervisedDataSet(X_train.shape[1], Y_train.shape[1])
+      train_ds.setField('input', X_train)
+      train_ds.setField('target', Y_train)
+      net = buildNetwork(X_train.shape[1], hidden_size, Y_train.shape[1], bias=True)
+      trainer = BackpropTrainer(net, train_ds)
 
-      if GENERATE_PLOTS:
-        plt.plot(Y_test, preds, 'ro')
-        plt.show()
-        break
-        #np.savetxt('Y_test.csv', Y_test)
-        #np.savetxt('preds.csv', preds)
-        #sys.exit(0)
+      epochs = 10
+      for i in xrange(epochs):
+        mse = trainer.train()
+        rmse = math.sqrt(mse)
+        print "epoch: %d, rmse: %f" % (i, rmse)
+
+      test_ds = SupervisedDataSet(X_test.shape[1], Y_test.shape[1])
+      test_ds.setField('input', X_test)
+      test_ds.setField('target', Y_test)
+      preds = net.activateOnDataset(test_ds)
+    else:
+      clf = Pipeline([
+         ('scaler', StandardScaler()),
+         # ('clf', AdaBoostRegressor()),
+         # ('clf', ARDRegression()),
+         # ('clf', BaggingRegressor()),
+         # ('clf', BayesianRidge()),
+         # ('clf', ElasticNet()),
+         # ('clf', ExtraTreesRegressor()),
+          ('clf', GradientBoostingRegressor()),
+         # ('clf', KNeighborsRegressor(n_neighbors=5)),
+         # ('clf', Lasso()),
+         # ('clf', LinearRegression()),
+         # ('clf', PassiveAggressiveRegressor()),
+         # ('clf', RandomForestRegressor()),
+         # ('clf', Ridge(alpha=0.5, normalize=False)),
+         # ('clf', SVR()),
+      ])
+
+      clf.fit(X_train, Y_train)
+      preds = clf.predict(X_test).astype(float)
+
+    rmse = math.sqrt(metrics.mean_squared_error(preds, Y_test))
+    corr = pearsonr(preds, Y_test)
+    diff = np.array([abs(p-a)/a for (p,a) in zip(preds,Y_test)]).mean()
+
+    print rmse, corr
+    L_rmse.append(rmse)
+    L_corr.append(corr[0])
+    L_diff.append(diff)
+
+    if GENERATE_PLOTS:
+      plt.plot(Y_test, preds, 'ro')
+      plt.show()
+      break
   print "Mean RMSE: ", np.array(L_rmse).mean()
   print "Mean corr: ", np.array(L_corr).mean()
   print "Mean %diff: ", np.array(L_diff).mean()
