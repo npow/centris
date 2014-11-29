@@ -5,7 +5,9 @@ var json2csv = require('json2csv');
 var readdirp = Promise.promisifyAll(require('readdirp'));
 
 //combineExtra('extra_data', 'data/extra_data.csv');
-combineExtra('tmp/DUPROPRIO/hist/json', 'data/hist_DUPROPRIO.csv');
+//combineExtra('tmp/DUPROPRIO/hist/json', 'data/hist_DUPROPRIO.csv');
+//combineExtra('tmp/C21/hist', 'data/hist_C21.csv', true /* useEval */);
+//combineExtra('tmp/C21/curr', 'data/curr_C21.csv', true /* useEval */);
 
 function combine() {
   var L = [];
@@ -23,7 +25,7 @@ function combine() {
   });
 }
 
-function combineExtra(rootDir, targetFileName) {
+function combineExtra(rootDir, targetFileName, useEval) {
   var fileList = [];
   var keys = {};
   readdirp({ root: rootDir, fileFilter: '*.json' })
@@ -33,6 +35,10 @@ function combineExtra(rootDir, targetFileName) {
     .on('end', function () {
       Promise.all(fileList.map(function (x) {
         return fs.readFileAsync(x).then(function (data) {
+          if (useEval) {
+            eval('data = ' + data);
+            return data;
+          }
           return JSON.parse(data);
         });
       }))
