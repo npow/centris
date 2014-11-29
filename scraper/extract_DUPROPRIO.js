@@ -60,15 +60,16 @@ function processFile(fileName) {
         var id = $(x).find('a').attr('href');
         var url = 'http://duproprio.com' + id;
         var saleDate = $(x).first().find('p:contains("Sold")').text();
-        var priceSold = $('.resultData').first().find('p:contains("Price sold")').text().replace(/\n/g, '').trim();
+        var priceSold = $(x).first().find('p:contains("Price sold")').text().trim();
         priceSold = priceSold.substring(priceSold.indexOf(':')+1);
-        var askingPrice = $('.resultData').first().find('p:contains("Asking price")').text().replace(/\n/g, '').trim();
+        var askingPrice = $(x).first().find('p:contains("Asking price")').text().trim();
         askingPrice = askingPrice.substring(askingPrice.indexOf(':')+1);
         if (fs.existsSync('tmp/DUPROPRIO/hist/json' + id + '.json')) {
           console.log('Skipping: ' + id);
           return Promise.resolve();
         }
-        return fetchDUPROPRIO(url, { AskingPrice: askingPrice, PriceSold: priceSold, id: id });
+        var data = { AskingPrice: askingPrice, PriceSold: priceSold, SaleDate: saleDate, id: id };
+        return fetchDUPROPRIO(url, data);
       }));
     })
     .error(function () {
