@@ -10,6 +10,9 @@ def convert_to_sf(raw_value):
 		rest=nums[1].split()
 		num2=float(rest[0])
 		square_f=num1*num2
+		print raw_value
+		if (len(rest)==1):
+			rest.append('SF')
 		print raw_value + ' converted to ' + str(square_f) + ' '+ rest[1]
 		raw_value=str(square_f) + ' ' + rest[1]
 
@@ -25,17 +28,18 @@ def convert_to_sf(raw_value):
 	print raw_value + ' converted to ' + str(SF)
 	return SF
 
-data = pd.read_csv('extra_data.csv')
+data = pd.read_csv('extra_data_v2.csv')
 #print data
 #extract 'Area' field as well and convert to squared feet
 i=0
 for row in data.values:
 	
 	row[1]=convert_to_sf(str(row[1]))
-	#row[17]=convert_to_sf(str(row[17]))
+	row[6]=convert_to_sf(str(row[6]))
 	#data['Area'][i]=row[17]
 	#print 'this is item ' + str(data['LivingArea'][i])
 	data['LivingArea'][i]=row[1]
+	data['Area'][i]=row[6]
 	i=i+1
 	
 
