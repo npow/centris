@@ -14,9 +14,7 @@ function fetchDUPROPRIO(url, data) {
   return jsdom.envAsync(url, ["http://code.jquery.com/jquery.js"])
     .then(function (window) {
       var $ = window.$;
-      // missing: FloorCovering, Area, Insurance, Topography
       var fields = {
-        'Asking Price :': 'AskingPrice',
         'Year of construction :': 'YearBuilt',
         'Lot dimensions :': 'Area',
         'Number of bathrooms :': 'NumberBathrooms',
@@ -40,7 +38,6 @@ function fetchDUPROPRIO(url, data) {
           }
         }
       }
-      console.log(data);
       fs.writeFileSync('tmp/DUPROPRIO/hist/json' + data.id + '.json', JSON.stringify(data));
 
       window.close();
@@ -59,16 +56,40 @@ function processFile(fileName) {
       return Promise.all([].map.call($('.resultData'), function (x) {
         var id = $(x).find('a').attr('href');
         var url = 'http://duproprio.com' + id;
-        var saleDate = $(x).first().find('p:contains("Sold")').text();
+        var address = $($(x).children()[0].children[1]).text().trim().split('\n').map(function (x) {
+          return x.trim();
+        }).join('\n');
+        var category = $(x).first().find('a').first().text().trim().split(',')[0]
+        var saleDate = $(x).first().find('p:contains("Sold")').text().trim();
         var priceSold = $(x).first().find('p:contains("Price sold")').text().trim();
-        priceSold = priceSold.substring(priceSold.indexOf(':')+1);
+        priceSold = priceSold.substring(priceSold.indexOf(':')+1).trim();
         var askingPrice = $(x).first().find('p:contains("Asking price")').text().trim();
-        askingPrice = askingPrice.substring(askingPrice.indexOf(':')+1);
-        if (fs.existsSync('tmp/DUPROPRIO/hist/json' + id + '.json')) {
+        askingPrice = askingPrice.substring(askingPrice.indexOf(':')+1).trim();
+        var info = $(x).first().find('.resultMeta').text().trim();
+        var data = {
+          id: id,
+          Address: address,
+          AskingPrice: askingPrice,
+          Info: info,
+          PriceSold: priceSold,
+          SaleDate: saleDate,
+          Category: category
+        };
+        var targetFileName = 'tmp/DUPROPRIO/hist/json' + id + '.json';
+        if (fs.existsSync(targetFileName)) {
+          /*
+          var data2 = JSON.parse(fs.readFileSync(targetFileName).toString());
+          for (var key in data) {
+            var value = data[key];
+            if (value.length > 0) {
+              data2[key] = value;
+            }
+          }
+          fs.writeFileSync('tmp/DUPROPRIO/hist/json/new' + id + '.json', JSON.stringify(data));
+          */
           console.log('Skipping: ' + id);
           return Promise.resolve();
         }
-        var data = { AskingPrice: askingPrice, PriceSold: priceSold, SaleDate: saleDate, id: id };
         return fetchDUPROPRIO(url, data);
       }));
     })
