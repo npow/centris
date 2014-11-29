@@ -35,3 +35,13 @@ node combine.js
 # touch ${PROVIDER}_errors.txt
 # node fetch_details.js $PROVIDER
 ```
+
+##### Fetch historical data 
+```
+# ./fetch_hist_DUPROPRIO.sh
+# node extract_DUPROPRIO.js
+# node combine.js
+```
+
+##### Firestation data
+Run `notebooks/firestations.ipynb`
