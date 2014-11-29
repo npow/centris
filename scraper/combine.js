@@ -4,7 +4,8 @@ var fs = Promise.promisifyAll(require('fs'));
 var json2csv = require('json2csv');
 var readdirp = Promise.promisifyAll(require('readdirp'));
 
-combineExtra();
+//combineExtra('extra_data', 'data/extra_data.csv');
+combineExtra('tmp/DUPROPRIO/hist/json', 'data/hist_DUPROPRIO.csv');
 
 function combine() {
   var L = [];
@@ -22,10 +23,10 @@ function combine() {
   });
 }
 
-function combineExtra() {
+function combineExtra(rootDir, targetFileName) {
   var fileList = [];
   var keys = {};
-  readdirp({ root: 'extra_data', fileFilter: '*.json' })
+  readdirp({ root: rootDir, fileFilter: '*.json' })
     .on('data', function (entry) {
       fileList.push(entry.fullPath);
     })
@@ -44,7 +45,7 @@ function combineExtra() {
         });
         json2csv({ data: L, fields: Object.keys(keys) }, function (err, csv) {
           if (err) console.log(err);
-          fs.writeFile('data/extra_data.csv', csv, function(err) {
+          fs.writeFile(targetFileName, csv, function(err) {
             if (err) throw err;
             console.log('DONE');
           });
