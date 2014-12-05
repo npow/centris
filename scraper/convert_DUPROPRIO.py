@@ -22,77 +22,27 @@ listings = list(csv.DictReader(open(INPUT_FILE), delimiter=',', quotechar='"'))
 
 L = []
 for i, listing in enumerate(listings):
-  info = {}
+  info = { 'NumberBedrooms': '', 'NumberBathrooms': '', 'LivingArea': '', 'LotSize': ''}
   listing['Info'] = re.sub('\xc2\xa0', ' ', listing['Info'])
   listing['Info'] = re.sub('\xef\xbf\xbd', '', listing['Info'])
   if listing['Info'] == '':
     continue
-  m = re.match('([\d]+) bedroom\(s\), ([\d]+) bathroom\(s\), Living space  ([\d,]+) ft, Lot ([\d,]+)(.*)', listing['Info'])
+
+  m = re.match('.*([\d]+) bedroom\(s\).*', listing['Info'])
   if m:
     info['NumberBedrooms'] = parseInt(m.groups()[0])
-    info['NumberBathrooms'] = parseInt(m.groups()[1])
-    info['LivingArea'] = parseFloat(m.groups()[2])
-    info['LotSize'] = parseFloat(m.groups()[3])
-  else:
-    m = re.match('([\d]+) bedroom\(s\), ([\d]+) bathroom\(s\), Living space  ([\d,]+) ft', listing['Info'])
-    if m:
-      info['NumberBedrooms'] = parseInt(m.groups()[0])
-      info['NumberBathrooms'] = parseInt(m.groups()[1])
-      info['LivingArea'] = parseFloat(m.groups()[2])
-      info['LotSize'] = ''
-    else:
-      m = re.match('([\d]+) bedroom\(s\), ([\d]+) bathroom\(s\), Lot ([\d,]+) ft', listing['Info'])
-      if m:
-        info['NumberBedrooms'] = parseInt(m.groups()[0])
-        info['NumberBathrooms'] = parseInt(m.groups()[1])
-        info['LivingArea'] = ''
-        info['LotSize'] = parseFloat(m.groups()[2])
-      else:
-        m = re.match('([\d]+) bedroom\(s\), Living space  ([\d,]+) ft, Lot ([\d,]+)(.*)', listing['Info'])
-        if m:
-          info['NumberBathrooms'] = ''
-          info['NumberBedrooms'] = parseInt(m.groups()[0])
-          info['LivingArea'] = parseFloat(m.groups()[1])
-          info['LotSize'] = parseFloat(m.groups()[2])
-        else:
-          m = re.match('([\d]+) bathroom\(s\), Living space  ([\d,]+) ft, Lot ([\d,]+)(.*)', listing['Info'])
-          if m:
-            info['NumberBedrooms'] = ''
-            info['NumberBathrooms'] = parseInt(m.groups()[0])
-            info['LivingArea'] = parseFloat(m.groups()[1])
-            info['LotSize'] = parseFloat(m.groups()[2])
-          else:
-            m = re.match('([\d]+) bedroom\(s\), ([\d]+) bathroom\(s\), Lot ([\d,]+)(.*)', listing['Info'])
-            if m:
-              info['NumberBedrooms'] = parseInt(m.groups()[0])
-              info['NumberBathrooms'] = parseInt(m.groups()[1])
-              info['LivingArea'] = ''
-              info['LotSize'] = parseFloat(m.groups()[2])
-            else:
-              m = re.match('Lot ([\d,]+)(.*)', listing['Info'])
-              if m:
-                info['NumberBedrooms'] = ''
-                info['NumberBathrooms'] = ''
-                info['LivingArea'] = ''
-                info['LotSize'] = parseFloat(m.groups()[0])
-              else:
-                m = re.match('([\d]+) bedroom\(s\), ([\d]+) bathroom\(s\)(.*)', listing['Info'])
-                if m:
-                  info['NumberBedrooms'] = parseInt(m.groups()[0])
-                  info['NumberBathrooms'] = parseInt(m.groups()[1])
-                  info['LivingArea'] = ''
-                  info['LotSize'] = ''
-                  print listing
-                else:
-                  m = re.match('([\d]+) bedroom\(s\), ([\d]+) bathroom\(s\)', listing['Info'])
-                  if m:
-                    info['NumberBedrooms'] = parseInt(m.groups()[0])
-                    info['NumberBathrooms'] = parseInt(m.groups()[1])
-                    info['LivingArea'] = ''
-                    info['LotSize'] = ''
-                  else:
-                    print listing
-                    pass
+
+  m = re.match('.*([\d]+) bathroom\(s\).*', listing['Info'])
+  if m:
+    info['NumberBathrooms'] = parseInt(m.groups()[0])
+
+  m = re.match('.*Living space  ([\d,]+).*', listing['Info'])
+  if m:
+    info['LivingArea'] = parseInt(m.groups()[0])
+
+  m = re.match('.*Lot ([\d,]+)(.*)', listing['Info'])
+  if m:
+    info['LotSize'] = parseInt(m.groups()[0])
 
   info['Category'] = listing['Category']
   info['AskingPrice'] = parseFloat(listing['AskingPrice'])
