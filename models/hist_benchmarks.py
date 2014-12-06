@@ -33,44 +33,37 @@ USE_LOG = False
 USE_CALIBRATION = False
 GENERATE_PLOTS = False
 
+"""
+keys = [
+  'NumberBedrooms', 'NumberBathrooms', 'LivingArea', 'LotSize', 'Category', 'AskingPrice', 'PriceSold',
+  'SaleYYYY', 'SaleMM', 'SaleDD', 'SaleYYYYMMDD', 'DaysOnMarket', 'Address', 'Borough'
+]
+"""
 data = pd.read_csv('data/hist_DUPROPRIO_v2.csv')
 merged = data
+categorical_columns = ['Borough', 'SaleYYYY', 'SaleMM', 'SaleDD']
 for category in ['Condominium']:
   print "*" * 80
   print category
 
-  X = merged[['NumberBedrooms', 'NumberBathrooms', 'LivingArea', 'SaleYYYY', 'AskingPrice']]
+  X = merged[['NumberBedrooms', 'NumberBathrooms', 'LivingArea', 'DaysOnMarket']]
+  X_cat = merged[categorical_columns]
   Y = merged[['PriceSold']]
 
-  X = X[merged['Category']==category]
-  Y = Y[merged['Category']==category]
+  mask = merged['Category']==category
+  X, X_cat, Y = X[mask], X_cat[mask], Y[mask]
   print 'X.shape: ', X.shape
   print 'Y.shape: ', Y.shape
 
   # filter rows with NaN
   mask = ~np.isnan(X).any(axis=1)
-  X = X[mask]
-  Y = Y[mask]
+  X, X_cat, Y = X[mask], X_cat[mask], Y[mask]
+
   mask = ~np.isnan(Y).any(axis=1)
-  X = X[mask]
-  Y = Y[mask]
+  X, X_cat, Y = X[mask], X_cat[mask], Y[mask]
   print 'After NaN filter: ', X.shape
 
-  # remove high-end listings
-  mask = Y['PriceSold'] < 500000
-  X = X[mask]
-  Y = Y[mask]
-  print 'After upper-bound filter: ', X.shape
-
-  # remove low-end listings
-  mask = Y['PriceSold'] > 10**5
-  X = X[mask]
-  Y = Y[mask]
-  print 'After lower-bound filter: ', X.shape
-
-  columns = X.columns.values
-  X = np.array(X)
-  Y = np.array(Y)
+  X, X_cat, Y = np.array(X), np.array(X_cat), np.array(Y)
   if USE_LOG:
     Y = np.log(Y)
   Y = Y.reshape(Y.shape[0])
@@ -81,33 +74,32 @@ for category in ['Condominium']:
 
   # remove outliers
   mask = np.abs(Y-np.mean(Y)) <= (3*Y.std())
-  X = X[mask]
-  Y = Y[mask]
+  X, X_cat, Y = X[mask], X_cat[mask], Y[mask]
+
+  # one-hot encode categorical features
+  X_cat_enc = []
+  for i, cat in enumerate(categorical_columns):
+    col = X_cat[:,i]
+    col = LabelEncoder().fit_transform(col).reshape((-1,1))
+    col_enc = OneHotEncoder(sparse=False).fit_transform(col)
+    X_cat_enc.append(col_enc)
+  X_cat = np.concatenate(X_cat_enc, axis=1)
+  print 'X_cat.shape: ', X_cat.shape
 
   skf = KFold(n=X.shape[0], n_folds=10, shuffle=True, random_state=42)
-  L = { 'rmse': [], 'corr': [], 'r2': [], 'diff': [], 'mae': [], 'explained_var': [], 'var': []}
+  L = { 'rmse': [], 'corr': [], 'r2': [], 'pct_diff': [], 'mae': [], 'explained_var': [], 'var': []}
   for train_indices, test_indices in skf:
-    X_train, Y_train = X[train_indices], Y[train_indices]
-    X_test, Y_test = X[test_indices], Y[test_indices]
+    X_train, X_train_cat, Y_train = X[train_indices], X_cat[train_indices], Y[train_indices]
+    X_test, X_test_cat, Y_test = X[test_indices], X_cat[test_indices], Y[test_indices]
 
-    clf = Pipeline([
-       ('scaler', StandardScaler()),
-       # ('clf', AdaBoostRegressor()),
-       # ('clf', ARDRegression()),
-       # ('clf', BaggingRegressor()),
-       # ('clf', BayesianRidge()),
-       # ('clf', ElasticNet()),
-       # ('clf', ExtraTreesRegressor()),
-        ('clf', GradientBoostingRegressor()),
-       # ('clf', KNeighborsRegressor(n_neighbors=5)),
-       # ('clf', Lasso()),
-       # ('clf', LinearRegression()),
-       # ('clf', PassiveAggressiveRegressor()),
-       # ('clf', RandomForestRegressor()),
-       # ('clf', Ridge(alpha=0.5, normalize=False)),
-       # ('clf', SVR()),
-    ])
+    scaler = StandardScaler()
+    X_train = scaler.fit_transform(X_train)
+    X_test = scaler.transform(X_test)
 
+    X_train = np.concatenate([X_train, X_train_cat], axis=1)
+    X_test = np.concatenate([X_test, X_test_cat], axis=1)
+
+    clf = GradientBoostingRegressor()
     clf.fit(X_train, Y_train)
     preds = clf.predict(X_test).astype(float)
 
@@ -127,7 +119,7 @@ for category in ['Condominium']:
 
     L['rmse'].append(rmse)
     L['corr'].append(corr[0])
-    L['diff'].append(diff.mean())
+    L['pct_diff'].append(diff.mean())
     L['mae'].append(mae)
     L['explained_var'].append(explained_var)
     L['r2'].append(r2)
@@ -137,5 +129,5 @@ for category in ['Condominium']:
       plt.plot(Y_test_10, preds_10, 'ro')
       plt.show()
       break
-  for key in L.keys():
+  for key in sorted(L.keys()):
     print "Mean %s: %f" % (key, np.array(L[key]).mean())
