@@ -35,8 +35,16 @@ GENERATE_PLOTS = False
 
 """
 keys = [
-  'NumberBedrooms', 'NumberBathrooms', 'LivingArea', 'LotSize', 'Category', 'AskingPrice', 'PriceSold',
-  'SaleYYYY', 'SaleMM', 'SaleDD', 'SaleYYYYMMDD', 'DaysOnMarket', 'Address', 'Borough'
+  'AskingPrice', 'PriceSold',
+  'NumberBedrooms', 'NumberBathrooms', 'LivingArea', 'LotSize', 'DaysOnMarket',
+  'Category', 'Borough', 'Address',
+  'SaleYYYY', 'SaleMM', 'SaleDD', 'SaleYYYYMMDD',
+  'Apartment_Benchmark', 'Apartment_HPI',
+  'Composite_Benchmark', 'Composite_HPI',
+  'One_Storey_Benchmark', 'One_Storey_HPI',
+  'Single_Family_Benchmark', 'Single_Family_HPI',
+  'Townhouse_Benchmark', 'Townhouse_HPI',
+  'Two_Storey_Benchmark', 'Two_Storey_HPI'
 ]
 """
 data = pd.read_csv('data/hist_DUPROPRIO_v2.csv')
@@ -46,7 +54,7 @@ for category in ['Condominium']:
   print "*" * 80
   print category
 
-  X = merged[['NumberBedrooms', 'NumberBathrooms', 'LivingArea', 'DaysOnMarket']]
+  X = merged[['NumberBedrooms', 'NumberBathrooms', 'LivingArea', 'DaysOnMarket', 'Composite_HPI']]
   X_cat = merged[categorical_columns]
   Y = merged[['PriceSold']]
 
