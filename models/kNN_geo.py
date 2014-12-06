@@ -135,10 +135,10 @@ for col in ['AP']:#, 'COP', 'AP', 'LS', 'MA']:#, 'PPR', '2X', '3X', '4X', '5X', 
   skf = KFold(n=X.shape[0], n_folds=10, shuffle=True, random_state=42)
 
   var_num=2
-  num_neigh=range(3,10)
-  var_range=np.array(range(16,80))/20.0
+  num_neigh=range(5,10)
+  var_range=np.array(range(8,40))/10.0
   for neigh in num_neigh:
-    #for var_num in np.nditer(var_range):
+    for var_num in np.nditer(var_range):
       print neigh
       print var_num
       L_rmse = []
@@ -192,8 +192,8 @@ for col in ['AP']:#, 'COP', 'AP', 'LS', 'MA']:#, 'PPR', '2X', '3X', '4X', '5X', 
         indic= indic.tolist()[0]
         weights= weight_vector(geo_points[i][0],geo_points[i][1],geo_points[indic[1:]].tolist(),vari)
         weights_array=np.array(weights)
-        #y_pred.append(np.dot(weights_array,Y[indic[1:]])/weights_array.sum())
-        y_pred.append(Y[indic[1:]].mean())
+        y_pred.append(np.dot(weights_array,Y[indic[1:]])/weights_array.sum())
+        #y_pred.append(Y[indic[1:]].mean())
 
 
         #print y_pred[i]
