@@ -7,7 +7,7 @@
 ##### Dependencies
 ```
 # conda update scikit-learn numpy
-# pip install pybrain pandas
+# pip install pybrain pandas geocoder
 ```
 
 ## Scraper
@@ -36,6 +36,9 @@ node combine.js
 # node fetch_details.js $PROVIDER
 ```
 
+##### Firestation data
+Run `notebooks/firestations.ipynb`
+
 ##### Fetch historical data 
 ```
 # ./fetch_hist_DUPROPRIO.sh
@@ -43,5 +46,7 @@ node combine.js
 # node combine.js
 ```
 
-##### Firestation data
-Run `notebooks/firestations.ipynb`
+##### Geocode historical listings. This creates a file `data/scripts/geocoded_listings.csv`
+```
+# python geocode_listings.py
+```
