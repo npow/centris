@@ -16,13 +16,19 @@ def parseInt(s):
     return ''
   return int(s)
 
-INPUT_FILE = 'data/hist_DUPROPRIO.csv'
+INPUT_FILE = 'data/archive/hist_DUPROPRIO.csv'
 OUTPUT_FILE = 'data/hist_DUPROPRIO_v2.csv'
 listings = list(csv.DictReader(open(INPUT_FILE), delimiter=',', quotechar='"'))
 
 L = []
+keys = [
+  'NumberBedrooms', 'NumberBathrooms', 'LivingArea', 'LotSize', 'Category', 'AskingPrice', 'PriceSold',
+  'SaleYYYY', 'SaleMM', 'SaleDD', 'SaleYYYYMMDD', 'DaysOnMarket', 'Address', 'Borough'
+]
 for i, listing in enumerate(listings):
-  info = { 'NumberBedrooms': '', 'NumberBathrooms': '', 'LivingArea': '', 'LotSize': ''}
+  info = {}
+  for key in keys:
+    info[key] = ''
   listing['Info'] = re.sub('\xc2\xa0', ' ', listing['Info'])
   listing['Info'] = re.sub('\xef\xbf\xbd', '', listing['Info'])
   if listing['Info'] == '':
@@ -48,15 +54,23 @@ for i, listing in enumerate(listings):
   info['AskingPrice'] = parseFloat(listing['AskingPrice'])
   info['PriceSold'] = parseFloat(listing['PriceSold'])
 
-  m = re.match('Sold in (.+) (Days|months|day|month)  on (.*)', listing['SaleDate'])
+  m = re.match('.*on (.*)', listing['SaleDate'])
   if m:
-    daysOnMarket = m.groups()[0]
-    dateSold = m.groups()[2]
-    info['DaysOnMarket'] = daysOnMarket
+    dateSold = m.groups()[0]
     info['SaleYYYY'] = parseInt(dateSold.split('-')[0])
     info['SaleMM'] = parseInt(dateSold.split('-')[1])
     info['SaleDD'] = parseInt(dateSold.split('-')[2])
     info['SaleYYYYMMDD'] = info['SaleYYYY']*10000 + info['SaleMM']*100 + info['SaleDD']
+
+    daysOnMarket = 0
+    m = re.match('Sold in ([\d]+) (Days|day).*', listing['SaleDate'])
+    if m:
+      daysOnMarket += parseInt(m.groups()[0])
+    m = re.match('Sold in ([\d]+) (Month|months).*', listing['SaleDate'])
+    if m:
+      daysOnMarket += parseInt(m.groups()[0]) * 30
+    info['DaysOnMarket'] = daysOnMarket
+
   if listing['Address'].find('\\n') == -1:
     continue
   info['Borough'] = listing['Address'].split('\\n')[1].strip()
