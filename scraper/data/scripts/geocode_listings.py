@@ -14,6 +14,8 @@ f.write('id,address,lat,lng\n')
 for i, address in enumerate(addresses):
     if i < start_idx:
         continue
+    if i > start_idx + 2500:
+        break
     address = address[0]
     print i, ': ', address
     sys.stdout.flush()
