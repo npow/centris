@@ -31,7 +31,6 @@ np.random.seed(42)
 
 USE_LOG = True
 USE_NEURALNET = False
-USE_CALIBRATION = False
 GENERATE_PLOTS = False
 
 data = pd.read_csv('data/modified_listings.csv')
@@ -39,79 +38,70 @@ extra_data = pd.read_csv('data/post_extra_data.csv')
 extra_data = extra_data[['MlsNumber','LivingArea']]
 merged = pd.merge(data, extra_data, on='MlsNumber', suffixes=['_left', '_right'])
 merged.to_csv('data/all_data.csv')
+
+categorical_columns = [
+  'AP'    
+]
+
 for col in ['AP']:#, 'COP', 'AP', 'LS', 'MA']:#, 'PPR', '2X', '3X', '4X', '5X', 'AU', 'UNI', 'MEM']:
   print "*" * 80
   print col
 
-  #X = merged[['LivingArea','AvgIncome', 'WalkScore', 'NbPieces', 'NbChambres', 'NbSallesEaux', 'NbSallesBains', 'NbFoyerPoele', 'NbEquipements', 'NbGarages', 'NbStationnements', 'NbPiscines', 'NbBordEaux']]
-  X = merged.drop(['MlsNumber', 'Lat', 'Lng', 'BuyPrice'], axis=1, inplace=False)
+  X = merged[['LivingArea','AvgIncome', 'WalkScore', 'NbPieces', 'NbChambres', 'NbSallesEaux', 'NbSallesBains', 'NbFoyerPoele', 'NbEquipements', 'NbGarages', 'NbStationnements', 'NbPiscines', 'NbBordEaux']]
+  #X = merged.drop(['MlsNumber', 'Lat', 'Lng', 'BuyPrice'], axis=1, inplace=False)
+  X_cat = merged[categorical_columns]
   Y = merged[['BuyPrice']]
 
-  X = X[merged[col]==1]
-  Y = Y[merged[col]==1]
+  mask = merged[col]==1
+  X, X_cat, Y = X[mask], X_cat[mask], Y[mask]
   print 'X.shape: ', X.shape
   print 'Y.shape: ', Y.shape
 
   # filter rows with NaN
   mask = ~np.isnan(X).any(axis=1)
-  X = X[mask]
-  Y = Y[mask]
+  X, X_cat, Y = X[mask], X_cat[mask], Y[mask]
+
+  mask = ~np.isnan(Y).any(axis=1)
+  X, X_cat, Y = X[mask], X_cat[mask], Y[mask]
   print 'After NaN filter: ', X.shape
 
-  # remove high-end listings
-  #mask = Y['BuyPrice'] < 500000
-  #X = X[mask]
-  #Y = Y[mask]
-  #print 'After upper-bound filter: ', X.shape
-
-  # remove low-end listings
-  #mask = Y['BuyPrice'] > 10**5
-  #X = X[mask]
-  #Y = Y[mask]
-  #print 'After lower-bound filter: ', X.shape
-
-  print "mean: ", Y['BuyPrice'].mean()
-  print "median: ", Y['BuyPrice'].median()
-  print "std: ", Y['BuyPrice'].std()
-
-  columns = X.columns.values
-  X = np.array(X)
-  Y = np.array(Y)
+  X, X_cat, Y = np.array(X), np.array(X_cat), np.array(Y)
   if USE_LOG:
     Y = np.log(Y)
   Y = Y.reshape(Y.shape[0])
 
+  print "mean: ", np.mean(Y)
+  print "median: ", np.median(Y)
+  print "std: ", Y.std()
+
   # remove outliers
   mask = np.abs(Y-np.mean(Y)) <= (3*Y.std())
-  X = X[mask]
-  Y = Y[mask]
+  X, X_cat, Y = X[mask], X_cat[mask], Y[mask]
+
+  # one-hot encode categorical features
+  X_cat_enc = []
+  for i, cat in enumerate(categorical_columns):
+    col = X_cat[:,i]
+    col = LabelEncoder().fit_transform(col).reshape((-1,1))
+    col_enc = OneHotEncoder(sparse=False).fit_transform(col)
+    X_cat_enc.append(col_enc)
+  X_cat = np.concatenate(X_cat_enc, axis=1)
+  print 'X_cat.shape: ', X_cat.shape
 
   skf = KFold(n=X.shape[0], n_folds=10, shuffle=True, random_state=42)
   L = { 'rmse': [], 'corr': [], 'r2': [], 'diff': [], 'mae': [], 'explained_var': [], 'var': []}
   for train_indices, test_indices in skf:
-    X_train, Y_train = X[train_indices], Y[train_indices]
-    X_test, Y_test = X[test_indices], Y[test_indices]
+    X_train, X_train_cat, Y_train = X[train_indices], X_cat[train_indices], Y[train_indices]
+    X_test, X_test_cat, Y_test = X[test_indices], X_cat[test_indices], Y[test_indices]
 
-    if USE_CALIBRATION:
-      scaler = StandardScaler()
-      X_train_scaled = scaler.fit_transform(X_train)
-      X_test_scaled = scaler.transform(X_test)
+    scaler = StandardScaler()
+    X_train = scaler.fit_transform(X_train)
+    X_test = scaler.transform(X_test)
 
-      clf1 = GradientBoostingRegressor()
-      clf1.fit(X_train_scaled, Y_train)
-      clf1_train = clf1.predict(X_train_scaled)
-      clf1_test = clf1.predict(X_test_scaled)
+    X_train = np.concatenate([X_train, X_train_cat], axis=1)
+    X_test = np.concatenate([X_test, X_test_cat], axis=1)
 
-      clf1_train = clf1_train.reshape((clf1_train.shape[0],1))
-      clf1_test = clf1_test.reshape((clf1_test.shape[0],1))
-
-      clf1_train = np.concatenate([clf1_train, X_train_scaled], axis=1)
-      clf1_test = np.concatenate([clf1_test, X_test_scaled], axis=1)
-
-      clf = GradientBoostingRegressor()
-      clf.fit(clf1_train, Y_train)
-      preds = clf.predict(clf1_test).astype(float)
-    elif USE_NEURALNET:
+    if USE_NEURALNET:
       Y_train, Y_test = Y_train.reshape(-1, 1), Y_test.reshape(-1, 1)
       hidden_size = 100
 
@@ -132,24 +122,16 @@ for col in ['AP']:#, 'COP', 'AP', 'LS', 'MA']:#, 'PPR', '2X', '3X', '4X', '5X', 
       test_ds.setField('target', Y_test)
       preds = net.activateOnDataset(test_ds)
     else:
-      clf = Pipeline([
-         ('scaler', StandardScaler()),
-         # ('clf', AdaBoostRegressor()),
-         # ('clf', ARDRegression()),
-         # ('clf', BaggingRegressor()),
-         # ('clf', BayesianRidge()),
-         # ('clf', ElasticNet()),
-         # ('clf', ExtraTreesRegressor()),
-          ('clf', GradientBoostingRegressor()),
-         # ('clf', KNeighborsRegressor(n_neighbors=5)),
-         # ('clf', Lasso()),
-         # ('clf', LinearRegression()),
-         # ('clf', PassiveAggressiveRegressor()),
-         # ('clf', RandomForestRegressor()),
-         # ('clf', Ridge(alpha=0.5, normalize=False)),
-         # ('clf', SVR()),
-      ])
-
+      #clf = AdaBoostRegressor()
+      #clf = ARDRegression()
+      #clf = BaggingRegressor()
+      #clf = BayesianRidge()
+      #clf = ElasticNet()
+      clf = GradientBoostingRegressor()
+      #clf = KNeighborsRegressor(n_neighbors=5)
+      #clf = RandomForestRegressor()
+      #clf = Ridge(alpha=0.5, normalize=True)
+      #clf = SVR()
       clf.fit(X_train, Y_train)
       preds = clf.predict(X_test).astype(float)
 
@@ -159,6 +141,7 @@ for col in ['AP']:#, 'COP', 'AP', 'LS', 'MA']:#, 'PPR', '2X', '3X', '4X', '5X', 
     else:
       Y_test_10 = Y_test
       preds_10 = preds
+
     rmse = math.sqrt(metrics.mean_squared_error(Y_test_10, preds_10))
     corr = pearsonr(preds_10, Y_test_10)
     diff = np.array([abs(p-a)/a for (p,a) in zip(Y_test_10, preds_10)])
