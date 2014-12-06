@@ -29,7 +29,8 @@ from sklearn.tree import *
 from sklearn import metrics
 np.random.seed(42)
 
-USE_NEURALNET = True
+USE_LOG = True
+USE_NEURALNET = False
 USE_CALIBRATION = False
 GENERATE_PLOTS = False
 
@@ -42,7 +43,7 @@ for col in ['AP']:#, 'COP', 'AP', 'LS', 'MA']:#, 'PPR', '2X', '3X', '4X', '5X', 
   print "*" * 80
   print col
 
-  #X = merged[['LivingArea','WalkScore', 'NbPieces', 'NbChambres', 'NbSallesEaux', 'NbSallesBains', 'NbFoyerPoele', 'NbEquipements', 'NbGarages', 'NbStationnements', 'NbPiscines', 'NbBordEaux']]
+  #X = merged[['LivingArea','AvgIncome', 'WalkScore', 'NbPieces', 'NbChambres', 'NbSallesEaux', 'NbSallesBains', 'NbFoyerPoele', 'NbEquipements', 'NbGarages', 'NbStationnements', 'NbPiscines', 'NbBordEaux']]
   X = merged.drop(['MlsNumber', 'Lat', 'Lng', 'BuyPrice'], axis=1, inplace=False)
   Y = merged[['BuyPrice']]
 
@@ -58,36 +59,36 @@ for col in ['AP']:#, 'COP', 'AP', 'LS', 'MA']:#, 'PPR', '2X', '3X', '4X', '5X', 
   print 'After NaN filter: ', X.shape
 
   # remove high-end listings
-  mask = Y['BuyPrice'] < 500000
-  X = X[mask]
-  Y = Y[mask]
-  print 'After upper-bound filter: ', X.shape
+  #mask = Y['BuyPrice'] < 500000
+  #X = X[mask]
+  #Y = Y[mask]
+  #print 'After upper-bound filter: ', X.shape
 
   # remove low-end listings
-  mask = Y['BuyPrice'] > 10**5
-  X = X[mask]
-  Y = Y[mask]
-  print 'After lower-bound filter: ', X.shape
+  #mask = Y['BuyPrice'] > 10**5
+  #X = X[mask]
+  #Y = Y[mask]
+  #print 'After lower-bound filter: ', X.shape
 
   print "mean: ", Y['BuyPrice'].mean()
   print "median: ", Y['BuyPrice'].median()
   print "std: ", Y['BuyPrice'].std()
 
-  # remove outliers
-  mask = np.abs(Y['BuyPrice']-Y['BuyPrice'].median()) <= (3*Y['BuyPrice'].std())
-  X = X[mask]
-  Y = Y[mask]
-
   columns = X.columns.values
   X = np.array(X)
   Y = np.array(Y)
+  if USE_LOG:
+    Y = np.log(Y)
   Y = Y.reshape(Y.shape[0])
+
+  # remove outliers
+  mask = np.abs(Y-np.mean(Y)) <= (3*Y.std())
+  X = X[mask]
+  Y = Y[mask]
+
   skf = KFold(n=X.shape[0], n_folds=10, shuffle=True, random_state=42)
-  L_rmse = []
-  L_corr = []
-  L_diff = []
+  L = { 'rmse': [], 'corr': [], 'r2': [], 'diff': [], 'mae': [], 'explained_var': [], 'var': []}
   for train_indices, test_indices in skf:
-    print '=' * 80
     X_train, Y_train = X[train_indices], Y[train_indices]
     X_test, Y_test = X[test_indices], Y[test_indices]
 
@@ -152,20 +153,31 @@ for col in ['AP']:#, 'COP', 'AP', 'LS', 'MA']:#, 'PPR', '2X', '3X', '4X', '5X', 
       clf.fit(X_train, Y_train)
       preds = clf.predict(X_test).astype(float)
 
-    rmse = math.sqrt(metrics.mean_squared_error(preds, Y_test))
-    corr = pearsonr(preds, Y_test)
-    diff = np.array([abs(p-a)/a for (p,a) in zip(preds,Y_test)]).mean()
+    if USE_LOG:
+      Y_test_10 = np.exp(Y_test)
+      preds_10 = np.exp(preds)
+    else:
+      Y_test_10 = Y_test
+      preds_10 = preds
+    rmse = math.sqrt(metrics.mean_squared_error(Y_test_10, preds_10))
+    corr = pearsonr(preds_10, Y_test_10)
+    diff = np.array([abs(p-a)/a for (p,a) in zip(Y_test_10, preds_10)])
+    mae = metrics.mean_absolute_error(Y_test_10, preds_10)
+    explained_var = metrics.explained_variance_score(Y_test_10, preds_10)
+    r2 = metrics.r2_score(Y_test_10, preds_10)
+    var = np.var(diff)
 
-    print rmse, corr
-    L_rmse.append(rmse)
-    L_corr.append(corr[0])
-    L_diff.append(diff)
+    L['rmse'].append(rmse)
+    L['corr'].append(corr[0])
+    L['diff'].append(diff.mean())
+    L['mae'].append(mae)
+    L['explained_var'].append(explained_var)
+    L['r2'].append(r2)
+    L['var'].append(var)
 
     if GENERATE_PLOTS:
-      plt.plot(Y_test, preds, 'ro')
+      plt.plot(Y_test_10, preds_10, 'ro')
       plt.show()
       break
-  print "Mean RMSE: ", np.array(L_rmse).mean()
-  print "Mean corr: ", np.array(L_corr).mean()
-  print "Mean %diff: ", np.array(L_diff).mean()
-
+  for key in L.keys():
+    print "Mean %s: %f" % (key, np.array(L[key]).mean())
