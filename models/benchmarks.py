@@ -43,11 +43,26 @@ categorical_columns = [
   'AP'    
 ]
 
+numerical_columns = [
+  'AvgIncome',
+  'NbBordEaux',
+  'NbChambres',
+  'NbEquipements',
+  'NbGarages',
+  'NbFoyerPoele',
+  'NbPieces',
+  'NbPiscines',
+  'NbSallesEaux',
+  'NbSallesBains',
+  'NbStationnements',
+  'WalkScore',
+]
+
 for col in ['AP']:#, 'COP', 'AP', 'LS', 'MA']:#, 'PPR', '2X', '3X', '4X', '5X', 'AU', 'UNI', 'MEM']:
   print "*" * 80
   print col
 
-  X = merged[['LivingArea','AvgIncome', 'WalkScore', 'NbPieces', 'NbChambres', 'NbSallesEaux', 'NbSallesBains', 'NbFoyerPoele', 'NbEquipements', 'NbGarages', 'NbStationnements', 'NbPiscines', 'NbBordEaux']]
+  X = merged[numerical_columns]
   #X = merged.drop(['MlsNumber', 'Lat', 'Lng', 'BuyPrice'], axis=1, inplace=False)
   X_cat = merged[categorical_columns]
   Y = merged[['BuyPrice']]
@@ -103,7 +118,7 @@ for col in ['AP']:#, 'COP', 'AP', 'LS', 'MA']:#, 'PPR', '2X', '3X', '4X', '5X', 
 
     if USE_NEURALNET:
       Y_train, Y_test = Y_train.reshape(-1, 1), Y_test.reshape(-1, 1)
-      hidden_size = 100
+      hidden_size = 10
 
       train_ds = SupervisedDataSet(X_train.shape[1], Y_train.shape[1])
       train_ds.setField('input', X_train)
@@ -111,7 +126,7 @@ for col in ['AP']:#, 'COP', 'AP', 'LS', 'MA']:#, 'PPR', '2X', '3X', '4X', '5X', 
       net = buildNetwork(X_train.shape[1], hidden_size, Y_train.shape[1], bias=True)
       trainer = BackpropTrainer(net, train_ds)
 
-      epochs = 10
+      epochs = 100
       for i in xrange(epochs):
         mse = trainer.train()
         rmse = math.sqrt(mse)
