@@ -18,12 +18,33 @@ def parseInt(s):
 
 INPUT_FILE = 'data/archive/hist_DUPROPRIO.csv'
 OUTPUT_FILE = 'data/hist_DUPROPRIO_v2.csv'
+HPI_FILE = 'data/archive/montreal_hpi.csv'
+
 listings = list(csv.DictReader(open(INPUT_FILE), delimiter=',', quotechar='"'))
+hpi = {}
+months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
+for row in list(csv.DictReader(open(HPI_FILE), delimiter=',', quotechar='"')):
+  date = row['Date']
+  mm = months.index(date.split(' ')[0]) + 1
+  yyyy = parseInt(date.split(' ')[1])
+  for key in row:
+    if key != 'Date':
+      row[key] = parseFloat(row[key])
+  key = yyyy*100 + mm
+  hpi[key] = row
 
 L = []
 keys = [
-  'NumberBedrooms', 'NumberBathrooms', 'LivingArea', 'LotSize', 'Category', 'AskingPrice', 'PriceSold',
-  'SaleYYYY', 'SaleMM', 'SaleDD', 'SaleYYYYMMDD', 'DaysOnMarket', 'Address', 'Borough'
+  'AskingPrice', 'PriceSold',
+  'NumberBedrooms', 'NumberBathrooms', 'LivingArea', 'LotSize', 'DaysOnMarket',
+  'Category', 'Borough', 'Address',
+  'SaleYYYY', 'SaleMM', 'SaleDD', 'SaleYYYYMMDD',
+  'Apartment_Benchmark', 'Apartment_HPI',
+  'Composite_Benchmark', 'Composite_HPI',
+  'One_Storey_Benchmark', 'One_Storey_HPI',
+  'Single_Family_Benchmark', 'Single_Family_HPI',
+  'Townhouse_Benchmark', 'Townhouse_HPI',
+  'Two_Storey_Benchmark', 'Two_Storey_HPI'
 ]
 for i, listing in enumerate(listings):
   info = {}
@@ -61,6 +82,12 @@ for i, listing in enumerate(listings):
     info['SaleMM'] = parseInt(dateSold.split('-')[1])
     info['SaleDD'] = parseInt(dateSold.split('-')[2])
     info['SaleYYYYMMDD'] = info['SaleYYYY']*10000 + info['SaleMM']*100 + info['SaleDD']
+
+    hpi_key = info['SaleYYYY']*100 + info['SaleMM']
+    if hpi_key in hpi:
+      for key in hpi[hpi_key]:
+        if key != 'Date':
+          info[key] = hpi[hpi_key][key]
 
     daysOnMarket = 0
     m = re.match('Sold in ([\d]+) (Days|day).*', listing['SaleDate'])
