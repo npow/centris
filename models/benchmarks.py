@@ -29,7 +29,7 @@ from sklearn.tree import *
 from sklearn import metrics
 np.random.seed(42)
 
-USE_LOG = True
+USE_LOG = False
 USE_NEURALNET = False
 GENERATE_PLOTS = False
 
@@ -175,7 +175,7 @@ for col in ['AP']:#, 'COP', 'AP', 'LS', 'MA']:#, 'PPR', '2X', '3X', '4X', '5X', 
   print "*" * 80
   print col
 
-  X = merged[numerical_columns]
+  X = merged[numerical_columns + ['LivingArea']]
   #X = merged.drop(['MlsNumber', 'Lat', 'Lng', 'BuyPrice'], axis=1, inplace=False)
   X_cat = merged[categorical_columns]
   Y = merged[['BuyPrice']]
@@ -203,7 +203,9 @@ for col in ['AP']:#, 'COP', 'AP', 'LS', 'MA']:#, 'PPR', '2X', '3X', '4X', '5X', 
   print "std: ", Y.std()
 
   # remove outliers
-  mask = np.abs(Y-np.mean(Y)) <= (3*Y.std())
+  mask = Y > 10**5
+  X, X_cat, Y = X[mask], X_cat[mask], Y[mask]
+  mask = Y < 10**6
   X, X_cat, Y = X[mask], X_cat[mask], Y[mask]
 
   # one-hot encode categorical features
