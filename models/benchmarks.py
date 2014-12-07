@@ -30,7 +30,7 @@ from sklearn import metrics
 np.random.seed(42)
 
 USE_LOG = False
-USE_NEURALNET = False
+USE_NEURALNET = True
 GENERATE_PLOTS = False
 
 data = pd.read_csv('data/modified_listings.csv')
@@ -171,7 +171,7 @@ numerical_columns = [
   'FireDist'
   ]
 
-def benchmark(clf=None, hidden_size=10):
+def benchmark(clf=None, n_hidden=10, n_epochs=10):
   for col in ['AP']:#, 'COP', 'AP', 'LS', 'MA']:#, 'PPR', '2X', '3X', '4X', '5X', 'AU', 'UNI', 'MEM']:
     print "*" * 80
     print type(clf)
@@ -234,17 +234,16 @@ def benchmark(clf=None, hidden_size=10):
       X_test = np.concatenate([X_test, X_test_cat], axis=1)
 
       if USE_NEURALNET:
-        print 'hidden_size: %d' % hidden_size
+        print 'n_hidden: %d' % n_hidden
         Y_train, Y_test = Y_train.reshape(-1, 1), Y_test.reshape(-1, 1)
 
         train_ds = SupervisedDataSet(X_train.shape[1], Y_train.shape[1])
         train_ds.setField('input', X_train)
         train_ds.setField('target', Y_train)
-        net = buildNetwork(X_train.shape[1], hidden_size, Y_train.shape[1], bias=True)
+        net = buildNetwork(X_train.shape[1], n_hidden, Y_train.shape[1], bias=True)
         trainer = BackpropTrainer(net, train_ds)
 
-        epochs = 20
-        for i in xrange(epochs):
+        for i in xrange(n_epochs):
           mse = trainer.train()
           rmse = math.sqrt(mse)
           print "epoch: %d, rmse: %f" % (i, rmse)
@@ -304,11 +303,7 @@ def main():
     SVR()
   ]
   if USE_NEURALNET:
-    L = []
-    for h in range(1, 100):
-      res = benchmark(None, hidden_size=h)
-      L.append(res)
-    joblib.dump(L, 'NN_hidden_results.pkl')
+    print benchmark(n_hidden=40, n_epochs=100)
   else:
     for clf in classifiers:
       benchmark(clf)
