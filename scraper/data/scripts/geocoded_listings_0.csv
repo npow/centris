@@ -1,0 +1,2501 @@
+id,address,lat,lng
+0,"8845, avenue Henri-Julien Montreal",45.545100,-73.642169
+1,"12225, rue Desenclaves Montreal",45.543891,-73.699858
+2,"5125, avenue Beaconsfield Montreal",45.474656,-73.638910
+3,"2466 Viau Montreal Montreal",45.561104,-73.541795
+4,"2465, rue Sicard Montreal",45.558573,-73.544012
+5,"5096, rue Hertel Montreal",45.505973,-73.846902
+6,"5928, rue Andr� Montreal",45.501689,-73.567256
+7,"5564 Waverly Montreal",45.524187,-73.600907
+8,"182, avenue Champetre Montreal",45.629838,-73.505507
+9,"12237, rue Victoria Montreal",45.642889,-73.492295
+10,"124, avenue Coolbreeze Montreal",45.451727,-73.803370
+11,"6856, 29e avenue Montreal",45.568544,-73.582729
+12,"49, avenue Elmwood Montreal",45.518306,-73.603112
+13,"4180, boulevad Henri-Bourassa Ouest Montreal",45.525697,-73.699502
+14,"1850, chemin Laval Montreal",45.521495,-73.695981
+15,"1323, rue Manning Montreal",45.449969,-73.583966
+16,"6610 Rue Gouin ouest Montreal",45.527667,-73.727283
+17,"10555 Rue J.-J. Gagnier Montreal",45.580487,-73.648433
+18,"12207A Rue Green-Lane Montreal",45.509734,-73.749907
+19,"15 Rue Alliance Montreal",45.511434,-73.753789
+20,"12122 Blvd St-Germain Montreal",45.533363,-73.710313
+21,"10200, avenue Georges Baril Montreal",45.557903,-73.657669
+22,"8867, rue Berri Montreal",45.546897,-73.641554
+23,"10552, avenue Sacr�-coeur, Montreal, Ahuntsic Montreal",45.550000,-73.670000
+24,"10285, rue Jeanne-Mance Montreal",45.543458,-73.667503
+25,"10135, rue Chambord Montreal",45.559142,-73.655625
+26,"10 333 rue De St-Firmin Montreal",45.570595,-73.651637
+27,"11715 Letellier Montreal",45.541369,-73.686183
+28,"12331 Notre Dame des Anges Montreal",45.534657,-73.716555
+29,"10175 Chambord Montreal",45.559309,-73.656238
+30,"12360 DeSerres Montreal",45.533573,-73.719705
+31,"10660, Rue D'iberville Montreal",45.577493,-73.652606
+32,"10854 av d'Auteuil Montreal",45.553063,-73.669700
+33,"1450, boulevard Gouin Ouest Montreal",45.545093,-73.699878
+34,"10840 St-Fran�ois D'Assise Montreal",45.576634,-73.658122
+35,"10072 Berri Montreal",45.551524,-73.659052
+36,"10 464, de Lille Montreal",45.573023,-73.645661
+37,"12095, boulevard O'Brien Montreal",45.533655,-73.708971
+38,"10190, rue Verville Montreal",45.542608,-73.667031
+39,"725, boulevard Gouin Est Montreal",45.558326,-73.668781
+40,"10200, avenue P�loquin Montreal",45.556581,-73.658690
+41,"165, rue Sauriol Ouest Montreal",45.545146,-73.663341
+42,"10562, rue Grande-All�e Montreal",45.550485,-73.668199
+43,"17, avenue du Ruisseau Montreal",45.511160,-73.754693
+44,"1620, boulevard Gouin Ouest Montreal",45.544233,-73.701571
+45,"10125, avenue de L'Esplanade Montreal",45.545035,-73.663977
+46,"12245, boulevard O'Brien Montreal",45.535660,-73.711804
+47,"11884, rue Pasteur Montreal",45.538530,-73.694481
+48,"11770, rue Lavigne Montreal",45.529446,-73.701088
+49,"10548, rue Laverdure Montreal",45.551386,-73.667805
+50,"10340, boulevard Olympia Montreal",45.562086,-73.657733
+51,"10465, rue Meunier Montreal",45.545777,-73.669444
+52,"6, avenue de l'Alliance Montreal",45.501689,-73.567256
+53,"10788, rue Saint-Hubert Montreal",45.558994,-73.669316
+54,"12026, boulevard Saint-Germain Montreal",45.532173,-73.708417
+55,"8787, rue Ernest Savignac Montreal",45.557327,-73.632441
+56,"10015, rue Berri Montreal",45.551254,-73.657376
+57,"12109-11, rue Valmont Montreal",45.542774,-73.698437
+58,"195, rue Sauriol Ouest Montreal",45.544948,-73.663625
+59,"10830, boulevard Olympia Montreal",45.563633,-73.664193
+60,"9291, avenue Justine Lacoste Montreal",45.607404,-73.580259
+61,"6936 Lionel-Daunais Montreal",45.616153,-73.545623
+62,"7751, avenue Mousseau Montreal",45.615140,-73.554416
+63,"6180, avenue des Jalesnes Montreal",45.591637,-73.551927
+64,"7776, place Seuilly Montreal",45.608259,-73.561039
+65,"8201, avenue Vaujours Montreal",45.607015,-73.555924
+66,"7020, avenue Guy Montreal",45.612732,-73.547821
+67,"41, rue Claude Montreal",45.476745,-73.872855
+68,"40, avenue Eastbourne Montreal",45.427181,-73.858881
+69,"59, rue Beaurepaire Montreal",45.435383,-73.841148
+70,"474 Jubilee Crescent Montreal",45.435525,-73.881594
+71,"125, croissant Chartwell Montreal",45.444493,-73.841026
+72,"160, rue Woodside Montreal",45.500364,-73.786329
+73,"101, rue Franklin Montreal",45.540833,-73.762392
+74,"5891, rue Notre Dame de Grace Montreal",45.470131,-73.622020
+75,"4911, avenue Kensington Montreal",45.472096,-73.636957
+76,"3586 Addington Montreal",45.474271,-73.614304
+77,"3840 ave Oxford Montreal",45.472834,-73.618308
+78,"5187 Av Belmore Montreal",45.463431,-73.648713
+79,"5115 Kensington Montreal",45.473427,-73.640048
+80,"4825 Bessborough Ave Montreal",45.468611,-73.638038
+81,"5290, rue Patricia Montreal",45.460030,-73.653632
+82,"4768, rue M�ridian Montreal",45.501689,-73.567256
+83,"4880, Grand Boulevard Montreal",45.472274,-73.636109
+84,"4669, avenue Victoria Montreal",45.485326,-73.617420
+85,"6449, avenue Coolbrook Montreal",45.489927,-73.646100
+86,"4338, avenue Royal Montreal",45.472171,-73.627174
+87,"4635, avenue Draper Montreal",45.475203,-73.630895
+88,"4408, avenue Mayfair Montreal",45.460862,-73.638418
+89,"3442, avenue de Melrose Montreal",45.470111,-73.618098
+90,"5765, chemin de la C�te-Saint-Antoine Montreal",45.470908,-73.618347
+91,"4835, Bessborough Montreal",45.468652,-73.638143
+92,"250 rue Dufferin Montreal",45.483236,-73.640484
+93,"145, avenue Westminster North Montreal",45.454600,-73.649285
+94,"24, rue Westover Montreal",45.458528,-73.659254
+95,"22, avenue Ballantyne Sud Montreal",45.452250,-73.642134
+96,"6, rue Malard Montreal",45.488426,-73.837526
+97,"9, rue Mayfair Montreal",45.469399,-73.843647
+98,"21, croissant Columbia Montreal",45.492810,-73.802978
+99,"45 Place Canterbury Montreal",45.492770,-73.812183
+100,"3053 Lake Montreal",45.482521,-73.828085
+101,"277 Magnolia Montreal",45.479750,-73.845788
+102,"4581, rue Lake Montreal",45.480194,-73.831522
+103,"67, rue Fredmir Montreal",45.493736,-73.830967
+104,"1245, rue Tecumseh Montreal",45.486978,-73.829667
+105,"64, rue Fredmir Montreal",45.493638,-73.831412
+106,"36, rue Dawn Montreal",45.486992,-73.787106
+107,"83, rue Roger Pilon Montreal",45.492765,-73.817980
+108,"24, rue Buttonwood Montreal",45.496124,-73.829568
+109,"119 Louis Riel Street Montreal",45.482273,-73.814225
+110,"210 Rue Touzin Montreal",45.441753,-73.769073
+111,"640, Avenue Dawson Montreal",45.441100,-73.735747
+112,"226, cercle Malcolm Montreal",45.442477,-73.765009
+113,"227, avenue Dahlia Montreal",45.442412,-73.733348
+114,"169, rue Beauchemin Montreal",45.507417,-73.865223
+115,"324 rue Ren� Mass� Montreal",45.501689,-73.567256
+116,"140 rue Colombier Montreal",45.497281,-73.879191
+117,"519 Rue Macquet Montreal",45.496989,-73.872561
+118,"19, rue Proulx Montreal",45.500075,-73.864641
+119,"154, rue Beauchemin Montreal",45.507933,-73.866156
+120,"258, rue Joncaire Montreal",45.594817,-73.566024
+121,"479, croissant Boyer Montreal",45.499928,-73.876059
+122,"625, rue Lacombe Montreal",45.493867,-73.880448
+123,"3247 L�on-Brisebois Montreal",45.495803,-73.867485
+124,"282 rue Soupras Montreal",45.496094,-73.865054
+125,"3248 rue L�on-Brisebois Montreal",45.495699,-73.867224
+126,"644, St-Malo Est Montreal",45.502679,-73.867961
+127,"228 Laurier Montreal",45.525410,-73.590642
+128,"229, rue Saint-Raphael Montreal",45.503542,-73.905521
+129,"237, rue Barette Montreal",45.507567,-73.870924
+130,"411, rue Marcelin Montreal",45.506119,-73.864627
+131,"280, rue Ouimet Montreal",45.489201,-73.876881
+132,"3027, chemin Cherrier Montreal",45.505947,-73.861030
+133,"308, rue Alphonse Desjardins Montreal",45.503066,-73.901411
+134,"143, rue Beauchemin Montreal",45.507717,-73.867891
+135,"315, rue L�o-Grenier Montreal",45.508914,-73.867579
+136,"3195, rue L�on-Brisebois Montreal",45.498021,-73.865433
+137,"975, rue Bellevue Montreal",45.505996,-73.865439
+138,"130, rue Dubuisson Montreal",45.494106,-73.878455
+139,"416, rue Closse Montreal",45.492005,-73.870881
+140,"3208, rue L�on-Brisebois Montreal",45.497312,-73.866186
+141,"405 Rue de la Prunelle Montreal",45.465990,-73.546527
+142,"180, rue Terry Fox Montreal",45.465288,-73.540280
+143,"28 Dufferin Montreal",45.478966,-73.630965
+144,"6, place Colbert Montreal",45.662790,-73.498202
+145,"325, place Terry Fox Montreal",45.464874,-73.539833
+146,"12 Renaud Montreal",45.454918,-73.841109
+147,"74, rue Acres Montreal",45.462731,-73.847383
+148,"30, rue Lafford Montreal",45.445963,-73.884711
+149,"30, rue des Hirondelles Montreal",45.438766,-73.893895
+150,"122, rue Terry Fox Montreal",45.465702,-73.540800
+151,"79, rue Granada Montreal",45.464618,-73.854263
+152,"9, place Smiley Montreal",45.439242,-73.883560
+153,"144, rue Jacques Chan Montreal",45.447081,-73.887147
+154,"98, rue Macdonald Montreal",45.518555,-73.531034
+155,"34, rue de Cherbourg Montreal",45.447812,-73.849753
+156,"26, rue de Calais Montreal",45.446069,-73.833833
+157,"4315, rue Sherbrooke Montreal",45.444921,-73.704601
+158,"825 50e Avenue Montreal",45.445465,-73.712467
+159,"635, 49e avenue Montreal",45.442895,-73.711244
+160,"735, 36 avenue Montreal",45.522547,-73.610465
+161,"260, 50e Avenue Montreal",45.440002,-73.711471
+162,"3450, rue Broadway Montreal",45.437249,-73.695185
+163,"1165, rue Sherbrooke Montreal",45.444952,-73.674853
+164,"770, 13e Avenue Montreal",45.443514,-73.675706
+165,"2960, Terrasse Js Aime Ashby Montreal",45.446342,-73.690467
+166,"255, 49e Avenue Montreal",45.439912,-73.710839
+167,"2505, rue Saint-Antoine Montreal",45.439850,-73.686455
+168,"764, 13e avenue Montreal",45.443408,-73.675720
+169,"265, 9e avenue Montreal",45.435611,-73.671693
+170,"140, avenue Boyer Montreal",45.444997,-73.649877
+171,"785, 46e Avenue Montreal",45.444421,-73.708154
+172,"870, 39e avenue Montreal",45.445961,-73.700369
+173,"805, 50e avenue Montreal",45.445125,-73.712414
+174,"785, 39e avenue Montreal",45.444496,-73.700364
+175,"63, 50e avenue Montreal",45.438694,-73.711486
+176,"11-8e avenue Montreal",45.637939,-73.489126
+177,"2182 rue Emile-Nelligan Montreal",45.433104,-73.633459
+178,"415 Louis-Fortier Montreal",45.432790,-73.649056
+179,"2492 Avenue Dollard Montreal",45.434076,-73.638917
+180,"324 1iere Avenue Montreal",45.458386,-73.568756
+181,"120, avenue Strathyre Montreal",45.429312,-73.659484
+182,"67, rue Strathyre Montreal",45.428084,-73.659442
+183,"2188 Avenue Mercier Montreal",45.597272,-73.517405
+184,"2280, rue St-Cl�ment Montreal",45.559895,-73.540243
+185,"3105, rue Anne Hebert Montreal",45.588250,-73.536728
+186,"7680, rue Fonteneau Montreal",45.596116,-73.542016
+187,"7183 Pierre Gadois Montreal",45.596674,-73.568552
+188,"1125 De Bruxelles Montreal",45.588116,-73.510276
+189,"6067, Rue Alfred-Pellan Montreal",45.578439,-73.548614
+190,"8371 Place Fonteneau Montreal",45.602293,-73.537551
+191,"2400, rue Louis-Veuillot Montreal",45.571239,-73.535722
+192,"2995, rue Curatteau Montreal",45.592917,-73.532037
+193,"6100, rue Alfred Pellan Montreal",45.578787,-73.548146
+194,"2375, avenue de Lorimier Montreal",45.530616,-73.562397
+195,"4840, rue Adam Montreal",45.556878,-73.532020
+196,"639, avenue Rougemont Montreal",45.568084,-73.524168
+197,"1324, rue de Bruxelles Montreal",45.588226,-73.511118
+198,"2461, avenue Haig Montreal",45.582239,-73.529565
+199,"3170, rue Du Quesne Montreal",45.576605,-73.544106
+200,"5580, rue Louis Dumouchel Montreal",45.601005,-73.542479
+201,"1799, rue Montcalm Montreal",45.520392,-73.560632
+202,"3519 Lorne Montreal",45.507427,-73.576266
+203,"2700, rue Hill Park Montreal",45.496938,-73.600273
+204,"1795 de la Visitation Montreal",45.521347,-73.559881
+205,"2920, Terrase Thomas Valin Montreal",45.538601,-73.549761
+206,"772, rue Lusignan Montreal",45.492776,-73.570664
+207,"561-563, rue Bourgeoys Montreal",45.480045,-73.557498
+208,"816 Saint-Ferdinand Montreal",45.477951,-73.588985
+209,"5314, rue Notre-Dame OUest Montreal",45.468855,-73.594492
+210,"2429, rue Rozel Montreal",45.475761,-73.562845
+211,"231, rue Delinelle Montreal",45.472333,-73.586437
+212,"5190, rue Sainte-Marie Montreal",45.468741,-73.592583
+213,"1526, rue Springland Montreal",45.454039,-73.585193
+214,"350, rue Saint-Philippe Montreal",45.475619,-73.585448
+215,"2475 rue St-Charles Montreal",45.479813,-73.569023
+216,"5059 Ste-Clotilde Montreal",45.470525,-73.592401
+217,"2263, rue Coursol Montreal",45.487589,-73.576756
+218,"391, rue de la Congr�gation Montreal",45.481303,-73.554028
+219,"169, rue Bourget Montreal",45.478400,-73.579125
+220,"1501, rue Holy Cross Montreal",45.456499,-73.583802
+221,"1695, avenue de l'�glise Montreal",45.463639,-73.586153
+222,"2718 Reading Montreal",45.475502,-73.566983
+223,"1126, rue Shearer Montreal",45.482438,-73.561516
+224,"6690, rue Hamilton Montreal",45.451569,-73.595593
+225,"6568 rue Briand Montreal",45.453323,-73.593046
+226,"2551 de Chateauguay Unit 201 Montreal",45.478020,-73.568350
+227,"285, avenue Beverley Montreal",45.524251,-73.640850
+228,"640, avenue Inverness Montreal",45.507728,-73.659392
+229,"18 Henley Montreal",45.515238,-73.636575
+230,"7405 De Tilly Montreal",45.512830,-73.635445
+231,"31, rue Henley Montreal",45.479264,-73.818431
+232,"81, avenue Simcoe Montreal",45.516574,-73.635023
+233,"7345, rue Maynard Montreal",45.510681,-73.636507
+234,"152, avenue Balfour Montreal",45.521588,-73.640971
+235,"6345 Boulevard Gouin Est Montreal",45.623995,-73.626439
+236,"11287 av. des Laurentides Montreal",45.590978,-73.648131
+237,"10660 Pelletier Montreal",45.590734,-73.631788
+238,"5990 Villeneuve Montreal",45.618279,-73.626610
+239,"4800 boulevard Gouin est Montreal",45.604620,-73.638887
+240,"12061, avenue D�sy Montreal",45.501689,-73.567256
+241,"10445, avenue De Belleville Montreal",45.582671,-73.642505
+242,"10750, avenue Pelletier Montreal",45.591474,-73.632820
+243,"10736, avenue de Cobourg Montreal",45.585552,-73.643874
+244,"11-460, rue de Normandie Montreal",45.646194,-73.493299
+245,"10615, boulevard Saint-Michel Montreal",45.582237,-73.647141
+246,"11817, avenue Drapeau Montreal",45.602528,-73.639162
+247,"281, Mc Dougall Montreal",45.517363,-73.603043
+248,"634 Querbes Montreal",45.522005,-73.608098
+249,"94, McCulloch Montreal",45.514099,-73.599563
+250,"538 Chemin C�te Ste-Catherine Montreal",45.514235,-73.610511
+251,"242, avenue Mcdougall Montreal",45.516700,-73.602043
+252,"652, rue Wiseman Montreal",45.518794,-73.611415
+253,"17138 Guillaume Street Montreal",45.536474,-73.505735
+254,"19858 Boulevard Gouin Ouest Montreal",45.461897,-73.918077
+255,"15730, rue Gaucher Montreal",45.463813,-73.863679
+256,"4212, rue Hugo Montreal",45.473936,-73.863055
+257,"12695 rue Bedford Montreal",45.500838,-73.832150
+258,"5128 Alma / NOUVEAU PRIX. Montreal",45.501689,-73.567256
+259,"4371 rue Graham Montreal",45.481796,-73.850398
+260,"18121, rue  Hardouin Montreal",45.459073,-73.889756
+261,"18131, rue Hardouin Montreal",45.458987,-73.889938
+262,"12696, rue Bedford Montreal",45.500619,-73.832624
+263,"5122, boulevard Lalande Montreal",45.509829,-73.802088
+264,"17953, rue Foster Montreal",45.454276,-73.883460
+265,"493, boulevard Saraguay Est Montreal",45.512400,-73.800232
+266,"5041, rue Laurin Montreal",45.506833,-73.776278
+267,"5050, rue Fraser Montreal",45.503855,-73.847089
+268,"4769, rue Pr�vel Montreal",45.460147,-73.887395
+269,"11612, rue L�pine Montreal",45.505171,-73.814860
+270,"18464, boulevard Gouin Ouest Montreal",45.462662,-73.897843
+271,"4248, avenue Laval Montreal",45.520606,-73.580600
+272,"4611. Rue St-Dominique Montreal",45.521347,-73.587527
+273,"3598 Dorion Montreal",45.530435,-73.565904
+274,"806/80 Rue Gilford Montreal",45.527928,-73.585080
+275,"3977, rue Rivard Montreal",45.521076,-73.574677
+276,"4270, rue Papineau, condo 303 Montreal",45.501689,-73.567256
+277,"3887 Henri-Julien Montreal",45.518977,-73.575046
+278,"3760, rue Sewell Montreal",45.514386,-73.576141
+279,"4281, rue de Lanaudi�re Montreal",45.528709,-73.573412
+280,"4701, rue Pontiac Montreal",45.526484,-73.584301
+281,"4443 Montreal",-33.496952,-70.641843
+282,"3827 Henri-julien Montreal",45.518539,-73.574051
+283,"4441 de Bullion Montreal",45.521179,-73.584359
+284,"174 Fairmount Est Montreal",45.525526,-73.593205
+285,"4516 Saint-Andr� Montreal",45.501689,-73.567256
+286,"5314, avenue de l'Esplanade Montreal",45.522304,-73.598760
+287,"5896, rue Jeanne-Mance Montreal",45.524954,-73.606495
+288,"5124, rue de Lanaudi�re Montreal",45.533644,-73.584325
+289,"5312, rue Drolet Montreal",45.527694,-73.593178
+290,"4547, rue Cartier Montreal",45.534127,-73.574695
+291,"4380, rue de Lanaudi�re Montreal",45.529433,-73.575605
+292,"4571, rue St-Hubert Montreal",45.526713,-73.582591
+293,"4210, rue de Bullion Montreal",45.519455,-73.580869
+294,"5162, rue Cartier Montreal",45.536752,-73.580971
+295,"4321, rue Rivard Montreal",45.523355,-73.579726
+296,"5346, avenue de l'Esplanade Montreal",45.522568,-73.599157
+297,"3848, rue Berri Montreal",45.520645,-73.572497
+298,"4442, rue Chambord Montreal",45.529424,-73.576865
+299,"774, rue de Bienville Montreal",45.526626,-73.582887
+300,"1795, 36e avenue Montreal",45.660021,-73.502369
+301,"619 Bellevue Montreal",45.684914,-73.491740
+302,"15990 Rue Belle-Rive Montreal",45.694768,-73.482633
+303,"23 Pauline Donalda Montreal",45.692745,-73.483692
+304,"13320, rue Achille Fortier Montreal",45.659100,-73.501610
+305,"540, Place du Parc Montreal",45.650742,-73.506415
+306,"230, Pierre Mercure Montreal",45.698297,-73.490946
+307,"14601, rue Notre-Dame est Montreal",45.676217,-73.493507
+308,"15430 Rue Notre-Dame Montreal",45.687416,-73.489660
+309,"556, place Nicolas-Senet Montreal",45.655754,-73.493056
+310,"1946, 18e Avenue Montreal",45.647807,-73.510290
+311,"525, 1 ere avenue Montreal",45.633850,-73.494577
+312,"751, 28e avenue Montreal",45.653505,-73.493685
+313,"3505, rue Jules Huot Montreal",45.685659,-73.504016
+314,"620, place du Parc Montreal",45.650430,-73.506658
+315,"294 Avenue Marsh Montreal",45.463350,-73.797241
+316,"7, avenue de la Pointe-Claire Montreal",45.506828,-73.812588
+317,"78, Baie de Valois Montreal",45.453749,-73.792943
+318,"301 Avenue Jaillet Montreal",45.462173,-73.796688
+319,"417A Avenue Delmar Montreal",45.460723,-73.797198
+320,"60 Belmont Montreal",45.455550,-73.788611
+321,"276, avenue Maclean Montreal",45.463439,-73.795126
+322,"111, avenue Highgate Montreal",45.442295,-73.826669
+323,"352, avenue St-Louis Montreal",45.510670,-73.553900
+324,"30, avenue Victoria Montreal",45.438974,-73.663938
+325,"53, avenue Bayview Montreal",45.441301,-73.806726
+326,"87, avenue Saddlewood Montreal",45.447404,-73.806842
+327,"5, avenue Prince Edward Montreal",45.505777,-73.807225
+328,"10205, rue Ulric-Gravel Montreal",45.663855,-73.557927
+329,"8934, rue Albert Chamberland Montreal",45.650484,-73.585524
+330,"12505, 71 avenue Montreal",45.535373,-73.729557
+331,"8854 rue Albert-Chamberland Montreal",45.649824,-73.584066
+332,"9944 3ieme Rue Montreal",45.660787,-73.563372
+333,"12230 94 i�me Avenue Montreal",45.497055,-73.963783
+334,"11268, boulevard Perras Montreal",45.673724,-73.537035
+335,"9505 boul Gouin est Montreal",45.658583,-73.573859
+336,"12336 Louise-Dech�ne Montreal",45.663990,-73.547816
+337,"10195 Rue Panis-Charles Montreal",45.656568,-73.552245
+338,"12076, rue Henri Christophe Montreal",45.657339,-73.550783
+339,"10247, rue Karl-L�v�que Montreal",45.501689,-73.567256
+340,"12118, rue Camille Tessier Montreal",45.632210,-73.595519
+341,"11653, rue Sylvia Daoust Montreal",45.624866,-73.595489
+342,"7570, boulevard Gouin est Montreal",45.636719,-73.606694
+343,"12282, rue la Galissonni�re Montreal",45.660411,-73.548628
+344,"12054, 15e Avenue Montreal",45.628948,-73.595769
+345,"11241, boulevard Perras Montreal",45.673233,-73.538210
+346,"10337, rue Sylvain Garneau Montreal",45.658412,-73.561347
+347,"12526, 62e Avenue Montreal",45.658431,-73.566054
+348,"12535, 55e avenue Montreal",45.655795,-73.571369
+349,"5130 Avenue Des Sorbiers Montreal",45.569685,-73.561565
+350,"6210 9ieme Avenue Montreal",45.552692,-73.583796
+351,"5710 Rue St-Andr� Montreal",45.501689,-73.567256
+352,"4666, rue Charlemagne Montreal",45.555526,-73.562315
+353,"6065 31e avenue Rosemont Montreal",45.566161,-73.570053
+354,"4360 rue de Bellechasse Montreal",45.563980,-73.573499
+355,"5945 Rue Viau Montreal",45.569747,-73.567134
+356,"7286 22�me Avenue Montreal",45.501689,-73.567256
+357,"6385, 10i�me avenue Montreal",45.501689,-73.567256
+358,"5969, rue des �rables Montreal",45.501689,-73.567256
+359,"6823, 30�me avenue Montreal",45.501689,-73.567256
+360,"6529, avenue de Gasp� Montreal",45.501689,-73.567256
+361,"6751, avenue Henri Julien Montreal",45.534847,-73.610308
+362,"5340, rue B�langer Montreal",45.577246,-73.576433
+363,"6191, rue Rodolphe Mathieu Montreal",45.583147,-73.562661
+364,"5871, rue de Bordeaux Montreal",45.542310,-73.589200
+365,"6275, 3e avenue Montreal",45.550604,-73.586803
+366,"6330, 5e avenue Montreal",45.551555,-73.586757
+367,"4985, 5e Avenue Montreal",45.546389,-73.570895
+368,"4972, 6e Avenue Montreal",45.546706,-73.570694
+369,"6212, rue Alma Montreal",45.531082,-73.603767
+370,"5723, 14e avenue Montreal",45.554939,-73.577209
+371,"5260, avenue d'Orl�ans Montreal",45.556641,-73.567981
+372,"5870, avenue des Plaines Montreal",45.569991,-73.565441
+373,"6848, rue de Normanville Montreal",45.541786,-73.605970
+374,"4629 Rue De Chambly Condo 6 Montreal",45.501689,-73.567256
+375,"26 avenue Phillips Montreal",45.442363,-73.953741
+376,"1395, rue Guertin Montreal",45.520663,-73.683645
+377,"784, rue Cardinal Montreal",45.509799,-73.679911
+378,"125 rue H�bert Montreal",45.511081,-73.663780
+379,"1705 Rue Filion Montreal",45.524151,-73.687609
+380,"2060 Rue Johnson Montreal",45.502576,-73.682192
+381,"1605 rue Rochon Montreal",45.514484,-73.687156
+382,"665 Tait Montreal",45.505415,-73.682221
+383,"1500, avenue O'Brien Montreal",45.519811,-73.687324
+384,"1760, rue Guertin Montreal",45.523480,-73.688407
+385,"1830, avenue O'brien Montreal",45.523010,-73.692401
+386,"2060, rue Johnson Montreal",45.502576,-73.682192
+387,"1625, place Decelles Montreal",45.500897,-73.626589
+388,"2359, rue Robert-Peary Montreal",45.511206,-73.704735
+389,"1390, rue Filion Montreal",45.520992,-73.683204
+390,"9003 De Belmont Street Montreal",45.600179,-73.600697
+391,"220, rue Vall�e Montreal",45.437637,-73.924344
+392,"183, rue Lanthier Montreal",45.435682,-73.928036
+393,"1087 Rue Moffat Montreal",45.450496,-73.579180
+394,"1745 Crawford Montreal",45.439982,-73.593930
+395,"1510 Rue Fayolle Montreal",45.436269,-73.589469
+396,"1840 Fayolle Montreal",45.437468,-73.596928
+397,"97, rue Hickson Montreal",45.464866,-73.563894
+398,"7920, 24e avenue Montreal",45.571772,-73.600394
+399,"7235, rue Louis-H�mon Montreal",45.552541,-73.605105
+400,"7040 Bloomfield Montreal",45.526962,-73.623086
+401,"8270 Henri Julien Montreal",45.541999,-73.632723
+402,"8027 Chambord Montreal",45.549450,-73.620790
+403,"8320 Avenue d'Outremont Montreal",45.530692,-73.640141
+404,"7121 8e avenue Montreal",45.556572,-73.598456
+405,"8460, avenue des Belges Montreal",45.546812,-73.632580
+406,"7245, avenue Henri-Julien Montreal",45.537615,-73.617140
+407,"7212, rue Louis H�bert Montreal",45.443371,-73.610585
+408,"7400, 22e Avenue Montreal",45.567278,-73.595207
+409,"7101, 8e Avenue Montreal",45.556460,-73.598095
+410,"7445, rue St-Andr� Montreal",45.501689,-73.567256
+411,"7365, rue des �cores Montreal",45.501689,-73.567256
+412,"8346, avenue De Gasp� Montreal",45.501689,-73.567256
+413,"7111, 19e avenue Montreal",45.563979,-73.591909
+414,"7778, rue St-Andr� Montreal",45.501689,-73.567256
+415,"7411, 21e avenue Montreal",45.567095,-73.595651
+416,"7600, 6e avenue Montreal",45.559195,-73.607328
+417,"8052, rue Rousselot Montreal",45.550703,-73.620706
+418,"7101, 19e avenue Montreal",45.563938,-73.591744
+419,"7975 rue Louis Hemon Montreal",45.556317,-73.613671
+420,"4690 Ave Roslyn, Montr�al, Montreal",45.501689,-73.567256
+421,"6, avenue Burton Montreal",45.477018,-73.602073
+422,"44, Curzon Montreal",45.452634,-73.647918
+423,"150, avenue Wolseley Nord Montreal",45.453283,-73.650281
+424,"4, rue des Parulines Montreal",45.449724,-73.551367
+425,"48, rue Cherry-Lane Montreal",45.466890,-73.858619
+426,"3349, rue Dalb� Viau Montreal",45.501689,-73.567256
+427,"823, rue Raymond, LaSalle Montreal",45.424385,-73.612304
+428,"2753, rue Anne H�bert Montreal",45.586382,-73.532357
+429,"2672, rue Anne H�bert Montreal",45.585736,-73.531171
+430,"7317 rue de Marseille Montreal",45.590016,-73.534452
+431,"7215 Rue Duchesse de Bassano Montreal",45.501689,-73.567256
+432,"2676 av Charlemagne Montreal",45.552176,-73.551973
+433,"733-735, rue Versailles Montreal",45.493058,-73.569289
+434,"1714, rue de Champlain Montreal",45.523542,-73.556968
+435,"3445 Cr. Paul-�mile-C�t� Montreal",45.501689,-73.567256
+436,"2330, rue Sainte-Cun�gonde Montreal",45.482653,-73.572147
+437,"536, avenue Berwick Montreal",45.505741,-73.645666
+438,"3475 Jeanne-Mance Montreal",45.510106,-73.572528
+439,"4605, rue de Bullion Montreal",45.522451,-73.586583
+440,"7540, Elis�e Martel Montreal",45.501689,-73.567256
+441,"8393, rue Ernest Ouimet Montreal",45.632445,-73.579053
+442,"2811, rue de l'�cu Montreal",45.510812,-73.713751
+443,"371, rue Gilberte-Dub� Montreal",45.501689,-73.567256
+444,"221 Rue Dufferin Montreal",45.482642,-73.639095
+445,"2324 Hogan Montreal",45.536806,-73.555716
+446,"5905, boulevard Pierre-Bernard Montreal",45.609608,-73.538626
+447,"3315, rue de Rouen Montreal",45.543343,-73.550149
+448,"1621, rue Cuvillier Montreal",45.542744,-73.542334
+449,"2115 � 2123 De Champlain Montreal",45.501689,-73.567256
+450,"2202-2214, Plessis Montreal",45.524591,-73.563346
+451,"3820 Rue Fleury Montreal",45.584401,-73.636261
+452,"5472, Henri-Bourassa est Montreal",45.605123,-73.624327
+453,"12100 Boulevard Lacordaire Montreal",45.614027,-73.628049
+454,"3975-77-79, rue Martial Montreal",45.591348,-73.640360
+455,"12769, boulevard Gouin Ouest Montreal",45.504146,-73.837073
+456,"4408, rue Fabre Montreal",45.530792,-73.574688
+457,"5138 Rue De Gaspé Montreal",45.525161,-73.592185
+458,"5820, � 5832 Chateaubriand Montreal",45.501689,-73.567256
+459,"2195 Rue Dandurand Montreal",45.541306,-73.583820
+460,"6928-26-24 Christophe Colomb Montreal",45.540577,-73.608090
+461,"3340, 3342, 3344, 3340-A, Rue Dandurand Montreal",45.552731,-73.575416
+462,"3480 Avenue D'Orleans Montreal",45.552819,-73.556127
+463,"5841, rue Chabot Montreal",45.541473,-73.589341
+464,"5920, boulevard Saint-Michel Montreal",45.553359,-73.581165
+465,"518-520-522 osborne Montreal",45.451223,-73.570790
+466,"709 � 719 4i�me Avenue Montreal",45.501689,-73.567256
+467,"773 � 783 3i�me Avenue Montreal",45.501689,-73.567256
+468,"626 � 636 Hickson Montreal",45.501689,-73.567256
+469,"3500-3510, rue Evelyn Montreal",45.468626,-73.569667
+470,"6985 Rue Durocher Montreal",45.528492,-73.620538
+471,"4140 41ieme rue Montreal",45.579038,-73.617355
+472,"8044 Avenue Champagneur Montreal",45.530092,-73.635623
+473,"8541-8549, rue Saint G�rard Montreal",45.546382,-73.635310
+474,"525, rue Laberge Montreal",45.498997,-73.872740
+475,"8330, rue Vincent-Piette Montreal",45.595547,-73.518088
+476,"303, avenue �mery Montreal",45.501689,-73.567256
+477,"4019-4021-4023, rue Wellington Montreal",45.463530,-73.566974
+478,"5757-5751, boulevard St-Michel Montreal",45.552711,-73.578581
+479,"8540 Rue Raymond-Pelletier Montreal",45.552205,-73.631428
+480,"1300 Alain-Grandbois Montreal",45.535909,-73.667673
+481,"8580, Rue Raymond-Pelletier #505 Montreal",45.552810,-73.632095
+482,"8865 Rue Marcel-Cadieux Condo 502 Montreal",45.501689,-73.567256
+483,"8518 Rue Pierre-Dupaigne Montreal",45.552955,-73.628966
+484,"8600 Rue Raymond-Pelletier Condo 203 Montreal",45.501689,-73.567256
+485,"1111 rue Arthur-Lismer Montreal",45.537008,-73.668845
+486,"8699 Rue Joseph Quintal Montreal",45.554516,-73.630438
+487,"8637 Rue Joseph Quintal Montreal",45.554152,-73.629601
+488,"8516 Rue Pierre-Dupaigne Montreal",45.552936,-73.628924
+489,"1129 Rue Jacques-Casault Montreal",45.552290,-73.629447
+490,"9022 St-Hubert Montreal",45.551065,-73.642302
+491,"1580 Rue Robert-Charbonneau App. 401 Montreal",45.536344,-73.676264
+492,"2055 A Boulevard Gouin Est Montreal",45.574028,-73.659252
+493,"1540 Henri-Bourassa Ouest Montreal",45.537361,-73.678399
+494,"8865 Rue Marcel Cadieux App. 108 Montreal",45.550874,-73.637760
+495,"8569, rue Joseph-Quintal Montreal",45.553752,-73.628683
+496,"8644 Rue Andr� Grasset Montreal",45.501689,-73.567256
+497,"10777 rue Saint-Denis Montreal",45.554227,-73.670753
+498,"1671 Rue Louis-Alphonse-Venne Condo 302 Montreal",45.501689,-73.567256
+499,"10680 Rue Tanguay App 205 Montreal",45.544242,-73.674109
+500,"8604 Avenue Andr�-Grasset Montreal",45.501689,-73.567256
+501,"8860, rue Marcel Cadieux Montreal",45.551058,-73.639064
+502,"1585 Rue Robert-Charbonneau Condo 206 Montreal",45.501689,-73.567256
+503,"8600, rue Raymond pelletier, condo 604 Montreal",45.501689,-73.567256
+504,"8743, rue Ren� Labelle Montreal",45.501689,-73.567256
+505,"8580, rue Joseph Quintal Montreal",45.553697,-73.628626
+506,"1042, place Pierre-Dupaigne Montreal",45.553129,-73.630494
+507,"104-10730, avenue Christophe-Colomb Montreal",45.562693,-73.663244
+508,"8687, rue Joseph-Quintal Montreal",45.554446,-73.630276
+509,"8663, rue Joseph Quintal Montreal",45.554305,-73.629952
+510,"9020A St-Hubert Montreal",45.551134,-73.642263
+511,"10135, rue Lajeunesse, app. 3 Montreal",45.552878,-73.659650
+512,"1595, rue Louis-Carrier, app. 403 Montreal",45.536471,-73.677860
+513,"8542, rue Joseph-Quintal Montreal",45.553448,-73.628056
+514,"1D-10685, De Lorimier Montreal",45.573563,-73.656443
+515,"8583, rue Ren� Labelle Montreal",45.501689,-73.567256
+516,"8560, rue Raymond-Pelletier, condo 307 Montreal",45.501689,-73.567256
+517,"8534, rue Ren�e Labelle Montreal",45.555160,-73.634052
+518,"8627, rue Joseph Quintal Montreal",45.554093,-73.629466
+519,"8566, Ren�-Labelle Montreal",45.501689,-73.567256
+520,"12448, rue Odette-Oligny Montreal",45.532294,-73.723695
+521,"1550, rue Henri Bourassa Ouest, app. 307 Montreal",45.537082,-73.678565
+522,"8874, rue Marcel Cadieux Montreal",45.550974,-73.639293
+523,"12444, rue Odette Oligny Montreal",45.532215,-73.723584
+524,"1550, boulevard Henri-Bourassa ouest, app. 103 Montreal",45.537082,-73.678565
+525,"10332, rue Paul-Comtois, app. 108 Montreal",45.538560,-73.673035
+526,"8657, rue Pierre Dupaigne Montreal",45.553821,-73.630780
+527,"1144, rue Henri-Gauthier Montreal",45.553692,-73.631356
+528,"1117, place Henri-Gauthier Montreal",45.554026,-73.631667
+529,"8638, avenue Andr�-Grasset Montreal",45.501689,-73.567256
+530,"1540 Boulevard henri bourassa App. 211 Montreal",45.564363,-73.661106
+531,"8600, rue Raymond-Pelletier app. 801 Montreal",45.553071,-73.632455
+532,"10730-103 Christophe-Colomb Montreal",45.562693,-73.663244
+533,"2170, Henri-Bourassa Est, condo 402 Montreal",45.501689,-73.567256
+534,"384 rue Farly Montreal",45.545952,-73.641693
+535,"8636 Joseph Quintal Montreal",45.554063,-73.629467
+536,"8520 Rue Raymond-Pelletier #507 Montreal",45.551873,-73.631142
+537,"8528 Avenue Andr�-Grasset Montreal",45.501689,-73.567256
+538,"8870 Marcel Cadieux Montreal",45.551093,-73.639185
+539,"107-11825 Avenue Norwood Montreal",45.548218,-73.684922
+540,"10105 rue Lajeunesse, unit� 5 Montreal",45.501689,-73.567256
+541,"8564 Andr�-Grasset Montreal",45.501689,-73.567256
+542,"332 rue Farly Montreal",45.545272,-73.642090
+543,"1601 Louis Alphonse Venne  202 Montreal",45.561810,-73.648580
+544,"1647 Fleury Est, App. 5 Montreal",45.564394,-73.655661
+545,"10105, Lajeunesse no 7 Montreal",45.552693,-73.659006
+546,"8552 Avenue Andr�-Grasset Montreal",45.501689,-73.567256
+547,"8498, avenue Andr�-Grasset Montreal",45.501689,-73.567256
+548,"10812 Grande-All�e Montreal",45.552025,-73.673324
+549,"8885 rue Marcel Cadieux app 302 Montreal",45.551015,-73.638815
+550,"8540 Raymond-Pelletier app 203 Montreal",45.552205,-73.631428
+551,"5353 Dudemaine Montreal",45.526380,-73.703744
+552,"10730, Christophe-Colomb # 304 Montreal",45.562693,-73.663244
+553,"301-8580 RUE RAYMOND-PELLETIER Montreal",45.552810,-73.632095
+554,"1102, Place Pierre-Dupaigne Montreal",45.552975,-73.629853
+555,"6-1355 Antoine-Deat Montreal",45.561428,-73.645770
+556,"10730 Christophe-Colomb Apt:2 Montreal",45.562693,-73.663244
+557,"8586 Andr�-Grasset Montreal",45.501689,-73.567256
+558,"8540, rue Raymond-Pelletier app 406 Montreal",45.552205,-73.631428
+559,"8580 rue Raymond-Pelletier # 602 Montreal",45.552810,-73.632095
+560,"8661 Joseph-Quintal Montreal",45.554293,-73.629925
+561,"1540, Henri Bourrassa ouest Montreal",45.537361,-73.678399
+562,"10141 Rue Lajeunesse app.6 Montreal",45.552921,-73.659779
+563,"10141 Rue Lajeunesse #3 Montreal",45.552921,-73.659779
+564,"12152 Lachapelle no 204 Montreal",45.529193,-73.718912
+565,"8885 Marcel Cadieux app 111 Montreal",45.551015,-73.638815
+566,"205 Henri-Bourassa Ouest Montreal",45.547280,-73.673044
+567,"8555 Ren�-Labelle Montreal",45.501689,-73.567256
+568,"306-2075 Caroline-Béique Montreal",45.533681,-73.672733
+569,"1595 Rue Louis-Carrier App.302 Montreal",45.536471,-73.677860
+570,"1076 Place Pierre Dupaigne Montreal",45.552882,-73.630186
+571,"8545 Pierre Dupaigne Montreal",45.553091,-73.629192
+572,"12477, Ranger Montreal",45.534002,-73.723654
+573,"8775, rue Lajeunesse Montreal",45.546806,-73.639207
+574,"8771 St-Hubert Montreal",45.549973,-73.637996
+575,"10123 Lajeunesse #1 Montreal",45.552813,-73.659390
+576,"8520-205 Raymond-Pelletier Montreal",45.551873,-73.631142
+577,"605-10150, avenue de Bois-de-Boulogne Montreal",45.536613,-73.670288
+578,"8714 Andre-Grasset Montreal",45.555655,-73.630984
+579,"8647 rue Joseph-Quintal Montreal",45.554211,-73.629736
+580,"403-1600, rue Robert Charbonneau Montreal",45.535683,-73.676770
+581,"8620 Ren�-Labelle Montreal",45.501689,-73.567256
+582,"1480  Rue Antoine-Deat, app 5 Montreal",45.563345,-73.644380
+583,"1570 Robert Charbonneau #503 Montreal",45.536650,-73.676081
+584,"10135 Rue  Lajeunesse #2 Montreal",45.552878,-73.659650
+585,"12320 Rue Lachapelle app.207 Montreal",45.531186,-73.722157
+586,"8526 Joseph Quintal Montreal",45.553343,-73.627815
+587,"9999 L' Acadie #209 Montreal",45.494408,-73.840344
+588,"8635 Rue Joseph Quintal Montreal",45.554140,-73.629574
+589,"12482, avenue de Rivoli Montreal",45.533092,-73.724015
+590,"301-1621, rue Louis-Alphonse Venne Montreal",45.562179,-73.648584
+591,"10260, avenue Curotte Montreal",45.563176,-73.655993
+592,"306-8540, rue Raymond-Pelletier Montreal",45.552205,-73.631428
+593,"15-1647, rue Fleury Est Montreal",45.564394,-73.655661
+594,"102-1711, rue Louis-Alphonse Venne Montreal",45.563798,-73.647654
+595,"8541, rue Joseph-Quintal Montreal",45.553587,-73.628306
+596,"1213, place Henri-Gauthier Montreal",45.554266,-73.630997
+597,"1124, rue Henri-Gauthier Montreal",45.553507,-73.631497
+598,"12290, rue Letellier Montreal",45.545296,-73.698954
+599,"1-10730, avenue Christophe-Colomb Montreal",45.562693,-73.663244
+600,"8591 Pierre-Dupaigne Montreal",45.553397,-73.629863
+601,"11777, rue Marie-Anne-Lavall�e Montreal",45.539569,-73.688484
+602,"5-10111, rue Lajeunesse Montreal",45.552732,-73.659138
+603,"1230, rue �tienne-Blanchard Montreal",45.501689,-73.567256
+604,"A01-1097, avenue Berthe-Louard Montreal",45.556098,-73.642016
+605,"203-2085, rue Fleury Est Montreal",45.570959,-73.651560
+606,"9987, Avenue De L'Esplanade Montreal",45.544566,-73.662553
+607,"6-1455, rue Louvain Est Montreal",45.562686,-73.643382
+608,"10789, rue Berri Montreal",45.555166,-73.670485
+609,"102-1595, rue Louis-Carrier Montreal",45.536471,-73.677860
+610,"8516, rue Pierre Dupaigne Montreal",45.552936,-73.628924
+611,"507-10100, rue Paul Comtois Montreal",45.537392,-73.669677
+612,"2527, Rue Fleury Est Montreal",45.575799,-73.647278
+613,"207-10150, avenue de Bois-de-Boulogne Montreal",45.536613,-73.670288
+614,"402-2170, Henri-Bourassa Est Montreal",45.574464,-73.655718
+615,"301-8901, rue Marcel-Cadieux Montreal",45.551451,-73.639040
+616,"10777, rue St-Denis Montreal",45.554227,-73.670753
+617,"8735, rue Ren�-Labelle Montreal",45.501689,-73.567256
+618,"10673, avenue Larose Montreal",45.580333,-73.650300
+619,"203-8520, rue Raymond Pelletier Montreal",45.551873,-73.631142
+620,"36-12000, Poincar� Montreal",45.501689,-73.567256
+621,"8604, avenue Andr� Grasset Montreal",45.501689,-73.567256
+622,"1054 Pl Pierre-Dupaigne Montreal",45.553033,-73.630403
+623,"8672, rue Joseph Quintal Montreal",45.554298,-73.630007
+624,"102-1611, rue Louis Alphonse Venne Montreal",45.562048,-73.648672
+625,"103-1310, rue Sauv� Est Montreal",45.501689,-73.567256
+626,"8565, rue Pierre-Dupaigne Montreal",45.553223,-73.629475
+627,"8663 Joseph-Quintal Montreal",45.554305,-73.629952
+628,"322, rue Farly Montreal",45.545146,-73.642161
+629,"1445 Rue De Louvain Est App3 Montreal",45.562494,-73.643776
+630,"304-8885, rue Marcel-Cadieux Montreal",45.551015,-73.638815
+631,"707, rue Germaine Gu�vremont Montreal",45.536853,-73.666314
+632,"8768, avenue Andr�-Grasset Montreal",45.501689,-73.567256
+633,"301-10680, rue Tanguay Montreal",45.544242,-73.674109
+634,"10100 Bois-De-Boulogne Montreal",45.536372,-73.669450
+635,"10651, rue Saint-Denis Montreal",45.553666,-73.668224
+636,"10812 Grande-Allée Montreal",45.552025,-73.673324
+637,"403-10332, rue Paul-Comtois Montreal",45.538560,-73.673035
+638,"A01-1095, avenue Berthe-Louard Montreal",45.556192,-73.642440
+639,"9208, rue Lajeunesse Montreal",45.549042,-73.646974
+640,"606-8580, rue Raymond-Pelletier Montreal",45.552810,-73.632095
+641,"8614, rue Ren�-Labelle Montreal",45.501689,-73.567256
+642,"10726, boulevard Olympia Montreal",45.563452,-73.662487
+643,"1575 Robert Charboneau #306 Montreal",45.536782,-73.676444
+644,"1115, rue Jacques-Casault Montreal",45.552112,-73.629879
+645,"1207-10550, place de l'Acadie Montreal",45.532647,-73.680010
+646,"101-8952, rue Lajeunesse Montreal",45.547837,-73.643225
+647,"103-8901, rue Marcel-Cadieux Montreal",45.551451,-73.639040
+648,"8-10135, rue Lajeunesse Montreal",45.552878,-73.659650
+649,"511-1540, boulevard Henri-Bourassa Ouest Montreal",45.537361,-73.678399
+650,"12533, rue Odette Oligny Montreal",45.532620,-73.725010
+651,"5-10129, rue Lajeunesse Montreal",45.552838,-73.659529
+652,"326, rue Farly Montreal",45.545196,-73.642133
+653,"304-8580, rue Raymond-Pelletier Montreal",45.552810,-73.632095
+654,"307-2075, rue Caroline-B�ique Montreal",45.533681,-73.672733
+655,"5-10105, rue Lajeunesse Montreal",45.552693,-73.659006
+656,"12608, rue Odette Oligny Montreal",45.532349,-73.725517
+657,"10152, avenue Saint-Charles Montreal",45.557003,-73.657333
+658,"6-10285, rue Saint-Hubert Montreal",45.556372,-73.659744
+659,"10592, avenue George-Baril Montreal",45.559644,-73.663573
+660,"404-8600, rue Raymond Pelletier Montreal",45.553071,-73.632455
+661,"204-205, boulevard Henri-Bourassa O Montreal",45.547280,-73.673044
+662,"10363, avenue du Sacr�-Coeur Montreal",45.501689,-73.567256
+663,"305-1605, rue Robert Charbonneau Montreal",45.535724,-73.677127
+664,"306-2110, rue Caroline B�ique Montreal",45.533644,-73.673078
+665,"8743, rue Ren� Labelle Montreal",45.501689,-73.567256
+666,"204-8580, rue Raymond-Pelletier Montreal",45.552810,-73.632095
+667,"605-8500, rue Raymond-Pelletier Montreal",45.551757,-73.630882
+668,"610-1540, rue Henri Bourassa Ouest Montreal",45.537361,-73.678399
+669,"207-8500, rue Raymond Pelletier Montreal",45.551757,-73.630882
+670,"8545 Pierre Dupaigne Montreal",45.553091,-73.629192
+671,"1455, De Louvain Est Montreal",45.562686,-73.643382
+672,"508-8885, rue Marcel Cadieux Montreal",45.551015,-73.638815
+673,"11889, rue Lachapelle Montreal",45.525503,-73.712535
+674,"13-12000, rue Poincar� Montreal",45.501689,-73.567256
+675,"4-10111, rue Lajeunesse Montreal",45.552732,-73.659138
+676,"301-1591, rue Louis-Alphonse Venne Montreal",45.561664,-73.648942
+677,"10487, rue P�loquin Montreal",45.557894,-73.662624
+678,"4-1385, rue Antoine D�at Montreal",45.501689,-73.567256
+679,"10260, avenue P�loquin Montreal",45.556900,-73.659598
+680,"1-D-10685, avenue de Lorimier Montreal",45.573563,-73.656443
+681,"103-10210, rue Lajeunesse Montreal",45.553123,-73.661372
+682,"1173, place Henri Gauthier Montreal",45.554402,-73.631391
+683,"711-8500, rue Raymond Pelletier Montreal",45.551757,-73.630882
+684,"206-1310, rue Sauv� Est Montreal",45.501689,-73.567256
+685,"406-12152, rue Lachapelle Montreal",45.529193,-73.718912
+686,"502-11891, rue Lachapelle Montreal",45.525769,-73.712616
+687,"407-8865, rue Marcel-Cadieux Montreal",45.550874,-73.637760
+688,"7722-10800, avenue Millen Montreal",45.556724,-73.669320
+689,"11825 ave. Norwood, apt. 102 Montreal",45.548218,-73.684922
+690,"10819 Laverdure Montreal",45.552963,-73.672437
+691,"6-10275, rue St-Hubert Montreal",45.556319,-73.659704
+692,"209-1310, rue Sauv� Est Montreal",45.501689,-73.567256
+693,"504-8520, rue Raymond-Pelletier Montreal",45.551873,-73.631142
+694,"104-8520, rue Raymond Pelletier Montreal",45.551873,-73.631142
+695,"202-8865, rue Marcel Cadieux Montreal",45.550874,-73.637760
+696,"313-10355, avenue Bois-de-Boulogne Montreal",45.537920,-73.673545
+697,"10482, avenue d'Auteuil Montreal",45.551884,-73.666150
+698,"101-8956, rue Lajeunesse Montreal",45.547851,-73.643304
+699,"8563, rue Joseph Quintal Montreal",45.553717,-73.628603
+700,"102-8500, rue Raymond-Pelletier Montreal",45.551757,-73.630882
+701,"102-8540, rue Raymond-Pelletier Montreal",45.552205,-73.631428
+702,"8548, avenue Andr�-Grasset Montreal",45.501689,-73.567256
+703,"11825 Avenue Norwood Condo 209 Montreal",45.501689,-73.567256
+704,"8580, rue Raymond-Pelletier Montreal",45.552810,-73.632095
+705,"10400 P�loquin Montreal",45.557535,-73.661499
+706,"8623 Rue Pierre Dupaigne Montreal",45.553599,-73.630313
+707,"1124 Place Pierre Dupaigne Montreal",45.553149,-73.629678
+708,"10300 Avenue De Lorimier Montreal",45.571179,-73.651301
+709,"8539 Rue Pierre Dupaigne Montreal",45.553052,-73.629107
+710,"10685 Avenue De Lorimier 1C Montreal",45.573563,-73.656443
+711,"10173 Rue De La Roche Montreal",45.558633,-73.657018
+712,"8501 Rue Pierre Dupaigne Montreal",45.552801,-73.628568
+713,"8614 Rue René-Labelle Montreal",45.554720,-73.632931
+714,"1600 Rue Robert-Charbonneau App. #404 Montreal",45.535683,-73.676770
+715,"8663 Rue Joseph Quintal Montreal",45.554305,-73.629952
+716,"11825 Norwood #113 Montreal",45.548218,-73.684922
+717,"2085 Rue Fleury Est App. 102 Montreal",45.570959,-73.651560
+718,"7005 Avenue Rondeau Montreal",45.614056,-73.546737
+719,"7231, Avenue Alsace #101 Montreal",45.606048,-73.581947
+720,"7461, Av. Des Halles, #203 Montreal",45.596232,-73.566309
+721,"7275 Rue de Beaufort Condo 502 Montreal",45.501689,-73.567256
+722,"8840 blvd des GAleries d'anjou Montreal",45.602750,-73.577663
+723,"6923 Rondeau Avenue Montreal",45.613811,-73.546170
+724,"10051 Rue Promenade Des Riverains Condo 207 Montreal",45.501689,-73.567256
+725,"7261, avenue de l'Alsace, condo 301 Montreal",45.501689,-73.567256
+726,"8851, boulevard Les Galeries d'anjou, app. 3 Montreal",45.603084,-73.577586
+727,"207-7280, rue De Beaufort Montreal",45.595439,-73.562896
+728,"10300, boulevard Des Galeries d'Anjou, app. 205 Montreal",45.608940,-73.591701
+729,"6781, place d'Antioche, app. 6 Montreal",45.594070,-73.559568
+730,"7280, boulevard Des Galeries D'ajou, condo 704 Montreal",45.501689,-73.567256
+731,"7199, rue Impasse de L'Eau Vive Montreal",45.608107,-73.587911
+732,"10126, promenade des Riverins Montreal",45.606242,-73.590810
+733,"7101 St-Zotique Est, condo 301 Montreal",45.501689,-73.567256
+734,"7171, rue Impasse de la Boulance, app. 3 Montreal",45.608797,-73.589527
+735,"305-7280, rue de Beaufort Montreal",45.595439,-73.562896
+736,"7181 De L'Impasse De La Boulance app 6 Montreal",45.608797,-73.589527
+737,"7070 de l'Alsace Montreal",45.501689,-73.567256
+738,"7333 Pierre-Corneille app 312 Montreal",45.593978,-73.545653
+739,"7033 Rondeau Montreal",45.614265,-73.547218
+740,"8400 Boulevard les galeries d'anjou condo 301 Montreal",45.501689,-73.567256
+741,"7200, Boul. des Galeries d'Anjou #1005 Montreal",45.596250,-73.560630
+742,"7000 Av. Giraud, Apt 104 Montreal",45.602535,-73.581226
+743,"7421 des Halles #303 Montreal",45.596084,-73.565410
+744,"7060 Ave  Giraud  apt.203 Montreal",45.603045,-73.579971
+745,"7285 Beaufort app 705 Montreal",45.595743,-73.562604
+746,"3-7181, impasse de la Boulance Montreal",45.608937,-73.589423
+747,"7285 De Beaufort Montreal",45.595743,-73.562604
+748,"6850 Blvd Des Roseraies App 504 Montreal",45.597639,-73.556547
+749,"6-6780, rue d'Antioche Montreal",45.594293,-73.559431
+750,"202-7091, Marie-G-Lajoie Montreal",45.605129,-73.586200
+751,"807-7320, Impasse St-Zotique Montreal",45.597447,-73.558141
+752,"7188, impasse de l'Eau Vive Montreal",45.608347,-73.587679
+753,"5544, rue de Contrecoeur Montreal",45.613492,-73.534831
+754,"504-7111, rue Belanger Montreal",45.596068,-73.564252
+755,"303-6935, avenue de Champchevrier Montreal",45.600670,-73.570942
+756,"209-10051, Promenade des Riverains Montreal",45.605667,-73.589461
+757,"511-7333, rue Pierre Corneille Montreal",45.593978,-73.545653
+758,"7227 M-B Jodoin Montreal",45.606753,-73.583895
+759,"205-7070, avenue de l'Alsace Montreal",45.603576,-73.582505
+760,"101-7231, avenue Alsace Montreal",45.606048,-73.581947
+761,"7009, avenue Rondeau Montreal",45.614086,-73.546806
+762,"102-7280, avenue de Beaufort Montreal",45.595439,-73.562896
+763,"408-7200, avenue M.B. Jodoin Montreal",45.606560,-73.583423
+764,"201-7001, avenue Marie-G Lajoie Montreal",45.604905,-73.586312
+765,"206-7415, rue Beaubien Montreal",45.597905,-73.554642
+766,"501-6824, boulevard des Roseraies Montreal",45.597132,-73.556008
+767,"705-6901, boulevard des Roseraies Montreal",45.598025,-73.555934
+768,"604-7000, avenue Giraud Montreal",45.602535,-73.581226
+769,"606-6900, boulevard des Roseraies Montreal",45.598100,-73.556189
+770,"606-7030, route Giraud Montreal",45.602604,-73.580608
+771,"10146, promenade des Riverains Montreal",45.606337,-73.591033
+772,"202-7031, avenue Lionnaise Montreal",45.601487,-73.579792
+773,"301-7280, rue de Beaufort Montreal",45.595439,-73.562896
+774,"403-7340, impasse Saint-Zotique Montreal",45.597296,-73.557569
+775,"403-10350, boulevard les Galeries d'Anjou Montreal",45.609353,-73.591924
+776,"103-7071, rue Saint-Zotique Est Montreal",45.594001,-73.561116
+777,"604-6880, boulevard des Roseraies Montreal",45.597897,-73.556003
+778,"7051-408 avenue Lionnaise Montreal",45.602243,-73.579098
+779,"56-7075, rue Bombardier Montreal",45.606114,-73.587548
+780,"301-7081, rue Saint-Zotique Est Montreal",45.594204,-73.560981
+781,"302-8880, boulevard des Galeries d'Anjou Montreal",45.603029,-73.578288
+782,"107-7275, avenue de Beaufort Montreal",45.595528,-73.561664
+783,"8851 Boulevard Galeries d'Anjou App. 2 Montreal",45.603084,-73.577586
+784,"210-9500, boulevard des Galeries d'Anjou Montreal",45.605991,-73.585352
+785,"10350 blv des Galeries d'Anjou Montreal",45.609353,-73.591924
+786,"7441 Rue Des Halles App. 504 Montreal",45.596307,-73.566098
+787,"7280 rue LES GALERIES D'ANJOU Montreal",45.596496,-73.562305
+788,"5963 de Terrebonne Street Montreal",45.473194,-73.629509
+789,"4373 Earnscliffe Avenue Montreal",45.478066,-73.622443
+790,"4687 Avenue Victoria Montreal",45.485448,-73.617688
+791,"3289 Avenue Van Horne Montreal",45.503358,-73.630271
+792,"4373 Avenue Beaconsfield Montreal",45.470473,-73.629511
+793,"6668 ave. de Terrebonne App. 301 Montreal",45.464563,-73.637013
+794,"5966 Rue De Terrebonne Montreal",45.473021,-73.629622
+795,"5453 Rue Duquette Montreal",45.476458,-73.619929
+796,"4474 Old Orchard Avenue Montreal",45.477587,-73.625170
+797,"2310 ave. Regent Montreal",45.468804,-73.616724
+798,"4453 Rue Earnscliffe Montreal",45.478640,-73.623714
+799,"4554 Av. Old Orchard Montreal",45.478105,-73.626622
+800,"3295 Ridgewood Apt.1 Montreal",45.494468,-73.609724
+801,"6668, rue de Terrebonne, app. 201 Montreal",45.464563,-73.637013
+802,"2237 boul. Grand Montreal",45.465329,-73.620377
+803,"5164, avenue Westbury Montreal",45.485633,-73.629104
+804,"2235 boul. Grand Montreal",45.465316,-73.620347
+805,"2349 ave. Regent Montreal",45.469207,-73.617257
+806,"4958, avenue Grosvenor Montreal",45.488033,-73.621758
+807,"4358, rue Coolbrook Montreal",45.478450,-73.621909
+808,"2151, rue Harvard Montreal",45.469497,-73.612444
+809,"209-2151, avenue Harvard Montreal",45.469497,-73.612444
+810,"2694, av de Soissons Montreal",45.507377,-73.623069
+811,"15-3360, rue Ridgewood Montreal",45.494147,-73.610549
+812,"4803, avenue Melrose Montreal",45.476072,-73.631102
+813,"495, rue Le Moyne, app. 2 Montreal",45.531171,-73.503967
+814,"5497 Coolbrook Avenue Montreal",45.485805,-73.636588
+815,"2150, avenue Oxford, app. 307 Montreal",45.469875,-73.611946
+816,"105-3465, rue Ridgewood Montreal",45.493474,-73.612380
+817,"705-4950, rue Des La Savane Montreal",45.500091,-73.652880
+818,"4932, avenue Connaught Montreal",45.456839,-73.650097
+819,"5968, rue De Terrebonne Montreal",45.473001,-73.629640
+820,"6058, rue DeTerrebonne Montreal",45.472506,-73.630092
+821,"4885, rue Queen Mary, condo 8 Montreal",45.501689,-73.567256
+822,"7090  ave. Chester Montreal",45.463681,-73.650812
+823,"7092 ave. Chester Montreal",45.463658,-73.650832
+824,"2908 ch. de Bedford  Unit� 7 Montreal",45.501689,-73.567256
+825,"2135 Hingston #104 Montreal",45.465903,-73.616979
+826,"3377 Jean-Brillant Montreal",45.497235,-73.620951
+827,"4455 avenue Bourret app 404 Montreal",45.495856,-73.632493
+828,"6-2645, avenue Barclay Montreal",45.511870,-73.627377
+829,"5615 Canterbury Montreal",45.505608,-73.619749
+830,"5025 Rue Par�, Unit� 109 Montreal",45.501689,-73.567256
+831,"306-6840, avenue Fielding Montreal",45.465577,-73.644594
+832,"16-3360, avenue Ridgewood Montreal",45.494147,-73.610549
+833,"3070 rue Linton Montreal",45.505915,-73.626536
+834,"3465, rue Ridgewood apt 306 Montreal",45.493474,-73.612380
+835,"2515 Van Horne Montreal",45.510368,-73.624114
+836,"306-4911 Chemin de la C�te-des-Neiges Montreal",45.495615,-73.616358
+837,"3151 Edouard-Montpetit app 11 Montreal",45.500635,-73.621556
+838,"4356 Melrose Avenue Montreal",45.473725,-73.625925
+839,"2515 ave. Van Horne  Appt.15 Montreal",45.510368,-73.624114
+840,"6240 Deacon Montreal",45.513253,-73.622512
+841,"5390 Decelles Montreal",45.498684,-73.621557
+842,"2237 Madison Condo 304 Montreal",45.501689,-73.567256
+843,"4976 avenue Victoria Montreal",45.487597,-73.622579
+844,"2448, avenue Montclair Montreal",45.461625,-73.629793
+845,"6931 rue Sherbrooke Ouest # 402 Montreal",45.460316,-73.635871
+846,"3297 Van Horne Montreal",45.503269,-73.630144
+847,"6116 de Terrebonne Montreal",45.471525,-73.630713
+848,"208-4877, avenue Wilson Montreal",45.477569,-73.632091
+849,"203-4877, avenue Wilson Montreal",45.477569,-73.632091
+850,"106-4950, rue de la Savane Montreal",45.500091,-73.652880
+851,"5135 Avenue Earnscliffe Montreal",45.482360,-73.631466
+852,"4790 Rue C�te-des-Neiges app 16 Montreal",45.495332,-73.611808
+853,"5627 Wilderton Montreal",45.507782,-73.618011
+854,"4375, rue Melrose Avenue Montreal",45.471367,-73.620627
+855,"117-5025, rue Par� Montreal",45.501689,-73.567256
+856,"3274 - 3276 - 3280 Rue Fendall Montreal",45.498497,-73.620378
+857,"503-4950, rue De La Savane Montreal",45.500091,-73.652880
+858,"4046, avenue de Vend�me Montreal",45.479404,-73.614810
+859,"4633, avenue Harvard Montreal",45.477140,-73.629604
+860,"5137, Earnscliffe Montreal",45.482379,-73.631508
+861,"308-2151, rue Harvard Montreal",45.469497,-73.612444
+862,"203-4000, avenue Benny Montreal",45.465625,-73.629519
+863,"4070, avenue Grey Montreal",45.480310,-73.614652
+864,"1-6445, boulevard de Maisonneuve O. Montreal",45.462811,-73.624841
+865,"4095, avenue Northcliffe Montreal",45.478566,-73.616211
+866,"302-4545, avenue Girouard Montreal",45.478728,-73.625478
+867,"4506, avenue Marcil Montreal",45.477223,-73.626179
+868,"4393, avenue Marcil Montreal",45.476567,-73.624318
+869,"3734 boulevard Edouard Montpetit Montreal",45.496778,-73.624765
+870,"4772, Avenue Grosvenor Montreal",45.486645,-73.618696
+871,"4520, rue Wilson Montreal",45.475494,-73.628163
+872,"207-6668, rue de Terrebonne Montreal",45.464563,-73.637013
+873,"4950, avenue Grosvenor Montreal",45.488006,-73.621539
+874,"5132, avenue Bessborough Montreal",45.470144,-73.642112
+875,"205-3465, rue Ridgewood Montreal",45.493474,-73.612380
+876,"5512, avenue McLynn Montreal",45.485066,-73.638231
+877,"4552 Av. Old Orchard Montreal",45.478191,-73.626486
+878,"3532, avenue Prud'Homme Montreal",45.474607,-73.611885
+879,"4869, rue Patricia Montreal",45.457800,-73.647738
+880,"102-2069, avenue Wilson Montreal",45.468665,-73.612362
+881,"4594, avenue d'Oxford Montreal",45.477223,-73.628301
+882,"4602, rue Harvard Montreal",45.476765,-73.629144
+883,"4843, avenue de Melrose Montreal",45.476426,-73.631896
+884,"303-3860, Boulevard Decarie Montreal",45.476965,-73.615016
+885,"4150, avenue Benny Montreal",45.466351,-73.630116
+886,"7-2908, chemin Bedford Montreal",45.510094,-73.631531
+887,"403-5780, avenue Decelles Montreal",45.501171,-73.627267
+888,"301-2237, Avenue Madison Montreal",45.464828,-73.621411
+889,"5460 et 5462, rue Duquette Montreal",45.476291,-73.619573
+890,"405-2500, chemin Bates Montreal",45.514285,-73.630148
+891,"4442, avenue Harvard Montreal",45.475494,-73.626372
+892,"4765 rue St-Kevin #1 Montreal",45.492008,-73.630522
+893,"1-6770, avenue Darlington Montreal",45.510335,-73.631098
+894,"305-4900, avenue Wilson Montreal",45.477554,-73.632600
+895,"4393, avenue Girouard Montreal",45.477731,-73.623196
+896,"3-3239, boulevard Edouard Montpetit Montreal",45.509293,-73.613884
+897,"4852, avenue Victoria Montreal",45.486585,-73.620573
+898,"300-3627, boulevard Decarie Montreal",45.476294,-73.613012
+899,"402-3615, avenue Ridgewood Montreal",45.493016,-73.612983
+900,"5218, rue Clanranald Montreal",45.482054,-73.633601
+901,"203-2150, avenue Oxford Montreal",45.469875,-73.611946
+902,"5404, avenue Coolbrook Montreal",45.484729,-73.634875
+903,"303-3445, avenue Ridgewood Montreal",45.493995,-73.612818
+904,"413-5025, rue Par� Montreal",45.501689,-73.567256
+905,"4827 avenue rosedale Montreal",45.464054,-73.641455
+906,"5-2850, avenue Willowdale Montreal",45.503740,-73.619677
+907,"2218, avenue Harvard Montreal",45.469815,-73.613393
+908,"201-3425, avenue Ridgewood Montreal",45.494351,-73.612246
+909,"17-3360, avenue Ridgewood Montreal",45.494147,-73.610549
+910,"5407, rue Duquette Montreal",45.476987,-73.619192
+911,"5144, avenue Coolbrooke Montreal",45.482932,-73.630865
+912,"407-4239, rue Jean-Talon Ouest Montreal",45.529660,-73.622719
+913,"207-2885, avenue Barclay Montreal",45.511933,-73.627140
+914,"5025, rue Par� Montreal",45.501689,-73.567256
+915,"4938, avenue Connaught Montreal",45.456936,-73.650105
+916,"412-7501, rue Mountain Sights Montreal",45.496793,-73.652226
+917,"4447 Wilson Montreal",45.475179,-73.626730
+918,"8-2918, rue Bedford Montreal",45.510094,-73.631531
+919,"3126, rue Fendall Montreal",45.499992,-73.619252
+920,"2212, avenue Harvard Montreal",45.469771,-73.613299
+921,"5025, rue Par�, unit� 402 Montreal",45.501689,-73.567256
+922,"6-4765, rue Saint-Kevin Montreal",45.492008,-73.630522
+923,"517-5025, rue Par� Montreal",45.501689,-73.567256
+924,"8-4970, chemin de la C�te-des-Neiges Montreal",45.483477,-73.617690
+925,"6-3975, boulevard Cavendish Montreal",45.464518,-73.630683
+926,"6241, chemin Hillsdale Montreal",45.510789,-73.623868
+927,"410-5025, rue Par� Montreal",45.501689,-73.567256
+928,"1208-4975, rue Jean-Talon-Ouest Montreal",45.497259,-73.650172
+929,"6060, rue de Terrebonne Montreal",45.472460,-73.630132
+930,"2273, avenue Harvard Montreal",45.470367,-73.614217
+931,"4509 Avenue wilson Montreal",45.475550,-73.627943
+932,"6644 Avenue Somerled Condo 111 Montreal",45.501689,-73.567256
+933,"5001 Avenue Victoria Montreal",45.487780,-73.622910
+934,"4386 Avenue Old Orchard Montreal",45.476961,-73.623774
+935,"4506 Rue Harvard Montreal",45.475991,-73.627479
+936,"4800 Avenue Westmore Montreal",45.457969,-73.646179
+937,"5961 Rue Terrebonne Montreal",45.473314,-73.629401
+938,"4352 Rue Coolbrook Montreal",45.478528,-73.621667
+939,"4405 Rue Marcil Montreal",45.476535,-73.624613
+940,"4829 Westmore Montreal",45.458120,-73.646494
+941,"4831 Westmore Montreal",45.458279,-73.646474
+942,"3600 Avenue Van Horne Condo 313 Montreal",45.501689,-73.567256
+943,"5877 Rue de Terrebonne Montreal",45.473442,-73.629287
+944,"4383, 4381 Harvard Avenue Montreal",45.475160,-73.625272
+945,"4373 Avenue de Melrose Montreal",45.473956,-73.626076
+946,"3145 Avenue Linton Condo 9 Montreal",45.501689,-73.567256
+947,"7928 Kingsley Rd Road App. 105 Montreal",45.501689,-73.567256
+948,"5720 Boulevard Cavendish Montreal",45.474873,-73.659398
+949,"1706-5700, boulevard Cavendish Montreal",45.474547,-73.659103
+950,"31, rue Ainslie Montreal",45.513860,-73.614754
+951,"1004-7905, chemin de la C�te Saint-Luc Montreal",45.460309,-73.660281
+952,"180 Rue Ath�nes Montreal",45.487743,-73.806684
+953,"402-110, Barnett Montreal",45.478800,-73.837802
+954,"337, rue Hyman Montreal",45.491910,-73.797600
+955,"114 Athenes Montreal",45.488506,-73.805862
+956,"9606 Ceres Montreal",45.501903,-73.786477
+957,"415 Barcelone Montreal",45.486446,-73.803123
+958,"289, rue de Barcelone Montreal",45.485526,-73.805115
+959,"176, rue Donnacona Montreal",45.486835,-73.809253
+960,"233, rue de Barcelone Montreal",45.485941,-73.805722
+961,"305-4100, boulevard des Sources Montreal",45.446697,-73.779027
+962,"205-110, rue Barnett Montreal",45.478800,-73.837802
+963,"301-4025, boulevard des Sources Montreal",45.492155,-73.805238
+964,"214, rue Dauphin Montreal",45.480446,-73.835404
+965,"323, rue de Barcelone Montreal",45.485615,-73.804915
+966,"4020 Boul. des Source Street North Condo 305 Montreal",45.501689,-73.567256
+967,"847C Bord du Lac Road Montreal",45.438847,-73.741508
+968,"855A Bord du Lac/ Lakeshore Montreal",45.501689,-73.567256
+969,"5-169, boulevard Bouchard Montreal",45.444620,-73.721731
+970,"201-335, avenue Louise-Lamy Montreal",45.444214,-73.744382
+971,"306-910, avenue Dawson Montreal",45.441180,-73.743678
+972,"855, chemin Bord du Lac, condo B Montreal",45.501689,-73.567256
+973,"202-480, boulevard Galland Montreal",45.447376,-73.724556
+974,"3305-479, rue Mousseau-Vermette Montreal",45.501689,-73.567256
+975,"490-207, boulevard Galland Montreal",45.448036,-73.724710
+976,"301-1015, rue William Montreal",45.495627,-73.561026
+977,"950, rue Notre-Dame Ouest Montreal",45.496710,-73.562056
+978,"503-400, rue de l'Inspecteur Montreal",45.496313,-73.560727
+979,"416-400, rue de l'Inspecteur Montreal",45.496313,-73.560727
+980,"215-950, rue Notre-Dame Ouest Montreal",45.496710,-73.562056
+981,"402-400, rue de l'Inspecteur Montreal",45.496313,-73.560727
+982,"611-950, rue Notre-Dame Ouest Montreal",45.496710,-73.562056
+983,"127-950, rue Notre-Dame Ouest Montreal",45.496710,-73.562056
+984,"401-1015, rue William Montreal",45.495627,-73.561026
+985,"833-950, rue Notre-Dame Ouest Montreal",45.496710,-73.562056
+986,"528-950, rue Notre-Dame Ouest Montreal",45.496710,-73.562056
+987,"216-400, rue de l'Inspecteur Montreal",45.496313,-73.560727
+988,"104-1661, rue Notre-Dame Ouest Montreal",45.489617,-73.567858
+989,"2a-2230, rue Notre-Dame ouest Montreal",45.484722,-73.572007
+990,"304-1661, rue Notre-Dame Ouest Montreal",45.489617,-73.567858
+991,"429-1010, rue William Montreal",45.495350,-73.560909
+992,"835-950, rue Notre-Dame Ouest Montreal",45.496710,-73.562056
+993,"1003-1085, rue Smith Montreal",45.492783,-73.556412
+994,"1411-1085, rue Smith Montreal",45.492783,-73.556412
+995,"107-240, rue Murray Montreal",45.491771,-73.556985
+996,"622-400, rue de l'Inspecteur Montreal",45.496313,-73.560727
+997,"612-225, rue de la Montagne Montreal",45.492079,-73.560233
+998,"423-1010, rue William Montreal",45.495350,-73.560909
+999,"6-1495, rue St-Jacques Montreal",45.492059,-73.569653
+1000,"717-400, rue de l'Inspecteur Montreal",45.496313,-73.560727
+1001,"305-300, rue Ann Montreal",45.495415,-73.559355
+1002,"842-950, rue Notre-Dame Ouest Montreal",45.496710,-73.562056
+1003,"308-225, rue de la Montagne Montreal",45.492079,-73.560233
+1004,"16680 boul. Gouin O. Montreal",45.473377,-73.874531
+1005,"168, rue Manoir Montreal",45.487862,-73.873842
+1006,"104-17010, boulevard Gouin Ouest Montreal",45.550030,-73.676206
+1007,"3-157, avenue du Manoir Montreal",45.487104,-73.872705
+1008,"230 Chemin du Golf Montreal",45.467829,-73.547655
+1009,"210 Rue Ch. du Golf Montreal",45.467829,-73.547655
+1010,"139 Place du soleil Montreal",45.465177,-73.542894
+1011,"760 Marie Le-Ber, suite 602 Montreal",45.464285,-73.549444
+1012,"App. 405, 200 des Sommets Montreal",45.449929,-73.548713
+1013,"315-300, avenue des Sommets Montreal",45.449728,-73.549468
+1014,"220 Chemin du Golf Montreal",45.467733,-73.547363
+1015,"201 Chemin du Club Marin Montreal",45.460401,-73.555840
+1016,"6 D-120, rue Ferland Montreal",45.462499,-73.541408
+1017,"579 Rue de la Noue Montreal",45.461731,-73.549787
+1018,"230 Chemin du Golf Condo 610 Montreal",45.501689,-73.567256
+1019,"777 De Lanoue Montreal",45.726367,-73.465903
+1020,"503-300, avenue des Sommets Montreal",45.449728,-73.549468
+1021,"60 rue William Paul Montreal",45.465663,-73.552096
+1022,"312-210, chemin du golf Montreal",45.468064,-73.547315
+1023,"80 Rue Berlioz app 1503 Montreal",45.464499,-73.539653
+1024,"598 Rue De La M�tairie Montreal",45.462866,-73.549642
+1025,"755 Rue De La Noue App. 402 Montreal",45.462881,-73.547883
+1026,"682 Rue de la M�tairie Montreal",45.463228,-73.551317
+1027,"30 Rue Berlioz App. 308 Montreal",45.464947,-73.537052
+1028,"515, rue de la M�tairie Montreal",45.462513,-73.551027
+1029,"1106-300, rue Des Sommets Montreal",45.449728,-73.549468
+1030,"80 rue Berlioz App. J3 Montreal",45.464499,-73.539653
+1031,"51 Place Du Soleil Montreal",45.464842,-73.541374
+1032,"760 Chemin Marie-Le Ber Condo 716 Montreal",45.501689,-73.567256
+1033,"570 de la Noue Montreal",45.461992,-73.549265
+1034,"200 Rue Hall Condo 104 Montreal",45.501689,-73.567256
+1035,"540 Rue de La Noue Montreal",45.461879,-73.550158
+1036,"201 chemin de la Pointe-Sud Montreal",45.449545,-73.553352
+1037,"60 Rue William-Paul App. 706 Montreal",45.465663,-73.552096
+1038,"506-300, rue Des Sommets Montreal",45.449728,-73.549468
+1039,"207-150, chemin de la Pointe Sud Montreal",45.447678,-73.554234
+1040,"60, rue William-Paul Montreal",45.465663,-73.552096
+1041,"Le Vistal II 250 ch. de la Pointe Sud App. 1001 Montreal",45.501689,-73.567256
+1042,"760, rue Marie Leber, condo 110 Montreal",45.501689,-73.567256
+1043,"345 DeLanoue Montreal",45.462068,-73.553753
+1044,"1200, chemin du Golf, app. 1106 Montreal",45.462668,-73.555765
+1045,"60, rue Berlioz, app. 1105 Montreal",45.464867,-73.538597
+1046,"60, Berlioz, condo 1505 Montreal",45.501689,-73.567256
+1047,"150, rue Berlioz, condo 125 Montreal",45.501689,-73.567256
+1048,"248 Corot, Suite 112 Montreal",45.458934,-73.543019
+1049,"60 Rue Berlioz App. 706 Montreal",45.464867,-73.538597
+1050,"565, rue De La M�tairie Montreal",45.462598,-73.549870
+1051,"301, chemin Club Marin, app. 1503 Montreal",45.458990,-73.555135
+1052,"587 rue De La noue Montreal",45.462054,-73.548630
+1053,"103, place du Soleil Montreal",45.465467,-73.542067
+1054,"150, rue Berlioz, app. 635 Montreal",45.461018,-73.540461
+1055,"501 Rue De La Noue Montreal",45.461804,-73.551365
+1056,"777 De La Noue # 302 Montreal",45.462881,-73.547883
+1057,"703-300, rue des sommets Montreal",45.449728,-73.549468
+1058,"393, rue de la Noue Montreal",45.461828,-73.552822
+1059,"539, de la Metairie Montreal",45.462535,-73.550468
+1060,"541, rue de La Noue Montreal",45.461820,-73.550565
+1061,"523 de la Noue Montreal",45.461807,-73.550847
+1062,"60, rue Berlioz Montreal",45.464867,-73.538597
+1063,"301-150 Berlioz Montreal",45.461018,-73.540461
+1064,"200 Av. Des sommets # 904 Montreal",45.449929,-73.548713
+1065,"49, Place du Soleil # 302 Montreal",45.464641,-73.541920
+1066,"60 rue Berlioz  Appt. 1106 Montreal",45.464867,-73.538597
+1067,"201 Chemin du Club-Marin Montreal",45.460401,-73.555840
+1068,"601 de la M�tairie Montreal",45.463064,-73.549727
+1069,"759, Marie-Le Ber Montreal",45.464004,-73.550289
+1070,"201 Chemin de la Pointe Sud  # 305 Montreal",45.449545,-73.553352
+1071,"90 rue Berlioz, PH6 Montreal",45.501689,-73.567256
+1072,"212 Des Colibris Montreal",45.460514,-73.547597
+1073,"1200 Ch Du Golf App 408 Montreal",45.462668,-73.555765
+1074,"2307-150, chemin De La Pointe Sud Montreal",45.447678,-73.554234
+1075,"369, rue de la Noue Montreal",45.461840,-73.553329
+1076,"2 Jardins Des Vosges, Montreal",45.450466,-73.549170
+1077,"668 Rue De La M�tairie Montreal",45.463226,-73.551154
+1078,"200 Av. Des sommets # 405 Montreal",45.449929,-73.548713
+1079,"150 rue Berlioz app 118 Montreal",45.461018,-73.540461
+1080,"150 Berlioz #901 Montreal",45.461018,-73.540461
+1081,"141 Place du Soleil Montreal",45.465061,-73.542785
+1082,"200 Des Sommets #905 Montreal",45.449929,-73.548713
+1083,"607-300, Des Sommets Montreal",45.449728,-73.549468
+1084,"760 Ch. Marie Leber Montreal",45.464285,-73.549444
+1085,"777 de la Noue #308 Montreal",45.462881,-73.547883
+1086,"337-150, Berlioz Montreal",45.461018,-73.540461
+1087,"760 Chemin Marie-Leber Montreal",45.501689,-73.567256
+1088,"557 de la Noue Montreal",45.461839,-73.550315
+1089,"131 Place Du Soleil Montreal",45.465194,-73.542588
+1090,"760 Chemin Marie Leber Condo 410 Montreal",45.501689,-73.567256
+1091,"60 Rue Berlioz Condo 307 Montreal",45.501689,-73.567256
+1092,"515-210, chemin du golf Montreal",45.468064,-73.547315
+1093,"150, Berlioz, #338 Montreal",45.461018,-73.540461
+1094,"51, Berlioz #302 Montreal",45.464695,-73.540488
+1095,"682 de la Métairie Montreal",45.463228,-73.551317
+1096,"2301-150, chemin de la Pointe Sud Montreal",45.447678,-73.554234
+1097,"250 Chemin de la Pointe Sud #705 Montreal",45.448069,-73.554868
+1098,"201 Chemin de la Pointe Sud #504 Montreal",45.449545,-73.553352
+1099,"230 Ch Du Golf #503 Montreal",45.467829,-73.547655
+1100,"300 Avenue des Sommets #1415 Montreal",45.449728,-73.549468
+1101,"302-51 Place du Soleil Montreal",45.464842,-73.541374
+1102,"113, Place du Soleil Montreal",45.465439,-73.542224
+1103,"49 Rue Terry Fox Montreal",45.466225,-73.539793
+1104,"503-210, chemin du Golf Montreal",45.468064,-73.547315
+1105,"679, rue de la Metairie Montreal",45.462984,-73.551262
+1106,"705-150, chemin de la Pointe-Sud Montreal",45.447678,-73.554234
+1107,"539 De La M�tairie Montreal",45.462535,-73.550468
+1108,"410-201, chemin de la Pointe Sud Montreal",45.449545,-73.553352
+1109,"1204-150, chemin de la Pointe-Sud Montreal",45.447678,-73.554234
+1110,"760 Rue Marie Leber Unit� 222 Montreal",45.501689,-73.567256
+1111,"1507-200, rue Hall Montreal",45.452063,-73.547731
+1112,"585, rue de la M�taierie Montreal",45.501689,-73.567256
+1113,"902-30, rue Berlioz Montreal",45.464947,-73.537052
+1114,"1516-300, avenue des Sommets Montreal",45.449728,-73.549468
+1115,"1103-100, avenue des Sommets Montreal",45.450555,-73.548627
+1116,"4, place des Vosges Montreal",45.450466,-73.549170
+1117,"613-760, chemin Marie-Le Ber Montreal",45.464285,-73.549444
+1118,"410-210, chemin du Golf Montreal",45.468064,-73.547315
+1119,"93, place du Soleil Montreal",45.465405,-73.541936
+1120,"1104-200, avenue des Sommets Montreal",45.449929,-73.548713
+1121,"2-205, place des Jardins des Vosges Montreal",45.450466,-73.549170
+1122,"117, place du Soleil Montreal",45.465410,-73.542266
+1123,"210, chemin du golf Montreal",45.468064,-73.547315
+1124,"201, chemin de la Pointe-Sud Montreal",45.449545,-73.553352
+1125,"510-230, chemin du Golf Montreal",45.467829,-73.547655
+1126,"502-210, chemin du Golf Montreal",45.468064,-73.547315
+1127,"548, rue de la M�tairie Montreal",45.462505,-73.550529
+1128,"1005-100, avenue des Sommets Montreal",45.450555,-73.548627
+1129,"611-201, chemin du Club Marin Montreal",45.460401,-73.555840
+1130,"60, rue Berlioz, unit� 1604 Montreal",0.000000,0.000000
+1131,"541, rue de la M�tairie Montreal",45.462538,-73.550422
+1132,"201-57, rue Berlioz Montreal",45.464421,-73.541058
+1133,"702-230, chemin du golf Montreal",45.467829,-73.547655
+1134,"622, rue de la M�tairie Montreal",45.463439,-73.550141
+1135,"600, rue de la Noue Montreal",45.462070,-73.548696
+1136,"702-1200, chemin du Golf Montreal",45.462668,-73.555765
+1137,"709, chemin Marie le Ber Montreal",45.463495,-73.551560
+1138,"210 chemin du Golf Montreal",45.468064,-73.547315
+1139,"202-55, rue Berlioz Montreal",45.464354,-73.540670
+1140,"160-150, rue berlioz Montreal",45.461018,-73.540461
+1141,"60, rue William Paul Montreal",45.465663,-73.552096
+1142,"325-111, chemin de la Pointe-Nord Montreal",45.473018,-73.539096
+1143,"109-760, chemin Marie le Ber Montreal",45.464285,-73.549444
+1144,"300 Av. Des Sommets PH106 Montreal",45.501689,-73.567256
+1145,"163, place du Soleil Montreal",45.464784,-73.543162
+1146,"1604-250, chemin de la Pointe-Sud Montreal",45.448069,-73.554868
+1147,"607-200, rue Berlioz Montreal",45.459668,-73.543729
+1148,"1002-50, rue Berlioz Montreal",45.465671,-73.538304
+1149,"216-760, chemin Marie le Ber Montreal",45.464285,-73.549444
+1150,"559 De La Métairie Montreal",45.462578,-73.550007
+1151,"302-69, rue Berlioz Montreal",45.463562,-73.541880
+1152,"911-300, rue des Sommets Montreal",45.449728,-73.549468
+1153,"204-210, chemin du Golf Montreal",45.468064,-73.547315
+1154,"63, rue Terry-Fox Montreal",45.466189,-73.540030
+1155,"607-300, avenue des Sommets Montreal",45.449728,-73.549468
+1156,"53 Rue Berlioz Montreal",45.464674,-73.540702
+1157,"543 Grande Allée Montreal",45.464515,-73.548316
+1158,"404-201, chemin Du Golf Montreal",45.467097,-73.546983
+1159,"201 Chemin du la Pointe Sud Montreal",45.449545,-73.553352
+1160,"709 chemin Marie Le Ber Montreal",45.463495,-73.551560
+1161,"Jardins Des Vosges Montreal",45.450466,-73.549170
+1162,"181 Terry Fox Street Montreal",45.465216,-73.540536
+1163,"60 Rue William-Paul Montreal",45.465663,-73.552096
+1164,"760 Rue Marie Le Ber App. 805 Montreal",45.464285,-73.549444
+1165,"760 Rue Marie-Le-Ber APP 606 Montreal",45.464285,-73.549444
+1166,"1200, Du Golf, app 1103 Montreal",45.462668,-73.555765
+1167,"1200 Rue chemin du golf App. 1201 Montreal",45.467829,-73.547655
+1168,"155 Place du Soleil Montreal",45.464821,-73.543131
+1169,"305-17150, boulevard Hymus Montreal",45.454209,-73.833942
+1170,"809 Gameroff Street Unit 6 Montreal",45.445307,-73.693578
+1171,"710 Avenue 36i�me Condo 301 Montreal",45.501689,-73.567256
+1172,"4622 Rue Richard Hewton Montreal",45.436943,-73.707611
+1173,"3476 Rue Anatole-Carignan Montreal",45.446437,-73.696339
+1174,"4640 Rue Richard-Hewton Montreal",45.437788,-73.707726
+1175,"4666 Richard-Hewton Street Condo 2 Montreal",45.501689,-73.567256
+1176,"125 45 �me Avenue Montreal",45.501689,-73.567256
+1177,"3400 Rue PROVOST App. 301 Montreal",45.442080,-73.694739
+1178,"730, 32�me Avenue Montreal",45.501689,-73.567256
+1179,"860 5th Avenue Avenue App. 5 Montreal",45.516545,-73.597261
+1180,"650 Terrasse du Ruisseau App. 201 Montreal",45.443297,-73.695017
+1181,"779, 32e avenue Montreal",45.442317,-73.692791
+1182,"3393 J A Descarries Montreal",45.445335,-73.695977
+1183,"676 36 Avenue East Condo 302 Montreal",33.632390,-112.022207
+1184,"3370 Rue Provost App. 302 Montreal",45.442078,-73.694283
+1185,"795, 1�re avenue, app. 412 Montreal",45.444348,-73.663784
+1186,"301-3520, rue Provost Montreal",45.442094,-73.696166
+1187,"125, 45i�me avenue, app. 114 Montreal",45.563524,-73.688395
+1188,"4626, rue Richard Hewton Montreal",45.437131,-73.707637
+1189,"677, terrasse Du Ruisseau, condo 201 Montreal",45.501689,-73.567256
+1190,"795, 1 re avenue, app. 402 Montreal",45.444348,-73.663784
+1191,"3520, rue Provost, condo 302 Montreal",45.501689,-73.567256
+1192,"2-4666, Richard Hewton Montreal",45.437788,-73.708828
+1193,"3520 St Joseph apt.7 Montreal",45.433944,-73.695623
+1194,"677 Terrasse du Ruisseau # 102 Montreal",45.442698,-73.695180
+1195,"648 36ieme Ave, App A01 Montreal",45.497055,-73.963783
+1196,"2000, St-Joseph #201 Montreal",45.433138,-73.682472
+1197,"641 Rue Terrasse Du Ruisseau App.202 Montreal",45.510429,-73.753897
+1198,"3485 Fort Rolland, Condo 1 Montreal",45.501689,-73.567256
+1199,"781 32e Avenue #2 Montreal",45.655755,-73.491114
+1200,"689 Terrasse du Ruisseau #302 Montreal",45.442695,-73.695542
+1201,"380 10ieme Avenue App 503 Montreal",45.436760,-73.672483
+1202,"684 Terrasse du Ruisseau Montreal",45.442725,-73.695059
+1203,"330 12e Ave unit� #3 Montreal",0.000000,0.000000
+1204,"203-3145 Rue Provost Montreal",45.441771,-73.691771
+1205,"795 1e Ave #302 Montreal",45.634600,-73.498891
+1206,"3270 Provost #3 Montreal",45.442042,-73.693703
+1207,"3475 Rue du Fort Rolland #7 Montreal",45.434711,-73.695334
+1208,"4540 boul. St. Joseph no. 4 Montreal",45.437034,-73.706736
+1209,"302-715, 36i�me avenue Montreal",45.501689,-73.567256
+1210,"11e Avenue Montreal",45.440100,-73.673880
+1211,"4500 App. 8 Blvd. St-Joseph Montreal",45.436808,-73.706033
+1212,"6-427, 21i�me  avenue Montreal",45.501689,-73.567256
+1213,"A-57, 7e Avenue Montreal",45.432788,-73.670423
+1214,"3-2130, rue Victoria Montreal",45.435887,-73.683750
+1215,"1-683, terrasse du Ruisseau Montreal",45.442697,-73.695361
+1216,"104-1655, rue Remembrance Montreal",45.437989,-73.678502
+1217,"4-3280, rue Provost Montreal",45.442049,-73.663547
+1218,"682, terrasse du Ruisseau Montreal",45.442727,-73.695006
+1219,"120-795, 1er avenue Montreal",45.634600,-73.498891
+1220,"2-4666, rue Richard Hewton Montreal",45.437788,-73.708828
+1221,"3534 Edgar Leduc Montreal",45.447093,-73.696359
+1222,"3280-1, rue Provost Montreal",45.442023,-73.663545
+1223,"2-3270, rue Provost Montreal",45.442042,-73.693703
+1224,"102-683, terrasse du Ruisseau Montreal",45.442697,-73.695361
+1225,"7-840, 5e avenue Montreal",45.456307,-73.575452
+1226,"614-2125, rue Remembrance Montreal",45.437727,-73.683565
+1227,"412 21I�me Avenue Montreal",45.501689,-73.567256
+1228,"306-3145, rue Provost Montreal",45.441771,-73.691771
+1229,"1-3455, rue du Fort Rolland Montreal",45.434613,-73.694644
+1230,"105-2125, rue Remembrance Montreal",45.437727,-73.683565
+1231,"4-3270, rue Provost Montreal",45.442042,-73.693703
+1232,"4-779, 32e avenue Montreal",45.655720,-73.490881
+1233,"101-380, 10 i�me avenue Montreal",45.496866,-73.963769
+1234,"102-825, rue St-louis Montreal",45.433492,-73.671355
+1235,"201-3400, rue Provost Montreal",45.442080,-73.694739
+1236,"795 1er avenue #410 Montreal",45.634600,-73.498891
+1237,"302-3480, rue Provost Montreal",45.442122,-73.695509
+1238,"201-3410, rue Provost Montreal",45.442111,-73.695009
+1239,"201-2812, boulevard Saint-Joseph Montreal",45.433794,-73.688993
+1240,"6-779, 32e avenue Montreal",45.655685,-73.490649
+1241,"609-2125, rue Remembrance Montreal",45.437727,-73.683565
+1242,"1-799, 32e avenue Montreal",45.655729,-73.491120
+1243,"2-435, 21e avenue Montreal",45.436695,-73.683407
+1244,"310-795, 1re avenue Montreal",45.444348,-73.663784
+1245,"505-2125, rue Remembrance Montreal",45.437727,-73.683565
+1246,"636 36e Ave. #302 Montreal",45.440230,-73.695847
+1247,"8-433, 21e Avenue Montreal",45.436578,-73.683404
+1248,"302-641, terrasse du Ruisseau Montreal",45.443496,-73.694796
+1249,"508-460, 19e avenue Montreal",45.437962,-73.681261
+1250,"119-2125, rue Remembrance Montreal",45.437727,-73.683565
+1251,"102-8, 11e avenue Montreal",45.507454,-73.805085
+1252,"6-815, rue Gameroff Montreal",45.445307,-73.693578
+1253,"213-2125, rue Remembrance Montreal",45.437727,-73.683565
+1254,"3548, rue Edgar Leduc Montreal",45.447166,-73.696590
+1255,"202-100, 21e avenue Montreal",45.433986,-73.683346
+1256,"2-3485, rue du Fort Rolland Montreal",45.434770,-73.695457
+1257,"3400 Rue Provost App. 302 Montreal",45.442080,-73.694739
+1258,"680 Avenue 36e Condo 201 Montreal",45.501689,-73.567256
+1259,"671 Terrasse Du Ruisseau App.202 Montreal",45.442701,-73.694997
+1260,"4510 Boulevard St-Joseph Montreal",45.436863,-73.706204
+1261,"3485 Avenue Du Fort Rolland Condo 8 Montreal",45.501689,-73.567256
+1262,"795 Avenue 1ere App. 320 Montreal",45.634600,-73.498891
+1263,"4530 St-Joseph Montreal",45.436980,-73.706558
+1264,"3440 Rue Provost App. 302 Montreal",45.442103,-73.695194
+1265,"32E Avenue Montreal",45.442642,-73.692465
+1266,"380 10E Avenue Montreal",45.436760,-73.672483
+1267,"7200 Rue Chouinard Montreal",45.441649,-73.615076
+1268,"6841 Rue Marie-Guyart Montreal",45.446490,-73.609645
+1269,"9889 boul. Lasalle Montreal",45.428601,-73.664997
+1270,"7176 Rue Chouinard Street Montreal",45.586021,-73.553656
+1271,"7161 rue Chouinard Montreal",45.442427,-73.614257
+1272,"7216 Rue Chouinard Montreal",45.441451,-73.614822
+1273,"9881 Boulevard LaSalle Condo 6 Montreal",45.501689,-73.567256
+1274,"8235 Rue George App. 101 Montreal",45.423935,-73.610821
+1275,"8165 Rue George Suite 201 Montreal",45.424310,-73.609710
+1276,"1501A Rue Baxter Montreal",45.438650,-73.608797
+1277,"1183 Croissant Du College Condo 204 Montreal",45.501689,-73.567256
+1278,"1010 Rue Thierry Montreal",45.433138,-73.606790
+1279,"6927, rue Marie-Guyart Montreal",45.446004,-73.610049
+1280,"1345 Shevchenko #2 Montreal",45.431320,-73.619841
+1281,"1871, rue Senkus, condo 2B Montreal",45.501689,-73.567256
+1282,"106-7625, boulevard Edouard Montreal",45.431272,-73.594491
+1283,"9270, rue Centrale, app. 201 Montreal",45.417244,-73.641284
+1284,"1012, rue Thierry Montreal",45.433149,-73.606854
+1285,"7108 Marie-Rollet Montreal",45.444594,-73.611152
+1286,"1062 A Thierry Montreal",45.433460,-73.608683
+1287,"1801 Senkus #105 Montreal",45.443084,-73.611268
+1288,"11A 65E Avenue Montreal",45.415816,-73.624165
+1289,"6971, rue Marie-Guyart Montreal",45.445581,-73.609282
+1290,"2173 Emile Nelligan Montreal",45.433233,-73.633226
+1291,"259 Lyette Montreal",45.430897,-73.665155
+1292,"A01-7114, rue Chouinard Montreal",45.442673,-73.613296
+1293,"1911 Rue Guy-Bouchard Montreal",45.444930,-73.609977
+1294,"1860 Senkus A-02 Montreal",45.443215,-73.612192
+1295,"1365 Rue Shevchenko App.6 Montreal",45.431322,-73.620254
+1296,"7191 D Chouinard Montreal",45.442244,-73.614514
+1297,"111 Rue McVey, condo 6 Montreal",45.501689,-73.567256
+1298,"8145 Rue George  #302 Montreal",45.424640,-73.608961
+1299,"2154 Lapierre Montreal",45.438419,-73.620030
+1300,"7011, Rue Louise Hebert, Apt 2c Montreal",45.444210,-73.610070
+1301,"249, Rue Lyette Montreal",45.430694,-73.665162
+1302,"1055 Ducas Montreal",45.437051,-73.603442
+1303,"201-1511, boulevard Shevchenko Montreal",45.431350,-73.624312
+1304,"9270, Centrale #201 Montreal",45.417244,-73.641284
+1305,"7315 Rue Chouinard Montreal",45.440471,-73.615373
+1306,"8245 Rue George No 301 Montreal",45.423886,-73.610973
+1307,"6806 Marie-Guyart Montreal",45.446181,-73.608823
+1308,"113, Rue Lafleur # 200 Montreal",45.467180,-73.565064
+1309,"8195 Rue George App 101 Montreal",45.424124,-73.610249
+1310,"7166a Chouinard Montreal",45.441917,-73.613923
+1311,"113 Avenue Lafleur App 500 Montreal",45.423755,-73.650398
+1312,"3D-7016, rue Marie-Rollet Montreal",45.444248,-73.610920
+1313,"1051A, rue Melatti Montreal",45.432691,-73.608362
+1314,"E-7211, rue Chouinard Montreal",45.441966,-73.614984
+1315,"6940, rue Marie Guyart Montreal",45.445621,-73.609975
+1316,"111-1000, rue Lapierre Montreal",45.434578,-73.603799
+1317,"2C-1871, rue Senkus Montreal",45.443309,-73.611757
+1318,"7507, rue Chouinard Montreal",45.438385,-73.617213
+1319,"3D- 7014, rue Marie-Rollet Montreal",45.444514,-73.610659
+1320,"201-8215, rue George Montreal",45.424032,-73.610518
+1321,"1D-1871, rue Senkus Montreal",45.443309,-73.611757
+1322,"6822 rue Marie-Guyart Montreal",45.446302,-73.609075
+1323,"1884, boulevard Guy-Bouchard Montreal",45.444653,-73.609780
+1324,"6795 Rue Marie-Guyart Montreal",45.445877,-73.608911
+1325,"107-7625, rue �douard Montreal",45.501689,-73.567256
+1326,"3E-7026, rue Marie-Rollet Montreal",45.444208,-73.612350
+1327,"8-1165, croissant du Coll�ge Montreal",45.437558,-73.603688
+1328,"6-1177, rue Baxter Montreal",45.437562,-73.604881
+1329,"7051, rue Louis H�bert Montreal",45.443418,-73.610728
+1330,"202-1000, rue Lapierre Montreal",45.434578,-73.603799
+1331,"7685 Boul. Lasalle #A Montreal",45.429395,-73.593569
+1332,"301-8235, rue George Montreal",45.423935,-73.610821
+1333,"1513 Rue Baxter Montreal",45.438826,-73.609021
+1334,"302-8155, rue George Montreal",45.424537,-73.609551
+1335,"8125 George, Appt. #301 Montreal",45.424892,-73.609071
+1336,"S103-1640, rue Shevchenko Montreal",45.431428,-73.626070
+1337,"6-1057, rue Ducas Montreal",45.437146,-73.603158
+1338,"4-9259, boulevard Lasalle Montreal",45.416636,-73.642655
+1339,"3C-7016, rue Marie-Rollet Montreal",45.444248,-73.610920
+1340,"201-8115, rue George Montreal",45.424916,-73.608868
+1341,"1-1100, rue Lapierre Montreal",45.435056,-73.604358
+1342,"303-7000, rue Allard Montreal",45.448609,-73.606110
+1343,"52, 1re avenue Montreal",45.458284,-73.564387
+1344,"102-9247, boulevard Lasalle Montreal",45.416679,-73.642286
+1345,"304-1171, croissant du Coll�ge Montreal",45.437566,-73.603724
+1346,"101-8215, rue Georges Montreal",45.424032,-73.610518
+1347,"2-9276, rue Centrale Montreal",45.417364,-73.641957
+1348,"6780, rue Marie-Guyart Montreal",45.445890,-73.608368
+1349,"8145 George #302 Montreal",45.424640,-73.608961
+1350,"1072, rue Thierry Montreal",45.433520,-73.609034
+1351,"106-1801, rue Senkus Montreal",45.443084,-73.611268
+1352,"1029-A, Rue Mélatti Montreal",45.432358,-73.608241
+1353,"7161 Chouinard apt 104 Montreal",45.442427,-73.614257
+1354,"9982 Rue St-Patrick Montreal",45.431151,-73.664870
+1355,"1173 Croissant du collège Condo 305 Montreal",45.501689,-73.567256
+1356,"9235 Boulevard LASALLE Condo 202 Montreal",45.501689,-73.567256
+1357,"6063 Rue Hamilton App. 5 Montreal",45.457583,-73.597880
+1358,"6910 Avenue Irwin Montreal",45.447683,-73.604371
+1359,"9276 Rue Centrale Condo 301 Montreal",45.501689,-73.567256
+1360,"2251 Rue Aird Condo 5 Montreal",45.501689,-73.567256
+1361,"1940 Rue Cuvillier App. 6 Montreal",45.543196,-73.544629
+1362,"2118 Avenue Letourneux Condo 3 Montreal",45.501689,-73.567256
+1363,"3020, Du Trianon #203 Montreal",45.588354,-73.535436
+1364,"8235 Rue Sherbrooke est App. 68 Montreal",45.599526,-73.533584
+1365,"2165 Rue Desjardins App. 4 Montreal",45.552011,-73.543319
+1366,"2661, Rue Louis-Veuillot Montreal",45.572561,-73.539379
+1367,"3107 Ste-Catherine Est App. 1 Montreal",45.537965,-73.542180
+1368,"4148 rue Adam Montreal",45.549668,-73.536854
+1369,"1445 Rue Aylwin Montreal",45.542693,-73.540014
+1370,"2165, Desjardins Montreal",45.552011,-73.543319
+1371,"110-4951, rue Ontario Est Montreal",45.559650,-73.535601
+1372,"7211, avenue Pierre-de-Coubertin Montreal",45.586709,-73.531792
+1373,"3571 Rue Hochelaga Montreal",45.546706,-73.551729
+1374,"229-4951, rue Ontario Est Montreal",45.559650,-73.535601
+1375,"2333 Rue Aubry App. 3 Montreal",45.607833,-73.515655
+1376,"403-2600, rue Bennett Montreal",45.557889,-73.547539
+1377,"3020 Rue du Trianon Condo 207 Montreal",45.501689,-73.567256
+1378,"4951 Rue Ontario Condo 122 Montreal",45.501689,-73.567256
+1379,"1-2642, rue Aylwin Montreal",45.546857,-73.554206
+1380,"2855, rue Aubry Montreal",45.608886,-73.520798
+1381,"2127 Avenue Letourneux Montreal",45.553176,-73.541808
+1382,"2065 Avenue Bennett Condo 202 Montreal",45.501689,-73.567256
+1383,"1429 Rue William-David Montreal",45.552760,-73.533638
+1384,"4800 Rue Bossuet Montreal",45.576954,-73.549689
+1385,"2201 Boulevard De Maisonneuve Montreal",45.527017,-73.550317
+1386,"2042 Rue Joliette Montreal",45.545028,-73.545867
+1387,"4723 Rue Ontario Est App. 401 Montreal",45.556754,-73.537268
+1388,"4751 Joseph A. Rodier # 607 Montreal",45.595571,-73.536698
+1389,"2015 Rue Aird Condo 406 Montreal",45.501689,-73.567256
+1390,"102-4951, rue Ontario Montreal",45.559650,-73.535601
+1391,"318-4951, rue Ontario est Montreal",45.559650,-73.535601
+1392,"2030 Rue Sicard App. 3 Montreal",45.556599,-73.538039
+1393,"2550 Rue Honor�-Beaugrand Montreal",45.501689,-73.567256
+1394,"7401 Rue de marseille App. 112 Montreal",45.590786,-73.533954
+1395,"2251, avenue Aird Montreal",45.557233,-73.542292
+1396,"2900 Rue Du Trianon App. 307 Montreal",45.587740,-73.533725
+1397,"3635 Rue De Rouen #4 Montreal",45.546638,-73.548117
+1398,"307-2650, rue Trianon Montreal",45.587100,-73.531458
+1399,"2155 Rue Desjardins Condo 3 Montreal",45.501689,-73.567256
+1400,"2610 Avenue Bennett Suite 314 Montreal",45.557931,-73.547671
+1401,"2546 Avenue Bennett Condo 8 Montreal",45.501689,-73.567256
+1402,"3307 Rue Cadillac Montreal",45.504357,-73.849564
+1403,"2150 Rue Pie-IX Condo 304 Montreal",45.501689,-73.567256
+1404,"203-2650, rue Du Trianon Montreal",45.587100,-73.531458
+1405,"2550 Bennett suite 7 Montreal",45.557679,-73.546877
+1406,"7401 Rue De marseille Condo 104 Montreal",45.501689,-73.567256
+1407,"308-2650, rue Trianon Montreal",45.587100,-73.531458
+1408,"2850 Rue du trianon App. 205 Montreal",45.587467,-73.532761
+1409,"540 Rue Lyall Montreal",45.578115,-73.515368
+1410,"2097 Rue Viau App. 200 Montreal",45.559835,-73.537331
+1411,"2150 Pie-IX, app 206 Montreal",45.551034,-73.544160
+1412,"1639 Rue Vallois Montreal",45.546360,-73.540364
+1413,"2015 Rue Aird App. 208 Montreal",45.555717,-73.537946
+1414,"2970 Rue Du Trianon Condo 107 Montreal",45.501689,-73.567256
+1415,"3020 rue du Trianon Montreal",45.588354,-73.535436
+1416,"2314 Rue Joliette Montreal",45.546149,-73.549736
+1417,"2592 ave Bennett Montreal",45.557855,-73.547433
+1418,"4951, rue Ontario est Montreal",45.559650,-73.535601
+1419,"2045 Avenue Valois Condo 8 Montreal",45.501689,-73.567256
+1420,"7401 Rue De Marseille Condo 407 Montreal",45.501689,-73.567256
+1421,"4951, Ontario Est Montreal",45.559650,-73.535601
+1422,"7880 Rue Madeleine-Huguenin App. 1 Montreal",45.592089,-73.523594
+1423,"1877, rue Davidson, condo 8 Montreal",45.501689,-73.567256
+1424,"2097, Viau, app. 301 Montreal",45.559835,-73.537331
+1425,"2667, rue Aylwin Montreal",45.547055,-73.554434
+1426,"2035, avenue Letourneux, app. 1 Montreal",45.552759,-73.540513
+1427,"7155, rue Pierre de Coubertin Montreal",45.586305,-73.531894
+1428,"517, avenue Meese Montreal",45.607518,-73.512449
+1429,"4840, rue Hochelaga, condo 3 Montreal",45.501689,-73.567256
+1430,"2155, rue Desjardins, condo 6 Montreal",45.501689,-73.567256
+1431,"4570, rue Hochelaga, app. 7 Montreal",45.557482,-73.544795
+1432,"2400, rue Aird, app. 7 Montreal",45.557809,-73.544509
+1433,"102-7401, rue De Marseille Montreal",45.590786,-73.533954
+1434,"6005, rue Chauveau Montreal",45.575932,-73.543831
+1435,"110-2150, boulevard Pie IX Montreal",45.551034,-73.544160
+1436,"2924, rue Bossuet Montreal",45.574478,-73.541793
+1437,"2015, avenue Aird, Loft 403 Montreal",45.501689,-73.567256
+1438,"2052, rue Viau, app. 2 Montreal",45.559429,-73.536595
+1439,"3080, rue du Trianon, app. 304 Montreal",45.588850,-73.535973
+1440,"7415, cl�oph�e-t�tu, app. 414 Montreal",45.501689,-73.567256
+1441,"4520, avenue Pierre-De Coubertin, app. 2 Montreal",45.558473,-73.548327
+1442,"7415 rue cl�oph�e-t�tu app 107 Montreal",45.501689,-73.567256
+1443,"407-2281, avenue Desjardins Montreal",45.552442,-73.544901
+1444,"1884, rue Darling, app. 3 Montreal",45.542089,-73.546016
+1445,"1653, De Ville-Marie Montreal",45.558910,-73.532006
+1446,"2347, rue Aubry, condo 3 Montreal",45.501689,-73.567256
+1447,"211-7401, rue Marseille Montreal",45.590786,-73.533954
+1448,"4930, rue de Rouen, app. 3 Montreal",45.560316,-73.539048
+1449,"8495, hochelaga, app. 9 Montreal",45.599067,-73.521507
+1450,"2015, rue Aird, condo 102 Montreal",45.501689,-73.567256
+1451,"6-2460, avenue Aird Montreal",45.557809,-73.544509
+1452,"2750, rue du Trianon, app. 404 Montreal",45.587167,-73.532011
+1453,"7880, rue Madeleine-Huguenin, app. 6 Montreal",45.592089,-73.523594
+1454,"038-4951, rue Ontario Montreal",45.559650,-73.535601
+1455,"7401, rue De Marseillle, app. 206 Montreal",45.590786,-73.533954
+1456,"1-3778, rue Ontario Est Montreal",45.546973,-73.543648
+1457,"515, avenue Meese Montreal",45.607512,-73.512439
+1458,"625, rue Duquesne Montreal",45.569887,-73.523543
+1459,"5915, rue Hochelaga, app. 101 Montreal",45.572433,-73.536581
+1460,"24-4951, rue Ontario Est Montreal",45.559650,-73.535601
+1461,"1440, rue chambly Montreal",45.543983,-73.539282
+1462,"2155, avenue Desjardins, condo 1 Montreal",45.501689,-73.567256
+1463,"2305, Aubry, app. 6 Montreal",45.607752,-73.515294
+1464,"3020, Trianon, app. 102 Montreal",45.588354,-73.535436
+1465,"133-4951, rue Ontario Est Montreal",45.559650,-73.535601
+1466,"2165, Desjardins Montreal",45.552011,-73.543319
+1467,"7151 Avenue Pierre-De-Coubertin Montreal",45.586306,-73.531901
+1468,"363, boulevard Pierre-Bernard Montreal",45.602627,-73.512133
+1469,"2970, rue Du Trianon, app. 302 Montreal",45.587981,-73.534496
+1470,"2896, rue Bossuet Montreal",45.574378,-73.541485
+1471,"3775, rue Ontario, condo 305 Montreal",45.501689,-73.567256
+1472,"523, rue Paul-Pau Montreal",45.604640,-73.513109
+1473,"2502, rue Bossuet Montreal",45.572712,-73.536615
+1474,"565, rue Pr�fontaine, app. 1 Montreal",45.538420,-73.541229
+1475,"2594, avenue Bennett, app. 6 Montreal",45.557864,-73.547459
+1476,"7401, rue De Marseille, app. 212 Montreal",45.590786,-73.533954
+1477,"568, rue Darling Montreal",45.540317,-73.539702
+1478,"7401, rue De Marseille, app. 303 Montreal",45.590786,-73.533954
+1479,"3020, trianon, app. 107 Montreal",45.588354,-73.535436
+1480,"5060 Lacordaire Montreal",45.575937,-73.552122
+1481,"102-2625, Aird Montreal",45.558784,-73.547046
+1482,"7870, rue Madeleine-Huguenin, app. 6 Montreal",45.591876,-73.523488
+1483,"2650, rue du Trianon-408 Montreal",45.587100,-73.531458
+1484,"4358 Av. Pierre De Coubertin Montreal",45.557552,-73.549071
+1485,"1970, rue Cuvillier, app. 5 Montreal",45.543349,-73.545158
+1486,"202-2050, avenue Aird Montreal",45.555860,-73.538881
+1487,"4751 Joseph-A.-Rodier App 109 Montreal",45.595571,-73.536698
+1488,"4211, de Rouen, app. 311 Montreal",45.552529,-73.544244
+1489,"4860, rue hochelaga, unit� 4 Montreal",45.501689,-73.567256
+1490,"2574, avenue Bennett, app. 4 Montreal",45.557779,-73.547195
+1491,"2900, rue du Trianon, condo 401 Montreal",45.501689,-73.567256
+1492,"106-4951, rue Ontario Montreal",45.559650,-73.535601
+1493,"2381 Jeanne D'Arc app. 104 Montreal",45.551386,-73.547129
+1494,"1961, rue Honor�-Beaugrand Montreal",45.501689,-73.567256
+1495,"1970, Cuvillier, condo 7 Montreal",45.501689,-73.567256
+1496,"2872, rue Bossuet Montreal",45.574330,-73.541341
+1497,"1921, rue De Chambly Montreal",45.545471,-73.543792
+1498,"7841 Madeleine-Huguenin #4 Montreal",45.591752,-73.524064
+1499,"2115, avenue Desjardins, condo 5 Montreal",45.501689,-73.567256
+1500,"2034 Rue Bourbonni�re App. 5 Montreal",45.548152,-73.543696
+1501,"7-575 Pr�fontaine Montreal",45.538455,-73.541365
+1502,"2015 Aird # 407 Montreal",45.555717,-73.537946
+1503,"001-2037, avenue Aird Montreal",45.555978,-73.538717
+1504,"1409 boulevard Pie-IX Montreal",45.548601,-73.535708
+1505,"2360 De La Salle App.205 Montreal",45.553451,-73.545678
+1506,"2576 Bennett #2 Montreal",45.557788,-73.547221
+1507,"2150 Pie-IX - 208 Montreal",45.551034,-73.544160
+1508,"2700 Charlemagne APT 201 Montreal",45.552369,-73.552706
+1509,"4344 Pierre-De Coubertin Montreal",45.557144,-73.549165
+1510,"2251, rue Aird Montreal",45.557233,-73.542292
+1511,"7401 Rue De Marseille app 412 Montreal",45.590786,-73.533954
+1512,"533 Ave Meese Montreal",45.607440,-73.512599
+1513,"5915 Hochelaga Appt. 201 Montreal",45.572433,-73.536581
+1514,"4453 rue Lafontaine Montreal",45.553464,-73.537046
+1515,"567 Meese Montreal",45.607493,-73.512857
+1516,"217-4211 De Rouen, Montr�al Montreal",45.552529,-73.544244
+1517,"2097 rue Viau #218 Montreal",45.559835,-73.537331
+1518,"538 Leclaire Montreal",45.554832,-73.530161
+1519,"3774 Ontario appt. 2 Montreal",45.546915,-73.543683
+1520,"4951, rue Ontario Est Montreal",45.559650,-73.535601
+1521,"1844 Letourneux Montreal",45.552101,-73.538563
+1522,"2650, du Trianon, #401 Montreal",45.587100,-73.531458
+1523,"4763 rue Adam Montreal",45.555862,-73.532816
+1524,"2089 Darling Montreal",45.542794,-73.547624
+1525,"302-2035 Bennett, Montreal Montreal",45.555290,-73.538899
+1526,"2120 ave de Lasalle Montreal",45.552443,-73.542272
+1527,"8495 rue Hochelaga app.11 Montreal",45.599067,-73.521507
+1528,"1960 Rue Cuvillier Montreal",45.543294,-73.544981
+1529,"7178, avenue Pierre-de-Coubertin Montreal",45.586478,-73.531672
+1530,"409-2281, avenue Desjardins Montreal",45.552442,-73.544901
+1531,"2806 rue Bossuet Montreal",45.574176,-73.540870
+1532,"212-7415, rue Cleophee T�tu Montreal",45.591119,-73.535053
+1533,"2655 Ave Bennett App 03 Montreal",45.558202,-73.547901
+1534,"2874 rue Bossuet Montreal",45.574334,-73.541353
+1535,"4354 Avenue Pierre de Coubertin Montreal",45.557429,-73.548980
+1536,"1425, Rue Sicard Montreal",45.554710,-73.532206
+1537,"4951, rue Ontario Est Montreal",45.559650,-73.535601
+1538,"9104 Notre-Dame Est, App 102 Montreal",45.604548,-73.512306
+1539,"4750 Rue Joseph A Rodier app 106 Montreal",45.594944,-73.537739
+1540,"7206 Pierre-de-Coubertin Montreal",45.586334,-73.530652
+1541,"2970 du Trianon, Montreal",45.587981,-73.534496
+1542,"2868 Bossuet Montreal",45.574322,-73.541317
+1543,"2750 Boul du Trianon app 105 Montreal",45.587167,-73.532011
+1544,"1836 rue Nicolet Montreal",45.546053,-73.542732
+1545,"2087 rue Darling Montreal",45.542725,-73.547663
+1546,"1877, rue Davidson App. 1 Montreal",45.542883,-73.545405
+1547,"1960 Cuvillier #6 Montreal",45.543294,-73.544981
+1548,"204-5990, rue Hochelaga Montreal",45.573015,-73.535742
+1549,"2414 Avenue Bennett Montreal",45.557236,-73.545483
+1550,"4951-137, rue Ontario Est Montreal",45.559650,-73.535601
+1551,"4810 de Repentigny Montreal",45.581506,-73.547681
+1552,"2576 rue Bennett app 2 Montreal",45.557788,-73.547221
+1553,"4358E Pierre-de-Coubertin Montreal",45.557552,-73.549071
+1554,"2168 rue Lebrun Montreal",45.598036,-73.516581
+1555,"2125, Ave Desjardins condo #7 Montreal",45.501689,-73.567256
+1556,"2931 Rue Aubry Montreal",45.609049,-73.521722
+1557,"2305 Rue aubry, app 6 Montreal",45.607752,-73.515294
+1558,"4229, Hochelaga #100 pr�s de Pie-IX Montreal",45.501689,-73.567256
+1559,"1435 Leclaire Montreal",45.555585,-73.531895
+1560,"2550, rue Honor� Beaugrand, unit� 305 Montreal",45.501689,-73.567256
+1561,"3-1950, Cuvillier Montreal",45.543251,-73.544799
+1562,"105-2550, rue Honor�-Beaugrand Montreal",45.501689,-73.567256
+1563,"020-4951, Ontario Est Montreal",45.559650,-73.535601
+1564,"2840 Bossuet Montreal",45.574260,-73.541127
+1565,"4356 Pierre de Coubertin Montreal",45.557449,-73.548968
+1566,"304-2281, Desjardins Montreal",45.552442,-73.544901
+1567,"2042 Viau # 6 Montreal",45.559372,-73.536428
+1568,"248-4951, Ontario Est Montreal",45.559650,-73.535601
+1569,"5-1945, rue Bossuet Montreal",45.570025,-73.527987
+1570,"540, rue de Ville-Marie Montreal",45.557586,-73.528396
+1571,"1993 Rue de Chambly Montreal",45.545648,-73.544378
+1572,"1877 Davidson no 7 Montreal",45.542883,-73.545405
+1573,"2754, avenue Jeanne D'Arc Montreal",45.553008,-73.552875
+1574,"1881, rue Jeanne D'Arc Montreal",45.549355,-73.540939
+1575,"4348 Pierre-de-Coubertin Montreal",45.557323,-73.549061
+1576,"2245 Viau #206 Montreal",45.560306,-73.538848
+1577,"2042 rue viau app.8 Montreal",45.559372,-73.536428
+1578,"9511 Souligny Montreal",45.609418,-73.513825
+1579,"2150 Boul. Pie-IX, 201 Montreal",45.551034,-73.544160
+1580,"2193 L�tourneux Montreal",45.553437,-73.542616
+1581,"3488 Rue Adam Montreal",45.542895,-73.541506
+1582,"3490 Rue Adam Montreal",45.542914,-73.541495
+1583,"7154, avenue Pierre-de Coubertin Montreal",45.586309,-73.531709
+1584,"8495 Hochelaga app10 Montreal",45.501689,-73.567256
+1585,"2970 Rue Du Trianon #302 Montreal",45.587981,-73.534496
+1586,"2055 Blvd Pie IX app,101 Montreal",45.551126,-73.542337
+1587,"2826 Rue Bossuet Montreal",45.574225,-73.541021
+1588,"2740-3 Avenue Jeanne d'Arc Montreal",45.552882,-73.552699
+1589,"2645 Avenue Bennett, unit� #15 Montreal",0.000000,0.000000
+1590,"2197, rue Letourneux Montreal",45.553453,-73.542667
+1591,"2093, Rue Darling Montreal",45.542871,-73.547768
+1592,"4951 Rue Ontario est app.343 Montreal",45.559650,-73.535601
+1593,"1891 Rue  De Chambly Montreal",45.545404,-73.543571
+1594,"2645 Bennett #36 Montreal",45.558144,-73.547748
+1595,"9460 Rousseau Montreal",45.613108,-73.536436
+1596,"2462 De Cadillac Montreal",45.572938,-73.535280
+1597,"201-2035, avenue Bennett Montreal",45.555290,-73.538899
+1598,"5064 Joseph A Rodier Montreal",45.596466,-73.540221
+1599,"1433 Rue Leclaire Montreal",45.555473,-73.531941
+1600,"2118 L�tourneux app 5 Montreal",45.501689,-73.567256
+1601,"6931 Pierre -de-Coubertin Montreal",45.583653,-73.533095
+1602,"4951 Rue Ontario Est app. 203 Montreal",45.559650,-73.535601
+1603,"7880 Madeleine Huguenin unit� 6 Montreal",45.501689,-73.567256
+1604,"5105, rue l'Assomption Montreal",45.571382,-73.553511
+1605,"1922 Lepailleur Montreal",45.588559,-73.516056
+1606,"6-2420, avenue Aird Montreal",45.557507,-73.543972
+1607,"4550 Lacordaire Montreal",45.575474,-73.550453
+1608,"4211 Rue de Rouen app 206 Montreal",45.552529,-73.544244
+1609,"109-2097, rue Viau Montreal",45.559835,-73.537331
+1610,"201-3282, rue Ontario Est Montreal",45.542131,-73.546522
+1611,"1866 Ave De La Salle App 6 Montreal",45.551461,-73.539597
+1612,"114-4951, Rue Ontario Est Montreal",45.559650,-73.535601
+1613,"6-4930, De Rouen Montreal",45.560316,-73.539048
+1614,"6082 Rue La Fontaine Montreal",45.570764,-73.524946
+1615,"2031 Aylwin Montreal",45.544659,-73.546044
+1616,"6-2645, rue Bennett Montreal",45.558144,-73.547748
+1617,"2600, rue Bennett #102 Montreal",45.557889,-73.547539
+1618,"9432 Rue Rousseau Montreal",45.612883,-73.536524
+1619,"2-1894, avenue Valois Montreal",45.546862,-73.542702
+1620,"3980 Rue Rouen App 2 Montreal",45.550472,-73.545269
+1621,"2850 Rue du Trianon app 405 Montreal",45.587467,-73.532761
+1622,"404 - 2750 rue du Trianon Montreal",45.587167,-73.532011
+1623,"703-4751, rue Joseph-a-Rodier Montreal",45.595571,-73.536698
+1624,"2-2543, avenue de la Salle Montreal",45.554468,-73.548045
+1625,"3565, rue Hochelaga Montreal",45.546764,-73.551748
+1626,"2693, rue Aylwin Montreal",45.547295,-73.555190
+1627,"A-4342, avenue Pierre-de-Coubertin Montreal",45.557153,-73.549337
+1628,"2225, rue de Bruxelles Montreal",45.591688,-73.521371
+1629,"1496, rue Aylwin Montreal",45.542897,-73.540773
+1630,"304-3775, rue Ontario Est Montreal",45.546943,-73.543866
+1631,"3-4580, rue Hochelaga Montreal",45.557582,-73.544720
+1632,"4-555, rue Pr�fontaine Montreal",45.538369,-73.541097
+1633,"202-2650, rue Nicolet Montreal",45.549172,-73.553449
+1634,"417-2610, avenue Bennett Montreal",45.557931,-73.547671
+1635,"313-7415, rue Cl�oph�e T�tu Montreal",45.501689,-73.567256
+1636,"1704, rue Saint-Germain Montreal",45.540842,-73.544587
+1637,"301-2600, avenue Bennett Montreal",45.557889,-73.547539
+1638,"214-7415, rue Cl�oph�e-T�tu Montreal",45.501689,-73.567256
+1639,"1-2170, rue Jeanne D'Arc Montreal",45.550438,-73.544905
+1640,"3-2350, avenue Bourbonni�re Montreal",45.549412,-73.548052
+1641,"330-4951, rue Ontario Est Montreal",45.559650,-73.535601
+1642,"207-2970, rue du Trianon Montreal",45.587981,-73.534496
+1643,"213-7415, rue Cl�oph�e-T�tu Montreal",45.501689,-73.567256
+1644,"405-3020, rue du Trianon Montreal",45.588354,-73.535436
+1645,"101-2002, rue Leclaire Montreal",45.557080,-73.537141
+1646,"6-1950, rue Cuvillier Montreal",45.543251,-73.544799
+1647,"304-2037, avenue Aird Montreal",45.555978,-73.538717
+1648,"2800, rue Bossuet Montreal",45.574089,-73.540817
+1649,"2316, rue Taillon Montreal",45.606112,-73.516519
+1650,"110-4951, rue Ontario Est Montreal",45.559650,-73.535601
+1651,"202-4723, rue Ontario est Montreal",45.556754,-73.537268
+1652,"4-2420, avenue Aird Montreal",45.557507,-73.543972
+1653,"2251 Aird Suite 211 Montreal",45.557233,-73.542292
+1654,"2550, rue Honor�-Beaugrand Montreal",45.501689,-73.567256
+1655,"2030, avenue Jeanne d'Arc Montreal",45.549634,-73.542420
+1656,"5-2155, avenue Desjardins Montreal",45.551924,-73.543219
+1657,"581, rue Sicard Montreal",45.554303,-73.530975
+1658,"1802, avenue Bourbonni�re Montreal",45.547346,-73.541259
+1659,"2-555, rue Prefontaine Montreal",45.538369,-73.541097
+1660,"205-4951, rue Ontario Est Montreal",45.559650,-73.535601
+1661,"5-2225, rue St-Cl�ment Montreal",45.559572,-73.538789
+1662,"101-4211, rue de Rouen Montreal",45.552529,-73.544244
+1663,"2144A, rue Cuvillier Montreal",45.544214,-73.548061
+1664,"503, rue Paul Pau Montreal",45.604608,-73.512942
+1665,"402-2700, rue Joliette Montreal",45.547900,-73.555110
+1666,"2866, rue Bossuet Montreal",45.574318,-73.541304
+1667,"5-1970, rue Cuvillier Montreal",45.543349,-73.545158
+1668,"206-2015, avenue Aird Montreal",45.555717,-73.537946
+1669,"1877, rue de Chambly Montreal",45.545466,-73.543411
+1670,"1-7910, rue Madeleine-Huguenin Montreal",45.592453,-73.523276
+1671,"7-2070, rue Letourneux Montreal",45.552875,-73.540962
+1672,"2180, Honore-Beaugrand Montreal",45.591909,-73.520174
+1673,"403-2970, rue du Trianon Montreal",45.587981,-73.534496
+1674,"7186, avenue Pierre de Coubertin Montreal",45.586540,-73.531658
+1675,"102-2015, avenue Aird Montreal",45.555717,-73.537946
+1676,"201-7415, rue Cl�oph�e-T�tu Montreal",45.501689,-73.567256
+1677,"2352 ave d'Orl�an app a Montreal",45.501689,-73.567256
+1678,"405-7401, rue de Marseille Montreal",45.590786,-73.533954
+1679,"5875, rue Desaulniers Montreal",45.572956,-73.538472
+1680,"3567, rue de Rouen Montreal",45.545823,-73.548636
+1681,"303-3282, rue Ontario Est Montreal",45.542131,-73.546522
+1682,"8-2115, avenue Desjardins Montreal",45.551760,-73.542712
+1683,"9442, rue Rousseau Montreal",45.612920,-73.536509
+1684,"1- 2197, avenue Letourneux Montreal",45.553453,-73.542667
+1685,"2836, rue Bossuet Montreal",45.574250,-73.541096
+1686,"402-3561, rue Rouen Montreal",45.545805,-73.548636
+1687,"2-3778, rue Ontario Est Montreal",45.546973,-73.543648
+1688,"4352A, rue Pierre de Coubertin Montreal",45.557428,-73.549154
+1689,"220-4951, rue Ontario Est Montreal",45.559650,-73.535601
+1690,"1-1855, rue Viau Montreal",45.558995,-73.534215
+1691,"2660, rue Nicolet Montreal",45.549188,-73.553500
+1692,"3-4040, rue la Fontaine Montreal",45.549169,-73.539510
+1693,"401-2650, rue Nicolet Montreal",45.549172,-73.553449
+1694,"015-4951, rue Ontario Est Montreal",45.559650,-73.535601
+1695,"308-2015, avenue Aird Montreal",45.555717,-73.537946
+1696,"1438, rue de Chambly Montreal",45.544063,-73.539149
+1697,"2478, rue Joliette Montreal",45.546725,-73.551175
+1698,"1-2120, avenue Jeanne-d'Arc Montreal",45.550199,-73.544142
+1699,"4-4927, rue Ontario Est Montreal",45.558887,-73.535838
+1700,"18-4951, rue Ontario Montreal",45.559650,-73.535601
+1701,"2-2029, avenue Charlemagne Montreal",45.549315,-73.542627
+1702,"101-2650, rue Trianon Montreal",45.587100,-73.531458
+1703,"203-5935, rue Hochelaga Montreal",45.572551,-73.536503
+1704,"2667, rue Aylwin Montreal",45.547055,-73.554434
+1705,"412-7415, Cl�oph�e-T�tu Montreal",45.501689,-73.567256
+1706,"4356A, avenue Pierre de Coubertin Montreal",45.557449,-73.548968
+1707,"103-3080, rue du Trianon Montreal",45.588850,-73.535973
+1708,"2657, rue Louis-Veuillot Montreal",45.572681,-73.539207
+1709,"209-7805, rue Sherbrooke Est Montreal",45.595309,-73.535888
+1710,"7-9, place Simon Valois Montreal",45.547536,-73.543937
+1711,"2844, rue Bossuet Montreal",45.574270,-73.541157
+1712,"54-8275, rue Sherbrooke Est Montreal",45.600035,-73.533300
+1713,"1-3778, rue Ontario Est Montreal",45.546973,-73.543648
+1714,"3-2543,  rue de la Salle Montreal",45.554468,-73.548045
+1715,"533, avenue Meese Montreal",45.607440,-73.512599
+1716,"1815, avenue Morgan Montreal",45.552903,-73.537465
+1717,"301-3555, rue de Rouen Montreal",45.545720,-73.548687
+1718,"1903, rue Saint-Germain Montreal",45.541599,-73.546258
+1719,"9434, rue Myra-Cree Montreal",45.611847,-73.531977
+1720,"2314, rue Joliette Montreal",45.546149,-73.549736
+1721,"337-4951, rue Ontario Est Montreal",45.559650,-73.535601
+1722,"1-2125, avenue Desjardins Montreal",45.551835,-73.542796
+1723,"210-7415, rue Cl�oph�e-T�tu Montreal",45.501689,-73.567256
+1724,"3-1965, rue Bossuet Montreal",45.570105,-73.528241
+1725,"6-7930, rue Madeleine-Huguenin Montreal",45.592580,-73.522943
+1726,"1-2344, rue St-Germain Montreal",45.543026,-73.551968
+1727,"4682, rue Dickson Montreal",45.574294,-73.551655
+1728,"5-2022, rue Viau Montreal",45.559267,-73.536093
+1729,"103-2015, avenue Aird Montreal",45.555717,-73.537946
+1730,"4-2105, avenue Desjardins Montreal",45.551824,-73.542536
+1731,"1979, rue de Chambly Montreal",45.545613,-73.544264
+1732,"521, rue Paul-Pau Montreal",45.604654,-73.513092
+1733,"101-9108, rue Notre-Dame Est Montreal",45.604723,-73.512290
+1734,"2435, avenue Bourbonni�re Montreal",45.550038,-73.549093
+1735,"3-2115, avenue Desjardins Montreal",45.551760,-73.542712
+1736,"8363, rue de Teck Montreal",45.600134,-73.530350
+1737,"2304, avenue d'Orl�ans Montreal",45.549958,-73.547120
+1738,"4464, rue la Fontaine Montreal",45.553499,-73.536732
+1739,"627, rue du Quesne Montreal",45.569998,-73.523493
+1740,"2464, rue de Cadillac Montreal",45.573180,-73.535703
+1741,"6-2125, avenue Desjardins Montreal",45.551835,-73.542796
+1742,"1440, avenue William-David Montreal",45.552682,-73.533932
+1743,"2236, rue Darling Montreal",45.543225,-73.549760
+1744,"4-3850, rue de Rouen Montreal",45.548541,-73.546624
+1745,"2472, rue de Cadillac Montreal",45.572967,-73.535370
+1746,"6-2022, rue Viau Montreal",45.559267,-73.536093
+1747,"6915, avenue Pierre-De-Coubertin Montreal",45.583522,-73.533183
+1748,"4350-A Pierre de Coubertin Montreal",45.557332,-73.549041
+1749,"101-2015, avenue Aird Montreal",45.555717,-73.537946
+1750,"1947, rue de Chambly Montreal",45.545535,-73.544004
+1751,"5047, rue Baldwin Montreal",45.604408,-73.534449
+1752,"5-2347, rue Aubry Montreal",45.607868,-73.515838
+1753,"007-2251, avenue Aird Montreal",45.557233,-73.542292
+1754,"1-1970, rue Cuvillier Montreal",45.543349,-73.545158
+1755,"5-2175, rue Charlemagne Montreal",45.550114,-73.545110
+1756,"314-7415, rue Cl�oph�e-T�tu Montreal",45.501689,-73.567256
+1757,"002-9104, rue Notre-Dame Est Montreal",45.604548,-73.512306
+1758,"1-4050, rue la Fontaine Montreal",45.549207,-73.539392
+1759,"322-4951, rue Ontario Est Montreal",45.559650,-73.535601
+1760,"402-3567, rue de Rouen Montreal",45.545823,-73.548636
+1761,"5867, rue Desaulniers Montreal",45.572721,-73.538632
+1762,"2293, rue Aylwin Montreal",45.545683,-73.549568
+1763,"2-4040, rue la Fontaine Montreal",45.549169,-73.539510
+1764,"2302, avenue d'Orl�ans Montreal",45.549854,-73.547160
+1765,"401-1850, rue Darling Montreal",45.541977,-73.545555
+1766,"672, avenue Clarence Gagnon Montreal",45.570962,-73.522358
+1767,"B203-2300, rue de la Salle Montreal",45.510414,-73.483709
+1768,"2-2152, avenue Bourbonni�re Montreal",45.548632,-73.545491
+1769,"102-2700, Charlemage Montreal",45.552369,-73.552706
+1770,"3-2240, rue Viau Montreal",45.560119,-73.538623
+1771,"104-3080, rue du Trianon Montreal",45.588850,-73.535973
+1772,"4977, rue Duchesneau Montreal",45.611528,-73.532533
+1773,"1828, rue Sicard Montreal",45.555804,-73.536023
+1774,"629, rue Duquesne Montreal",45.570003,-73.523509
+1775,"4-2250, rue De Chambly Montreal",45.546752,-73.548384
+1776,"4-1915, rue Bossuet Montreal",45.569900,-73.527613
+1777,"201-576, rue Saint-Cl�ment Montreal",45.556320,-73.529664
+1778,"201-2065, avenue Bennett Montreal",45.555438,-73.539343
+1779,"102-2035, rue Bennett Montreal",45.555290,-73.538899
+1780,"7194, avenue Pierre-de-Coubertin Montreal",45.586595,-73.531646
+1781,"2762, avenue Jeanne d'Arc Montreal",45.553071,-73.552871
+1782,"1960, rue Cuvillier, condo 1 Montreal",45.501689,-73.567256
+1783,"1610, rue Th�odore Montreal",45.556586,-73.532818
+1784,"3471, rue Sainte-Catherine Est Montreal",45.542088,-73.539391
+1785,"524, rue Lyall Montreal",45.578084,-73.515333
+1786,"4-2072, rue Viau Montreal",45.559531,-73.536926
+1787,"7400, rue Cl�oph�e-T�tu, app. 206 Montreal",45.501689,-73.567256
+1788,"4-2111, avenue de la Salle Montreal",45.552617,-73.542060
+1789,"2858, rue Bossuet Montreal",45.574303,-73.541256
+1790,"120-4211, rue de Rouen Montreal",45.552529,-73.544244
+1791,"3-1912, rue Valois Montreal",45.546903,-73.542835
+1792,"2-2244, rue de Chambly Montreal",45.546701,-73.548245
+1793,"2091, avenue Valois Montreal",45.547615,-73.545057
+1794,"3772, rue Adam Montreal",45.545728,-73.539680
+1795,"1680, boulevard Pie IX Montreal",45.549490,-73.538889
+1796,"1879, rue de Chambly Montreal",45.545378,-73.543483
+1797,"301-3282, rue Ontario Est Montreal",45.542131,-73.546522
+1798,"111-4750, rue Joseph A Rodier Montreal",45.594944,-73.537739
+1799,"4-2420, rue Honor� Beaugrand Montreal",45.501689,-73.567256
+1800,"2541, avenue de la Salle Montreal",45.554460,-73.548052
+1801,"9404, rue de Gros-Bois Montreal",45.610614,-73.531414
+1802,"4983, rue Adam Montreal",45.558387,-73.531240
+1803,"201-2660, rue Nicolet Montreal",45.549188,-73.553500
+1804,"401-2500, avenue Charlemagne Montreal",45.551273,-73.549228
+1805,"221-4951, rue Ontario Est Montreal",45.559650,-73.535601
+1806,"9439, rue Jean-Pierre Ronfard Montreal",45.612640,-73.535476
+1807,"2219, rue Hogan Montreal",45.536300,-73.553855
+1808,"7155, avenue Pierre de Coubertin Montreal",45.586305,-73.531894
+1809,"2535, rue Davidson Montreal",45.545246,-73.553368
+1810,"302-2037, avenue Aird Montreal",45.555978,-73.538717
+1811,"8-2155, avenue Desjardins Montreal",45.551924,-73.543219
+1812,"408-7201, Georges Villeneuve Montreal",45.586013,-73.530064
+1813,"3-2170, avenue Jeanne d'Arc Montreal",45.550438,-73.544905
+1814,"303-3100, rue Guillaume-Lahaise Montreal",45.590570,-73.534654
+1815,"05-1950, rue Cuvillier Montreal",45.543251,-73.544799
+1816,"7-2155, avenue Desjardins Montreal",45.551924,-73.543219
+1817,"4-2142, avenue Bourbonni�re Montreal",45.548603,-73.545352
+1818,"2-2055, rue Frontenac Montreal",45.533524,-73.553578
+1819,"3458, rue de Rouen Montreal",45.544755,-73.549096
+1820,"5-2135, avenue Charlemagne Montreal",45.549910,-73.544510
+1821,"9433, rue de Grosbois Montreal",45.610623,-73.531448
+1822,"3770, rue Adam Montreal",45.545729,-73.539686
+1823,"2081, rue Leclaire Montreal",45.557584,-73.537989
+1824,"309-7415, rue Cl�oph�e-T�tu Montreal",45.501689,-73.567256
+1825,"4-2588, avenue Bennett Montreal",45.557838,-73.547380
+1826,"3450, rue la Fontaine Montreal",45.543098,-73.543544
+1827,"a-4980, rue des Ormeaux Montreal",45.605460,-73.533715
+1828,"517, avenue Meese Montreal",45.607518,-73.512449
+1829,"401-1860, rue Darling Montreal",45.541996,-73.545681
+1830,"407-2850, rue du Trianon Montreal",45.587467,-73.532761
+1831,"201-3100, rue Sherbrooke Est Montreal",45.542462,-73.557751
+1832,"2314, rue Taillon Montreal",45.606102,-73.516466
+1833,"2673, rue Aylwin Montreal",45.547192,-73.554334
+1834,"8-2145, avenue Desjardins Montreal",45.551980,-73.543024
+1835,"3-2024, avenue Jeanne D'Arc Montreal",45.549627,-73.542398
+1836,"203-3100, rue Guillaume-Lahaise Montreal",45.590570,-73.534654
+1837,"2191, rue de Bruxelles Montreal",45.591449,-73.520579
+1838,"301-4211, rue de Rouen Montreal",45.552529,-73.544244
+1839,"304-3080, rue du Trianon Montreal",45.588850,-73.535973
+1840,"102-2720, avenue Charlemagne Montreal",45.552439,-73.552985
+1841,"583, avenue Valois Montreal",45.544984,-73.536344
+1842,"5-2142, avenue Bourbonni�re Montreal",45.548603,-73.545352
+1843,"203-2300, avenue de la Salle Montreal",45.553309,-73.544908
+1844,"407-7401, rue de Marseille Montreal",45.590786,-73.533954
+1845,"5513, rue Duchesneau Montreal",45.612237,-73.536145
+1846,"202-2310, rue Marcelle Ferron Montreal",45.607118,-73.516703
+1847,"3-3854, rue de Rouen Montreal",45.548649,-73.546577
+1848,"1-3960, rue de Rouen Montreal",45.550599,-73.545316
+1849,"3-2306, avenue Bourbonni�re Montreal",45.549223,-73.547442
+1850,"9134, avenue Dubuisson Montreal",45.605137,-73.515205
+1851,"4107, rue de Cadillac Montreal",45.577306,-73.548030
+1852,"204-2381, avenue Jeanne d'Arc Montreal",45.551386,-73.547129
+1853,"202-3775, rue Ontario Est Montreal",45.546943,-73.543866
+1854,"1895, avenue Bourbonni�re Montreal",45.547930,-73.542640
+1855,"401-4800, rue Bossuet Montreal",45.576954,-73.549689
+1856,"2229, rue Cuvillier Montreal",45.544650,-73.548926
+1857,"1832, rue Nicolet Montreal",45.546030,-73.542655
+1858,"306-2750, rue du Trianon Montreal",45.587167,-73.532011
+1859,"410-7401, rue de Marseille Montreal",45.590786,-73.533954
+1860,"105-2850, rue du Trianon Montreal",45.587467,-73.532761
+1861,"1-3920, rue la Fontaine Montreal",45.548194,-73.540168
+1862,"2-7890, rue Hochelaga Montreal",45.593028,-73.524546
+1863,"C-414-2281, avenue Desjardins Montreal",45.552442,-73.544901
+1864,"1-2135, avenue Charlemagne Montreal",45.549910,-73.544510
+1865,"5-2642, rue Aylwin Montreal",45.546857,-73.554206
+1866,"202-5990, rue Hochelaga Montreal",45.573015,-73.535742
+1867,"A-561, avenue Mercier Montreal",45.596072,-73.512778
+1868,"401-2070 rue Aird Montreal",45.555982,-73.539161
+1869,"405-2900, rue du Trianon Montreal",45.587740,-73.533725
+1870,"119-825, rue de Bruxelles Montreal",45.587627,-73.508678
+1871,"6-2045, avenue Valois Montreal",45.547440,-73.544248
+1872,"1-3774, rue Ontario Montreal",45.546915,-73.543683
+1873,"3-2535, avenue de la Salle Montreal",45.554426,-73.547908
+1874,"235-4951, rue Ontario Est Montreal",45.559650,-73.535601
+1875,"409-4550, rue Hochelaga Montreal",45.557264,-73.544926
+1876,"103-1859, boulevard PI-IX Montreal",45.550183,-73.539977
+1877,"202-7415, rue Cl�oph�e-T�tu Montreal",45.501689,-73.567256
+1878,"102-2150, boulevard Pie-IX Montreal",45.551034,-73.544160
+1879,"3-2142, avenue Bourbonni�re Montreal",45.548603,-73.545352
+1880,"305-2037, avenue Aird Montreal",45.555978,-73.538717
+1881,"4884, rue Joseph A. Rodier Montreal",45.596237,-73.539101
+1882,"1909, rue de Chambly Montreal",45.545444,-73.543703
+1883,"534, rue Leclaire Montreal",45.554810,-73.530101
+1884,"006-2251, avenue Aird Montreal",45.557233,-73.542292
+1885,"2830, rue Monsabr� Montreal",45.501689,-73.567256
+1886,"107-2251, avenue Aird Montreal",45.557233,-73.542292
+1887,"214-825, rue de Bruxelles Montreal",45.587627,-73.508678
+1888,"4252, rue Lacordaire Montreal",45.575215,-73.549898
+1889,"1443, avenue Valois Montreal",45.545680,-73.538222
+1890,"4991, rue Duchesneau Montreal",45.611528,-73.532533
+1891,"1891, avenue Bourbonni�re Montreal",45.547906,-73.542568
+1892,"106-2055, boulevard Pie-IX Montreal",45.551126,-73.542337
+1893,"101-2660, rue Nicolet Montreal",45.549188,-73.553500
+1894,"4-5960, rue Hochelaga Montreal",45.572764,-73.535977
+1895,"4953, rue Duchesneau Montreal",45.611528,-73.532533
+1896,"102-2740, avenue Charlemagne Montreal",45.552534,-73.553252
+1897,"305-2750, rue Trianon Montreal",45.587167,-73.532011
+1898,"1-2540, rue Sicard Montreal",45.558927,-73.545162
+1899,"1641, rue de Chambly Montreal",45.544811,-73.541268
+1900,"1951, rue de Chambly Montreal",45.545544,-73.544036
+1901,"205-2360, rue L�tourneux Montreal",45.554294,-73.545431
+1902,"405-2650, rue du Trianon Montreal",45.587100,-73.531458
+1903,"3-2095, avenue Desjardins Montreal",45.551750,-73.542444
+1904,"616-2910, rue Ontario Est Montreal",45.537174,-73.549764
+1905,"4-2548, avenue Bennett Montreal",45.557670,-73.546851
+1906,"203-3282, rue Ontario Est Montreal",45.542131,-73.546522
+1907,"407-2750, rue du Trianon Montreal",45.587167,-73.532011
+1908,"3-1861, rue Davidson Montreal",45.542778,-73.545069
+1909,"308-2900, rue du Trianon Montreal",45.587740,-73.533725
+1910,"1893, avenue Bourbonni�re Montreal",45.547918,-73.542604
+1911,"105-2015, avenue Aird Montreal",45.555717,-73.537946
+1912,"209-3282, rue Ontario Est Montreal",45.542131,-73.546522
+1913,"2-3161, rue Louis Veuillot Montreal",45.574548,-73.544964
+1914,"1850, rue Nicolet Montreal",45.546120,-73.542953
+1915,"1457, avenue Letourneux Montreal",45.551087,-73.535294
+1916,"207-2251, rue Aird Montreal",45.557233,-73.542292
+1917,"2062, rue Aylwin Montreal",45.544624,-73.546485
+1918,"335, boulevard Pierre Bernard Montreal",45.602388,-73.511643
+1919,"5-2546, avenue Bennett Montreal",45.557662,-73.546824
+1920,"4-2052, rue Viau Montreal",45.559429,-73.536595
+1921,"1911, rue de Chambly Montreal",45.545448,-73.543717
+1922,"2-2350, avenue Bourbonni�re Montreal",45.549412,-73.548052
+1923,"9481, rue Jean-Pierre Ronfard Montreal",45.613037,-73.535320
+1924,"410-2600, avenue Bennet Montreal",45.557889,-73.547539
+1925,"3249, rue Lacordaire Montreal",45.574230,-73.546619
+1926,"2054 A St-Germain Montreal",45.541997,-73.548060
+1927,"2-2642, rue Aylwin Montreal",45.546857,-73.554206
+1928,"2141, avenue Bourbonni�re Montreal",45.548639,-73.545121
+1929,"1433, avenue William-David Montreal",45.552647,-73.533735
+1930,"301-3567, rue de Rouen Montreal",45.545823,-73.548636
+1931,"9619 Notre Dame Est Montreal",45.610206,-73.510889
+1932,"2970, rue du Trianon Montreal",45.587981,-73.534496
+1933,"309-7400, rue Cl�oph�e-T�tu Montreal",45.501689,-73.567256
+1934,"306-2281, avenue Desjardins Montreal",45.552442,-73.544901
+1935,"02-2665, avenue Bennett Montreal",45.558233,-73.548043
+1936,"567, rue Cuvillier Montreal",45.541572,-73.538872
+1937,"202-2245, rue Viau Montreal",45.560306,-73.538848
+1938,"1415, rue D�z�ry Montreal",45.501689,-73.567256
+1939,"2251 avenue Aird #211 Montreal",45.557233,-73.542292
+1940,"1-1940, rue Cuvillier Montreal",45.543196,-73.544629
+1941,"2900 Rue Trianon App. 307 Montreal",45.587740,-73.533725
+1942,"2040 Avenue Aird App. 401 Montreal",45.555836,-73.538706
+1943,"1498, rue Aylwin Montreal",45.542782,-73.540863
+1944,"2360 Avenue de la salle Condo 205 Montreal",45.501689,-73.567256
+1945,"2150 Avenue Pie IX, apt104 Montreal",45.551034,-73.544160
+1946,"2030 Rue Sicard App. 8 Montreal",45.556599,-73.538039
+1947,"2700 Rue Charlemagne App. 301 Montreal",45.552369,-73.552706
+1948,"2030 Rue Bourbonnière App. 1 Montreal",45.548145,-73.543675
+1949,"2600 Avenue Bennett App. 412 Montreal",45.557889,-73.547539
+1950,"2145 Avenue Desjardins App. 4 Montreal",45.551980,-73.543024
+1951,"7805 Rue Sherbrooke E App 601 Montreal",45.595309,-73.535888
+1952,"301-4723, rue Ontario Montreal",45.556754,-73.537268
+1953,"1820 rue Letourneux Montreal",45.552005,-73.538248
+1954,"2900 Rue du Trianon app103 Montreal",45.587740,-73.533725
+1955,"3020 Rue du Trianon 202 Montreal",45.588354,-73.535436
+1956,"1810 rue Letourneux Montreal",45.551966,-73.538121
+1957,"2750 Rue du Trianon Condo 303 Montreal",45.501689,-73.567256
+1958,"2066 de La Salle Montreal",45.552152,-73.541386
+1959,"2850 Rue du Trianon Condo 405 Montreal",45.501689,-73.567256
+1960,"2850 Rue Trianon App. 403 Montreal",45.587467,-73.532761
+1961,"2155 Avenue Desjardins Condo 5 Montreal",45.501689,-73.567256
+1962,"6082 Rue La Fontaine Montreal",45.570764,-73.524946
+1963,"106-2850, rue Du Trianon Montreal",45.587467,-73.532761
+1964,"2970 Rue Du Trianon Suite 107 Montreal",45.587981,-73.534496
+1965,"141-4951, rue Ontario Montreal",45.559650,-73.535601
+1966,"103-4951, rue Ontario Est Montreal",45.559650,-73.535601
+1967,"523 Rue Paul-Pau Montreal",45.604640,-73.513109
+1968,"4022 Rue Duquesne Montreal",45.577844,-73.547824
+1969,"38-4951, Ontario Est Montreal",45.559650,-73.535601
+1970,"4947 Rue Ontario Est Montreal",45.559446,-73.535666
+1971,"2855 Rue Aubry Montreal",45.608886,-73.520798
+1972,"2850 Rue Du Trianon App. 103 Montreal",45.587467,-73.532761
+1973,"9621 Notre Dame Est Montreal",45.610226,-73.510881
+1974,"5-2055, boulevard Pie IX Montreal",45.551126,-73.542337
+1975,"2750 Rue Du Trianon Condo 306 Montreal",45.501689,-73.567256
+1976,"2056 Rue Saint-Germain Montreal",45.542004,-73.548086
+1977,"2333 Rue Aubry App. 1 Montreal",45.607833,-73.515655
+1978,"2105 Avenue Desjardins App. 5 Montreal",45.551824,-73.542536
+1979,"3020 Rue du Trianon App. 103 Montreal",45.588354,-73.535436
+1980,"2338 Rue Mousseau Montreal",45.602111,-73.519356
+1981,"2900 Rue Du Trianon App. 406 Montreal",45.587740,-73.533725
+1982,"501 Rue St-Christophe Montreal",45.512985,-73.551185
+1983,"2499 blv de Maisonneuve est Montreal",45.530220,-73.547419
+1984,"1200 St-Jacques Street Suite 1502 Montreal",45.495092,-73.566172
+1985,"86 Rue St-Norbert App. 3 Montreal",45.512958,-73.567841
+1986,"204, de l'H�pital Montreal",45.503417,-73.556561
+1987,"837 Rue Saint-Timoth�e Montreal",45.514450,-73.551649
+1988,"770 Rue St-Andr� Montreal",45.501689,-73.567256
+1989,"2219 Rue Florian Montreal",45.538041,-73.552644
+1990,"575 de la Montagne Montreal",45.493255,-73.565312
+1991,"2055 Rue Frontenac App. 6 Montreal",45.533524,-73.553578
+1992,"1225 notre dame Street West Montreal",45.493768,-73.564474
+1993,"1860 Rue Poupart Montreal",45.531213,-73.551951
+1994,"783 Rue St-Timoth�e Montreal",45.514227,-73.551407
+1995,"2033 rue Panet Montreal",45.523265,-73.561925
+1996,"828 Amherst Street Montreal",45.514941,-73.551546
+1997,"2129 Rue St-Timoth�e App. 4 Montreal",45.520441,-73.564786
+1998,"651 St-Christophe Montreal",45.513210,-73.551800
+1999,"2136 Rue Du Havre Montreal",45.534202,-73.554016
+2000,"1781 Rue St-Andr� Montreal",45.501689,-73.567256
+2001,"825 Boulevard Ren�-L�vesque E. App. 307 Montreal",45.501689,-73.567256
+2002,"511 Rue St-Christophe Montreal",45.512999,-73.551226
+2003,"334, rue Notre-Dame Est Montreal",45.537470,-73.540923
+2004,"410 Rue Notre-Dame est App. 101 Montreal",45.510360,-73.552277
+2005,"1371 Rue Logan Montreal",45.521558,-73.557437
+2006,"1710 Rue Poupart App.4 Montreal",45.530488,-73.550599
+2007,"400 Rue de l'inspecteur App. 209 Montreal",45.496313,-73.560727
+2008,"525 Rue Lucien-L'Allier App. 605 Montreal",45.492804,-73.566549
+2009,"1126 Rue Saint-Timoth�e Montreal",45.515599,-73.554736
+2010,"650 Rue Jean D'Estr�es App. 204 Montreal",45.494896,-73.565424
+2011,"1070 Rue berri App. 35 Montreal",45.513178,-73.556862
+2012,"3470 Simpson, app.501 Montreal",45.498412,-73.583817
+2013,"400, rue de l'Inspecteur Montreal",45.496313,-73.560727
+2014,"1489, Rue Logan Montreal",45.522313,-73.556736
+2015,"1420 Panet App.3 Montreal",45.520074,-73.555300
+2016,"1941 Avenue De Lorimier Condo 8 Montreal",45.501689,-73.567256
+2017,"401-50, rue des soeurs grises Montreal",45.498548,-73.554042
+2018,"1625 rue Amherst apt 2 Montreal",45.518636,-73.559592
+2019,"350 Rue de l'Inspecteur App. 511 Montreal",45.496167,-73.560114
+2020,"1203 Rue Saint-Christophe Condo 5 Montreal",45.501689,-73.567256
+2021,"2160 Rue De Rouen Condo 4 Montreal",45.501689,-73.567256
+2022,"551 Rue De La Montagne #606 Montreal",45.493360,-73.565513
+2023,"137 Rue Saint-Pierrre Unit 212 Montreal",45.500761,-73.554758
+2024,"401-1451, Parthenais Montreal",45.526500,-73.549542
+2025,"2108 Avenue Delorimier Montreal",45.528742,-73.559182
+2026,"211-1451, rue Parthenais Montreal",45.526500,-73.549542
+2027,"2417, rue Rouen Montreal",45.533302,-73.557525
+2028,"1854 Rue Beaudry Montreal",45.520926,-73.560818
+2029,"303-1500, boulevard de Maisonneuve est Montreal",45.521587,-73.555203
+2030,"363 Rue ST-Hubert Montreal",45.512363,-73.550618
+2031,"1051 Rue Anderson Unit 301 Montreal",45.505036,-73.562665
+2032,"2098 Rue St-Hubert Montreal",45.518646,-73.565917
+2033,"1901 Rue Champlain App. 3 Montreal",45.524593,-73.558674
+2034,"1400 rue Saint-Jacques #6 Montreal",45.493005,-73.568188
+2035,"1365 Boulevard Ren�-L�vesque Est App. 302 Montreal",45.500800,-73.566560
+2036,"2038 Avenue DeBullion Unit 302 Montreal",45.513145,-73.567292
+2037,"1691 Rue Logan App. 2 Montreal",45.523788,-73.555339
+2038,"1021 Rue Amherst App. 301 Montreal",45.515842,-73.553237
+2039,"2205 Rue Rouen App. 102 Montreal",45.531231,-73.559519
+2040,"710, rue Amherst Montreal",45.514564,-73.550770
+2041,"650 Jean D'Estrees Street App. 1704 Montreal",45.494896,-73.565424
+2042,"825 Boulevard Ren�-L�vesque Montreal",45.501689,-73.567256
+2043,"1846, rue Beaudry Montreal",45.520888,-73.560738
+2044,"2543, boulevard de Maisonneuve E. Montreal",45.530569,-73.547109
+2045,"1050 Amesbury condo 1127 Montreal",45.501689,-73.567256
+2046,"90 Des Soeurs Grises App. 705 Montreal",45.498845,-73.554854
+2047,"1800, rue St-Timoth�e, app. 1 Montreal",45.518899,-73.561751
+2048,"448, rue Notre-Dame Est, app. 505 Montreal",45.510933,-73.552033
+2049,"902-551, De la Montagne Montreal",45.493360,-73.565513
+2050,"1927, rue Alexandre-Des�ve, app. 217 Montreal",45.501689,-73.567256
+2051,"1240, rue Montcalm, app. 3 Montreal",45.517663,-73.554954
+2052,"2182 Harmony Montreal",45.531272,-73.557951
+2053,"98, rue Charlotte, app. 264 Montreal",45.510429,-73.561555
+2054,"403-448, rue Notre-Dame Est Montreal",45.510933,-73.552033
+2055,"859, rue de la Commune Est, suite 212 Montreal",45.512467,-73.549379
+2056,"410-1451, rue Parthenais Montreal",45.526500,-73.549542
+2057,"1700, rue Papineau, app. 108 Montreal",45.524140,-73.556054
+2058,"633, rue St-Timoth�e Montreal",45.513942,-73.550665
+2059,"81, rue de Br�soles, app. 604 Montreal",45.501689,-73.567256
+2060,"1880, boulevard de Maisonneuve est, app. 1 Montreal",45.523884,-73.553186
+2061,"329, rue Notre-Dame est, app. 129 Montreal",45.510036,-73.552824
+2062,"1200, rue St-Jacques, app. 204 Montreal",45.495092,-73.566172
+2063,"65, boulevard Ren�-L�vesque, app. 401 Montreal",45.501689,-73.567256
+2064,"697, rue Christophe Street South-East Montreal",45.553692,-73.632679
+2065,"1227 Montcalm Montreal",45.517810,-73.554843
+2066,"585, rue Guy, app. 2 Montreal",45.491010,-73.568658
+2067,"400, rue de l'Inspecteur, unit� 812 Montreal",0.000000,0.000000
+2068,"1365, Bd Ren� L�vesque Est, app. 201 Montreal",45.500800,-73.566560
+2069,"425, rue St-H�l�ne, app. 610 Montreal",45.501689,-73.567256
+2070,"211-1451, Parthenais Montreal",45.526500,-73.549542
+2071,"1021, rue Amherst, app. 101 Montreal",45.515842,-73.553237
+2072,"4200 St Ambroise app.313 Montreal",45.474261,-73.581169
+2073,"2252 Chapleau Montreal",45.533312,-73.557662
+2074,"2211 De Champlain #1 Montreal",45.526435,-73.562888
+2075,"641, avenue Saint-Christophe Montreal",45.513195,-73.551759
+2076,"2214, avenue de Lorimier Montreal",45.529414,-73.560601
+2077,"991, rue Amherst, condo 102 Montreal",45.501689,-73.567256
+2078,"1942, rue de la Visitation Montreal",45.522039,-73.561410
+2079,"919, rue de la Gaucheti�re Est Montreal",45.515035,-73.554267
+2080,"814, rue Amherst Montreal",45.514894,-73.551451
+2081,"1655, rue Patrick Street, Loft 501 Montreal",45.501689,-73.567256
+2082,"318-1451, rue Parthenais Montreal",45.526500,-73.549542
+2083,"1451, rue Partenais, unit� 207 Montreal",45.501689,-73.567256
+2084,"244 rue Sherbrooke Est App. 416 Montreal",45.515062,-73.567999
+2085,"581, rue St-Christophe Montreal",45.513103,-73.551514
+2086,"6-605 rue Guy Montreal",45.491117,-73.568875
+2087,"570 Milton Montreal",45.506968,-73.575779
+2088,"880, rue De la Gaucheti�re Est Montreal",45.514733,-73.554513
+2089,"1461 Rue Moreau Montreal",45.538081,-73.543220
+2090,"825, boulevard Ren�-L�vesque Montreal",45.501689,-73.567256
+2091,"1950, De Champlain, app. 207 Montreal",45.524742,-73.559575
+2092,"1450, rue Wolfe Montreal",45.518237,-73.557450
+2093,"1100, rue Jeanne Mance, condo 109 Montreal",45.501689,-73.567256
+2094,"1101, rue Saint-Urbain, app. 608 Montreal",45.507557,-73.562104
+2095,"2280, avenue De Lorimier Montreal",45.529932,-73.561309
+2096,"981, rue Amherst, app. 201 Montreal",45.515631,-73.553037
+2097,"859, rue de la Commune Est, condo 112 Montreal",45.501689,-73.567256
+2098,"1200, rue St-Jacques, condo 1304 Montreal",45.501689,-73.567256
+2099,"630, rue William Ap 503 Montreal",45.499127,-73.556804
+2100,"531-1451, rue parthenais Montreal",45.526500,-73.549542
+2101,"825, boulevard Ren�-Levesque Est, app. 410 Montreal",45.500800,-73.566560
+2102,"1308 Martineau Montreal",45.519821,-73.555978
+2103,"1090 Rue Berri Suite 30 Montreal",45.513421,-73.557067
+2104,"2201 de Maisonneuve E. Montreal",45.527017,-73.550317
+2105,"2025 De Champlain Apt.308 Montreal",45.525405,-73.560395
+2106,"2018, rue du Havre, app. 302 Montreal",45.533815,-73.553006
+2107,"2187 Maisonneuve Ouest Montreal",45.491093,-73.584651
+2108,"363, rue St-Hubert Unit� 208 Montreal",45.501689,-73.567256
+2109,"2780 Ontario est No.5 Montreal",45.535350,-73.550858
+2110,"1849 Amherst Montreal",45.519792,-73.561856
+2111,"2170 de Rouen #3 Montreal",45.530746,-73.559740
+2112,"101-1550, rue Dorion Montreal",45.524390,-73.553188
+2113,"1370 Overdale Montreal",45.494969,-73.571872
+2114,"5-2160, rue De Rouen Montreal",45.530626,-73.559822
+2115,"1379 Maisonneuve Est App. A Montreal",45.520916,-73.556074
+2116,"1566 Logan Montreal",45.522699,-73.556180
+2117,"825 rue St-Andr� Montreal",45.501689,-73.567256
+2118,"202-65, boulevard Ren�-L�vesques Est Montreal",45.501689,-73.567256
+2119,"2038 Du Havre app 102 Montreal",45.533755,-73.552988
+2120,"969, rue St-Timoth�e, Suite 101 Montreal",45.514991,-73.553021
+2121,"2517 rue Bercy Montreal",45.537101,-73.558173
+2122,"2160 de rouen app 2 Montreal",45.530626,-73.559822
+2123,"2377 rue Sainte Catherine Est Montreal",45.528131,-73.547428
+2124,"532-1451, rue Parthenais Montreal",45.526500,-73.549542
+2125,"821-950, rue Notre-Dame Ouest Montreal",45.496710,-73.562056
+2126,"1855 Amherst Montreal",45.519768,-73.562033
+2127,"2055 rue de Bleury #205 Montreal",45.507690,-73.569641
+2128,"801 de la Commune E. unit� 102 Montreal",45.501689,-73.567256
+2129,"825 Ren� L�vesque suite 212 Montreal",45.501689,-73.567256
+2130,"1451, rue Parthenais Montreal",45.526500,-73.549542
+2131,"2025 DeBullion Montreal",45.513112,-73.566786
+2132,"1-1070 rue Sainte-�lisabeth Montreal",45.501689,-73.567256
+2133,"591, rue Saint-Christophe Montreal",45.513118,-73.551555
+2134,"1420, rue Saint-Jacques, app. 2 Montreal",45.492770,-73.568647
+2135,"363 Rue St-Hubert, App 320 Montreal",45.512363,-73.550618
+2136,"1000 Commune Est. Apt. 513 Montreal",45.514126,-73.547611
+2137,"406-1200, rue St-Alexandre Montreal",45.504812,-73.566679
+2138,"2750 Ontario est app 1 Montreal",45.535106,-73.550938
+2139,"1320 de Maisonneuve E #1 Montreal",45.520285,-73.556432
+2140,"600, rue de la montagne Montreal",45.493815,-73.566555
+2141,"1100 Jeanne-Mance Apt 512 Montreal",45.505617,-73.562733
+2142,"2148 De La Visitation Montreal",45.523002,-73.563756
+2143,"2325 rue Olivier-Robert Montreal",45.528547,-73.550020
+2144,"551 De La Montagne App 304 Montreal",45.493360,-73.565513
+2145,"1950 rue De Champlain App 201 Montreal",45.524742,-73.559575
+2146,"550 rue Jean D'Estr�es, unit� 704 Montreal",45.501689,-73.567256
+2147,"1280 St-Jacques, Suite 806 Montreal",45.494336,-73.566932
+2148,"551 St-Christophe Montreal",45.513057,-73.551391
+2149,"1430, Rue Panet, Apt 1 Montreal",45.520126,-73.555418
+2150,"2245 d'Iberville Montreal",45.534025,-73.556846
+2151,"2507 de Maisonneuve Est Montreal",45.530265,-73.547379
+2152,"2277, rue de Champlain Montreal",45.526740,-73.563554
+2153,"1931 de Lorimier apt:3 Montreal",45.527905,-73.556532
+2154,"859, rue de la Commune E, app.107 Montreal",45.512467,-73.549379
+2155,"1200, Rue St-Jacques #1304 Montreal",45.495092,-73.566172
+2156,"1015 William Montreal",45.495627,-73.561026
+2157,"950, rue Notre-Dame Ouest Montreal",45.496710,-73.562056
+2158,"2112 rue de la Visitation Montreal",45.522838,-73.563320
+2159,"574, rue Dufresne Montreal",45.527775,-73.545945
+2160,"Hutchison Montreal",45.519079,-73.597525
+2161,"1708 De La Visitation Montreal",45.520760,-73.558742
+2162,"1194 rue Plessis app 302 Montreal",45.519632,-73.552638
+2163,"1420 rue panet # 2 Montreal",45.520074,-73.555300
+2164,"601-950, rue Notre-Dame Ouest Montreal",45.496710,-73.562056
+2165,"7-1825 de la Visitation Montreal",45.521418,-73.560030
+2166,"326-1451, rue Parthenais Montreal",45.526500,-73.549542
+2167,"2224 rue de Rouen app.3 Montr�al Montreal",45.531387,-73.559164
+2168,"2140, Rue de Bordeaux Montreal",45.528391,-73.560066
+2169,"1-1098 Wolfe Montreal",45.516492,-73.553762
+2170,"4 - 1901 Rue De Champlain Montreal",45.524593,-73.558674
+2171,"389 Rue St-Paul Ouest, appt. 402 Montreal",45.500656,-73.556804
+2172,"400 rue de l'inspecteur #318 Montreal",45.496313,-73.560727
+2173,"1401 Boulevard Maisonneuve-Est Montreal",45.497682,-73.577890
+2174,"1618 Saint-Dominique Montreal",45.511444,-73.565937
+2175,"216-1451, rue Parthenais Montreal",45.526500,-73.549542
+2176,"603-88 Charlotte Montreal",45.509846,-73.562000
+2177,"400 Rue l'Inspecteur Appt 303 Montreal",45.496313,-73.560727
+2178,"835 Rue St-Andr� Montreal",45.501689,-73.567256
+2179,"1616, rue Amherst Montreal",45.518585,-73.559547
+2180,"1175 Boul. Maisonneuve Est Apt:7 Montreal",45.518928,-73.558017
+2181,"3710 Rue Redpath Montreal",45.500094,-73.584761
+2182,"1020 Rue St-Antoine Est Montreal",45.514696,-73.551757
+2183,"532-1451, Parthenais Montreal",45.526500,-73.549542
+2184,"568 Dufresne apt 3 Montreal",45.527746,-73.545879
+2185,"551 de la Montagne #505 Montreal",45.493360,-73.565513
+2186,"551 De La Montagne apt 910 Montreal",45.493360,-73.565513
+2187,"551 de la Montagne Montreal",45.493360,-73.565513
+2188,"633 St-Timoth�e Montreal",45.513942,-73.550665
+2189,"2545, boulevard de Maisonneuve Est Montreal",45.530583,-73.547097
+2190,"2240 Parthenais Montreal",45.530865,-73.559193
+2191,"655 St-Andre Montreal Montreal",45.513598,-73.551218
+2192,"2160 rue de Rouen #4 Montreal",45.530626,-73.559822
+2193,"612 Rue Dufresne Montreal",45.527959,-73.546478
+2194,"882 Rue de la Gaucheti�re Est Montreal",45.514744,-73.554501
+2195,"325 Rue du Saint-Sacrement app303 Montreal",45.502016,-73.557410
+2196,"550 Jean-D'estrees App.103 Montreal",45.494470,-73.564478
+2197,"2038 Rue De Bullion # 205 Montreal",45.513145,-73.567292
+2198,"9-1451, Parthenais Montreal",45.526500,-73.549542
+2199,"1929 Rue Wolfe app 3 Montreal",45.520619,-73.562304
+2200,"86 Saint-Norbert app 5 Montreal",45.512958,-73.567841
+2201,"1430 Rue De La Visitation App.5 Montreal",45.519501,-73.556082
+2202,"400 Rue de l'Inspecteur  unit� 308 Montreal",0.000000,0.000000
+2203,"1854 Rue Beaudry Montreal",45.520926,-73.560818
+2204,"203-1455 Ren� L�vesque Est Montreal",45.501689,-73.567256
+2205,"1200 Rue St-Jacques Montreal",45.495092,-73.566172
+2206,"2002, Rue Amherst, Apt 6 Montreal",45.520189,-73.563196
+2207,"112-1451, rue Parthenais Montreal",45.526500,-73.549542
+2208,"2331, rue Hogan Montreal",45.536972,-73.555763
+2209,"925 Ren� L�vesque Montreal",45.501689,-73.567256
+2210,"512-1010 Rue Sainte-Catherine Est Montreal",45.517188,-73.557288
+2211,"3568 A, rue Aylmer Montreal",45.508194,-73.576855
+2212,"869 Avenue Viger #206 Montreal",45.514273,-73.553575
+2213,"810 Rue De La Gaucheti�re Est app 8 Montreal",45.514077,-73.555166
+2214,"118-1451, Parthenais Montreal",45.526500,-73.549542
+2215,"1566 Rue Plessis app.2 Montreal",45.521291,-73.556276
+2216,"2228 Cartier Montreal",45.527769,-73.561596
+2217,"2760, rue Ontario Est Montreal",45.535188,-73.550957
+2218,"1826, de la Visitation Montreal",45.521402,-73.560062
+2219,"1095, rue St-Andr� Montreal",45.501689,-73.567256
+2220,"1309, rue Panet Montreal",45.519732,-73.554108
+2221,"1716, rue de la Visitation Montreal",45.520788,-73.558803
+2222,"2442, rue Champagne Montreal",45.529162,-73.547258
+2223,"4-1430, rue Panet Montreal",45.520126,-73.555418
+2224,"7-2160, rue de Rouen Montreal",45.530626,-73.559822
+2225,"857 St-Christophe Montreal",45.513570,-73.552501
+2226,"756-98, rue Charlotte Montreal",45.510429,-73.561555
+2227,"606 - 111, rue Vinet Montreal",45.481846,-73.572333
+2228,"582, rue Dufresne Montreal",45.527816,-73.546036
+2229,"3-1901, rue De Champlain Montreal",45.524593,-73.558674
+2230,"801-1280, rue St-Jacques Montreal",45.494336,-73.566932
+2231,"3-1901 De Champlain Rue Montreal",45.524593,-73.558674
+2232,"3-1430, rue St-Jacques Montreal",45.492659,-73.568753
+2233,"1288, rue Alexandre-Des�ve Montreal",45.501689,-73.567256
+2234,"275 Rue De La Gauchetière Ouest Montreal",45.504945,-73.562326
+2235,"512-400, rue de l'Inspecteur Montreal",45.496313,-73.560727
+2236,"2254, rue Hochelaga Montreal",45.532174,-73.560276
+2237,"2025, rue St-Andr� Montreal",45.501689,-73.567256
+2238,"803-1200, rue Saint Jacques Montreal",45.495092,-73.566172
+2239,"607-65, boulevard Ren�-Levesque Est Montreal",45.501689,-73.567256
+2240,"1781 St-André Montreal",45.518364,-73.562247
+2241,"5-1200, rue St-Christophe Montreal",45.515087,-73.556771
+2242,"101-1951, rue Tansley Montreal",45.523530,-73.550462
+2243,"102-1700, avenue Papineau Montreal",45.524140,-73.556054
+2244,"2-928, boulevard de Maisonneuve est Montreal",45.517374,-73.559094
+2245,"2185, boulevard de Maisonneuve Est Montreal",45.526872,-73.550451
+2246,"207-1950, rue de Champlain Montreal",45.524742,-73.559575
+2247,"5-1460, rue Wolfe Montreal",45.518254,-73.557624
+2248,"106-3470, rue Simpson Montreal",45.498412,-73.583817
+2249,"1-1050, rue Sainte- �lizabeth Montreal",45.501689,-73.567256
+2250,"A-1963, rue  Fullum Montreal",45.530359,-73.554596
+2251,"7-2170, rue de Rouen Montreal",45.530746,-73.559740
+2252,"304-699, rue St-Maurice Montreal",45.499612,-73.559416
+2253,"304-2170, rue Cartier Montreal",45.527587,-73.561005
+2254,"1401, boulevard de Maisonneuve Est Montreal",45.521112,-73.555953
+2255,"323-260, rue Sherbrooke Est Montreal",45.515386,-73.568004
+2256,"1005-441, avenue du Pr�sident Kennedy Montreal",45.506730,-73.570416
+2257,"3-1081, rue Hotel de Ville Montreal",45.510392,-73.559084
+2258,"433-1451, rue Parthenais Montreal",45.526500,-73.549542
+2259,"740-950, rue Notre Dame Ouest Montreal",45.496710,-73.562056
+2260,"940-950, rue Notre-Dame Ouest Montreal",45.496710,-73.562056
+2261,"405-1280, rue St-Jacques Montreal",45.494336,-73.566932
+2262,"302-1181, rue Panet Montreal",45.519132,-73.552893
+2263,"2-1570, rue Beaudry Montreal",45.519601,-73.557779
+2264,"6-1265, rue Sainte-�lisabeth Montreal",45.501689,-73.567256
+2265,"690, rue Saint-Andr� Montreal",45.501689,-73.567256
+2266,"411-1200, St-Alexandre Montreal",45.504812,-73.566679
+2267,"909-1280, rue St-Jacques Ouest Montreal",45.494336,-73.566932
+2268,"605-400, rue de l'Inspecteur Montreal",45.496313,-73.560727
+2269,"5-1880, boul. de Maisonneuve Est Montreal",45.523884,-73.553186
+2270,"1450, rue Wolfe Montreal",45.518237,-73.557450
+2271,"314-2004 boul. Saint-Laurent Montreal",45.511371,-73.567090
+2272,"2252, rue Hochelaga Montreal",45.532162,-73.560261
+2273,"519-1000, de la Commune Est Montreal",45.514126,-73.547611
+2274,"519-400, rue de L'Inspecteur Montreal",45.496313,-73.560727
+2275,"240-950, rue Notre-Dame Ouest Montreal",45.496710,-73.562056
+2276,"301-1011, rue Amherst Montreal",45.515776,-73.553106
+2277,"1100, Rue Wolfe Montreal",45.516565,-73.553722
+2278,"555, boulevard Ren� L�vesque est Montreal",45.501689,-73.567256
+2279,"308-1625, avenue Lincoln Montreal",45.495866,-73.580705
+2280,"2190, rue Harmony Montreal",45.531306,-73.558024
+2281,"2278, rue de Lorimier Montreal",45.529919,-73.561282
+2282,"908-1061, rue Saint-Alexandre Montreal",45.503487,-73.563652
+2283,"609-551, rue de la Montagne Montreal",45.493360,-73.565513
+2284,"304-2023, avenue Papineau Montreal",45.526234,-73.559873
+2285,"308 - 1740, boulevard Papineau Montreal",45.524297,-73.556288
+2286,"2606-350, rue de Maisonneuve Ouest Montreal",45.506902,-73.568966
+2287,"1-2578, rue Wurtele Montreal",45.539006,-73.557723
+2288,"3 - 740, rue Lusignan Montreal",45.492599,-73.570316
+2289,"1944, rue de la Visitation Montreal",45.522050,-73.561438
+2290,"203-320, rue Sherbrooke ouest Montreal",45.508511,-73.571014
+2291,"316-1210, rue Saint-Antoine Est Montreal",45.517159,-73.549759
+2292,"4-2224, rue de Rouen Montreal",45.531387,-73.559164
+2293,"425 Ste-H�l�ne Unit� 401 Montreal",45.501689,-73.567256
+2294,"C-435, rue Versailles Montreal",45.491153,-73.565819
+2295,"609-950, Notre-Dame Ouest Montreal",45.496710,-73.562056
+2296,"212-90, rue des Soeurs Grises Montreal",45.498845,-73.554854
+2297,"2293, rue de Bordeaux Montreal",45.529137,-73.561381
+2298,"550 Jean D'Estrees Unit� 608 Montreal",45.501689,-73.567256
+2299,"609-90, rue des Soeurs Grises Montreal",45.498845,-73.554854
+2300,"1010-651, rue de la Montagne Montreal",45.493862,-73.566283
+2301,"241-950, rue Notre-Dame Ouest Montreal",45.496710,-73.562056
+2302,"1214, rue Ste-Elisabeth Montreal",45.511572,-73.560453
+2303,"1317 Rue La Fontaine, Unit� 2 Montreal",0.000000,0.000000
+2304,"001-1021, rue Amherst Montreal",45.515842,-73.553237
+2305,"501-600, rue de la Montagne Montreal",45.493815,-73.566555
+2306,"2149, rue Frontenac Montreal",45.534066,-73.554892
+2307,"2-1430, rue Saint-Jacques Montreal",45.492659,-73.568753
+2308,"2067, rue Beaudry Montreal",45.522014,-73.563106
+2309,"1961, rue Fullum Montreal",45.530370,-73.554639
+2310,"602-3445, rue Drummond Montreal",45.501402,-73.579522
+2311,"401-428, rue Saint-Pierre Montreal",45.501695,-73.557274
+2312,"1-2413, rue Sainte-Catherine Est Montreal",45.528669,-73.546922
+2313,"639-950, rue Notre-Dame ouest Montreal",45.496710,-73.562056
+2314,"1334, rue Sherbrooke Est Montreal",45.524306,-73.565087
+2315,"305-422, rue Saint-Pierre Montreal",45.501577,-73.557171
+2316,"1838, boulevard de Maisonneuve Est Montreal",45.523542,-73.553506
+2317,"806-550, rue Jean d'Estr�es Montreal",45.494470,-73.564478
+2318,"2086, avenue de Lorimier Montreal",45.528753,-73.558806
+2319,"6-2160, rue de Rouen Montreal",45.530626,-73.559822
+2320,"1129, rue St-Andr� Montreal",45.501689,-73.567256
+2321,"304-460, rue Saint-Jean Montreal",45.502352,-73.556977
+2322,"1085, rue du Glacis Montreal",45.514412,-73.550360
+2323,"3445, rue Drummond #607 Montreal",45.501402,-73.579522
+2324,"4-1787, rue Amherst Montreal",45.519443,-73.561101
+2325,"7-1570, rue Beaudry Montreal",45.519601,-73.557779
+2326,"2421, avenue des �rables Montreal",45.501689,-73.567256
+2327,"B-1602, avenue Selkirk Montreal",45.496396,-73.583084
+2328,"3-2720, rue Ontario Est Montreal",45.534849,-73.551119
+2329,"2055 Bleury #301 Montreal",45.507690,-73.569641
+2330,"403-555, Boulevard Ren�-L�vesque Est Montreal",45.501689,-73.567256
+2331,"1957, rue Fullum Montreal",45.530343,-73.554568
+2332,"2257, rue Dorion Montreal",45.528490,-73.561560
+2333,"325-1200, rue St-Alexandre Montreal",45.504812,-73.566679
+2334,"2055, rue Saint-Dominique Montreal",45.512389,-73.567653
+2335,"602-441, avenue du Pr�sident-Kennedy Montreal",45.506730,-73.570416
+2336,"2197, boulevard de Maisonneuve Montreal",45.526981,-73.550351
+2337,"301-2038, rue du Havre Montreal",45.533755,-73.552988
+2338,"96, rue Saint-Norbert Montreal",45.513196,-73.567781
+2339,"1-1400, rue Saint-Jacques Montreal",45.493005,-73.568188
+2340,"3-1495, rue Wolfe Montreal",45.518978,-73.557772
+2341,"303-2300, rue du Souvenir Montreal",45.487533,-73.581828
+2342,"101-427, rue Saint-Claude Montreal",45.508951,-73.552638
+2343,"517-555, boulevard Ren�-L�vesque Est Montreal",45.501689,-73.567256
+2344,"801-555, boulevard Ren� Levesque Est Montreal",45.501689,-73.567256
+2345,"743, rue Lusignan Montreal",45.492677,-73.570015
+2346,"333 Sherbrooke Est #108 Montreal",45.516488,-73.567694
+2347,"1005-551, rue de la Montagne Montreal",45.493360,-73.565513
+2348,"1646, rue Saint-Andr� Montreal",45.501689,-73.567256
+2349,"2248, rue Hochelaga Montreal",45.532162,-73.560483
+2350,"1870, Des �rables, unit� 5 Montreal",45.501689,-73.567256
+2351,"1-1800, rue Saint-Thimoth�e Montreal",45.518899,-73.561751
+2352,"451-98, rue Charlotte Montreal",45.510429,-73.561555
+2353,"106-1240, rue Saint-Timoth�e Montreal",45.516555,-73.556705
+2354,"1902, rue Frontenac, app. 302 Montreal",45.532379,-73.551439
+2355,"209-1740, avenue Papineau Montreal",45.524297,-73.556288
+2356,"3-2443, rue Ste-Catherine Est Montreal",45.528981,-73.546664
+2357,"1897 rue De Champlain Montreal",45.524593,-73.558667
+2358,"6-2770, rue Ontario Est Montreal",45.535269,-73.550912
+2359,"4-1921, rue de Lorimier Montreal",45.514442,-73.490693
+2360,"1058, rue Saint-Timoth�e Montreal",45.515355,-73.554044
+2361,"3-2121, rue Disraeli Montreal",45.527823,-73.555381
+2362,"1905, rue Wolfe Montreal",45.520463,-73.562145
+2363,"1844, rue Beaudry Montreal",45.520879,-73.560717
+2364,"302-1051, rue Anderson Montreal",45.505036,-73.562665
+2365,"1349, rue Logan Montreal",45.521234,-73.557831
+2366,"201-2487, rue Champagne Montreal",45.529726,-73.547066
+2367,"847-950, rue Notre-Dame Ouest Montreal",45.496710,-73.562056
+2368,"1-1071, avenue de L'Hotel de Ville Montreal",45.510326,-73.558940
+2369,"1084, rue Saint-Timoth�e Montreal",45.515465,-73.554483
+2370,"303-204, rue de l'H�pital Montreal",45.503417,-73.556561
+2371,"1-1988, rue Montcalm Montreal",45.521047,-73.562258
+2372,"1811, rue Saint-Andr� Montreal",45.501689,-73.567256
+2373,"301-1075, rue de Bleury Montreal",45.504696,-73.563281
+2374,"411-125, rue Ontario Est Montreal",45.512756,-73.566404
+2375,"1845, rue Panet Montreal",45.522420,-73.559911
+2376,"2058, rue Dorion Montreal",45.527449,-73.559390
+2377,"309-90, rue des Soeurs Grises Montreal",45.498845,-73.554854
+2378,"2129, rue Saint Timoth�e Montreal",45.520441,-73.564786
+2379,"3-4131, chemin de la C�te-des-Neiges Montreal",45.495641,-73.600961
+2380,"846 Amherst Montreal",45.515000,-73.551669
+2381,"5-2224, rue Rouen Montreal",45.531387,-73.559164
+2382,"1015, rue du Glacis Montreal",45.514361,-73.550389
+2383,"St-2-555, boulevard Ren�-L�vesque Est Montreal",45.501689,-73.567256
+2384,"316-1451, rue Parthenais Montreal",45.526500,-73.549542
+2385,"512-1451, rue Parthenais Montreal",45.526500,-73.549542
+2386,"1123, rue Saint-Andr� Montreal",45.501689,-73.567256
+2387,"1061, rue Saint-Alexandre, app. 610 Montreal",45.503487,-73.563652
+2388,"1629, rue Fullum Montreal",45.528353,-73.550674
+2389,"103-599, rue Wellington Montreal",45.486696,-73.557447
+2390,"203-370, rue Saint-Andr� Montreal",45.501689,-73.567256
+2391,"1211, rue Cartier Montreal",45.522603,-73.550137
+2392,"503, rue St-Christophe Montreal",45.512988,-73.551193
+2393,"2863 de rouen Montreal",45.537726,-73.553545
+2394,"30-500, rue Saint Paul Est Montreal",45.511012,-73.551036
+2395,"2088, avenue de Lorimier Montreal",45.528759,-73.558818
+2396,"301-2028, rue du Havre Montreal",45.533824,-73.553032
+2397,"1275, rue Panet Montreal",45.519519,-73.553850
+2398,"205-2038, rue de Bullion Montreal",45.513145,-73.567292
+2399,"3-1845, rue de la Visitation Montreal",45.521631,-73.560242
+2400,"2330, rue Sheppard Montreal",45.533220,-73.559243
+2401,"310-825, boulevard Ren�-L�vesque Est Montreal",45.501689,-73.567256
+2402,"511-2910, rue Ontario Est Montreal",45.537174,-73.549764
+2403,"109-1550, rue Dorion Montreal",45.524390,-73.553188
+2404,"2793, rue Ontario Est Montreal",45.535769,-73.550757
+2405,"1-2439, rue Sainte-Catherine Est Montreal",45.528906,-73.546738
+2406,"1693, rue Fullum Montreal",45.528841,-73.551710
+2407,"111-791, rue de la Commune Est Montreal",45.511794,-73.549804
+2408,"1955 René-Lévesque Est Montreal",45.522738,-73.548921
+2409,"1-2415, rue Parthenais Montreal",45.532150,-73.561446
+2410,"301-2160, rue Cartier Montreal",45.527533,-73.560891
+2411,"3-2279, avenue Gascon Montreal",45.535547,-73.555837
+2412,"409-2910, rue Ontario Est Montreal",45.537174,-73.549764
+2413,"309-2004, boulevard St-Laurent Montreal",45.511371,-73.567090
+2414,"1715, rue Sanguinet Montreal",45.514520,-73.565085
+2415,"313-2055, rue du Fort Montreal",45.493079,-73.583327
+2416,"301-1450, rue Parthenais Montreal",45.526498,-73.549869
+2417,"302-2200, rue Hochelaga Montreal",45.531785,-73.560686
+2418,"306-1010, rue Sainte-Catherine Est Montreal",45.517188,-73.557288
+2419,"601-925, boulevard Ren� Levesque Montreal",45.501689,-73.567256
+2420,"695, rue St-Andr� Montreal",45.501689,-73.567256
+2421,"618-1200, rue Saint-Alexandre Montreal",45.504812,-73.566679
+2422,"607-651, rue de la Montagne Montreal",45.493862,-73.566283
+2423,"204-60, rue de Br�soles Montreal",45.501689,-73.567256
+2424,"575 Lucien-L'Allier Montreal",45.492911,-73.566849
+2425,"6-2110, rue Clark Montreal",45.511606,-73.568873
+2426,"1895, rue de Champlain Montreal",45.524609,-73.558646
+2427,"1888, rue Poupart Montreal",45.531361,-73.552279
+2428,"303-825, boulevard Ren�-L�vesque Est Montreal",45.501689,-73.567256
+2429,"D-2425, avenue des �rables Montreal",45.501689,-73.567256
+2430,"507-925, boulevard Ren�-L�vesque Est Montreal",45.501689,-73.567256
+2431,"209-1451, rue Parthenais Montreal",45.526500,-73.549542
+2432,"4-1893, avenue de Lorimier Montreal",45.527639,-73.556023
+2433,"720, rue Saint-Andr� Montreal",45.501689,-73.567256
+2434,"2444, rue Champagne Montreal",45.529163,-73.547384
+2435,"624, rue Amherst Montreal",45.514404,-73.550440
+2436,"6-1361, rue la Fontaine Montreal",45.522166,-73.559185
+2437,"6-1317, rue la Fontaine Montreal",45.521678,-73.559780
+2438,"402-2380, avenue Pierre-Dupuy Montreal",45.494363,-73.544996
+2439,"407-1451, rue Parthenais Montreal",45.526500,-73.549542
+2440,"1111, rue Saint-Andr� Montreal",45.501689,-73.567256
+2441,"2497, boulevard de Maisonneuve Est Montreal",45.530178,-73.547456
+2442,"1203-370, rue Saint-Andr� Montreal",45.501689,-73.567256
+2443,"1305, rue Panet Montreal",45.519716,-73.554108
+2444,"1434, rue Fullum Montreal",45.527506,-73.548921
+2445,"425 rue Ste-Hélène #210 Montreal",45.500999,-73.557506
+2446,"2300, rue du Souvenir, condo 201 Montreal",45.501689,-73.567256
+2447,"455, St-Pierre Montreal",45.502135,-73.557986
+2448,"302-1200, rue Alexandre de S�ve Montreal",45.520363,-73.551983
+2449,"409-801, rue de la Commune Est Montreal",45.512250,-73.549547
+2450,"408-1280, rue Saint-Jacques Montreal",45.494336,-73.566932
+2451,"301-2150, rue Cartier Montreal",45.527478,-73.560778
+2452,"2005 Rue de Champlain App. 39 Montreal",45.525119,-73.560084
+2453,"1572 Rue Logan Montreal",45.522787,-73.556054
+2454,"1864 rue Poupart Montreal",45.531229,-73.551986
+2455,"1909 Avenue Goulet Montreal",45.525610,-73.557922
+2456,"2065 Rue Beaudry Montreal",45.522003,-73.563085
+2457,"1455 Towers Montreal",45.492950,-73.581937
+2458,"700 Rue Amherst Montreal",45.514535,-73.550711
+2459,"350 Rue de l'Inspecteur Montreal",45.495946,-73.560537
+2460,"1515 St. Jacques Street App. 8 Montreal",45.491872,-73.569821
+2461,"925 rue de la Gauchelière Est Montreal",45.515064,-73.554241
+2462,"1880 Rue De Maisonneuve est Montreal",45.523884,-73.553186
+2463,"2531 Ste Catherine E A Montreal",45.529919,-73.545670
+2464,"2371 Rue Dorion app.2 Montreal",45.529062,-73.562771
+2465,"104-50, rue des soeurs grises Montreal",45.498548,-73.554042
+2466,"1691 Rue Logan App. 2 Montreal",45.523788,-73.555339
+2467,"306-1451, rue Parthenais Montreal",45.526500,-73.549542
+2468,"1 Rue McGill App. 200 Montreal",45.498747,-73.552903
+2469,"98 Rue charlotte App. 461 Montreal",45.510429,-73.561555
+2470,"1921 Rue De Lorimier App. 4 Montreal",45.514442,-73.490693
+2471,"88 CHARLOTTE Street App. 314 Montreal",45.509846,-73.562000
+2472,"50, rue Des Soeurs Grises Montreal",45.498548,-73.554042
+2473,"727 Rue de Versailles App. 5 Montreal",45.493050,-73.569100
+2474,"1230 Rue St-Thimothée App. 1 Montreal",45.516060,-73.555446
+2475,"2025 rue de Champlain Montreal",45.525405,-73.560395
+2476,"441 Avenue President-Kennedy Condo 702 Montreal",45.501689,-73.567256
+2477,"3912 Parc Lafontaine Montreal",45.523562,-73.570816
+2478,"1478 Rue Alexandre-de-Seve Montreal",45.521567,-73.554750
+2479,"1431 Rue notre dame ouest App. 4 Montreal",45.491310,-73.566408
+2480,"574 Rue Dufresne Montreal",45.527775,-73.545945
+2481,"1077 Rue St-Mathieu Montreal",45.491815,-73.575665
+2482,"83 St-Paul E Ap. 206 Montreal",45.506538,-73.553211
+2483,"1100 Wolfe Street Montreal",45.516565,-73.553722
+2484,"630 Rue William App. 509 Montreal",45.499127,-73.556804
+2485,"1333 Rue Notre-Dame O. App. 409 Montreal",45.492388,-73.565436
+2486,"650 Rue Jean D'Estr�es Condo 1408 Montreal",45.501689,-73.567256
+2487,"1225 Notre Dame ouest Montreal",45.493768,-73.564474
+2488,"555 De La Commune Street West App. 210 Montreal",45.497803,-73.553022
+2489,"650 Rue Jean-d'Estr�es App. 1208 Montreal",45.494896,-73.565424
+2490,"5000 Rue Notre-dames App. 107 Montreal",45.501689,-73.567256
+2491,"207-4300, rue St-Ambroise Montreal",45.473731,-73.582071
+2492,"2667 Rufus Rockhead #4 Montreal",45.480663,-73.574370
+2493,"2835, St-Charles # 301 Montreal",45.477503,-73.572856
+2494,"778 Avenue Greene Montreal",45.483363,-73.582578
+2495,"2855 Rue Centre Montreal",45.476545,-73.572855
+2496,"1910 Rue St-Jacques Condo 104 Montreal",45.501689,-73.567256
+2497,"524-526 Beaudoin Montreal",45.474995,-73.587442
+2498,"525-527 Lacasse Montreal",45.474732,-73.587556
+2499,"1788 Rue du Canal App. 407 Montreal",45.485590,-73.564786

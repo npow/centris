@@ -63,12 +63,14 @@ def distance_on_unit_sphere(lat1, long1, lat2, long2):
 
 def weight_vector(lat1,long1,points,sigma):
   weights=[]
+  dist=[]
   for point in points:
     distance=distance_on_unit_sphere(lat1,long1,point[0],point[1])
+    dist.append(distance)
     weight=gaussian_weight(distance,sigma)
     weights.append(weight)
     #print "House at distance ",str(distance)," has weight ",str(weight)
-  return weights
+  return weights,dist
 
 def gaussian_weight(distance,sigma):
   return math.exp(-distance**2/(2*sigma**2))
@@ -88,7 +90,7 @@ for col in ['AP']:#, 'COP', 'AP', 'LS', 'MA']:#, 'PPR', '2X', '3X', '4X', '5X', 
   geo_points=merged[['Lat','Lng']]
   X = merged.drop(['MlsNumber', 'Lat', 'Lng', 'BuyPrice'], axis=1, inplace=False)
   Y = merged[['BuyPrice']]
-
+  #X=X[['LivingArea','NbChambres','NbSallesBains']]
   X = X[merged[col]==1]
   Y = Y[merged[col]==1]
   geo_points=geo_points[merged[col]==1]
@@ -134,11 +136,11 @@ for col in ['AP']:#, 'COP', 'AP', 'LS', 'MA']:#, 'PPR', '2X', '3X', '4X', '5X', 
   geo_points=np.array(geo_points)
   skf = KFold(n=X.shape[0], n_folds=10, shuffle=True, random_state=42)
 
-  var_num=2
-  num_neigh=range(5,10)
-  var_range=np.array(range(8,40))/10.0
+  var_num=1.6
+  num_neigh=range(7,8)
+  var_range=np.array(range(16,80))/20.0
   for neigh in num_neigh:
-    for var_num in np.nditer(var_range):
+    #for var_num in np.nditer(var_range):
       print neigh
       print var_num
       L_rmse = []
@@ -148,6 +150,7 @@ for col in ['AP']:#, 'COP', 'AP', 'LS', 'MA']:#, 'PPR', '2X', '3X', '4X', '5X', 
       vari=var_num
     #clf=KNeighborsRegressor(n_neighbors=8)
       scaler=StandardScaler()
+      pca=PCA(n_components=2)
       clf = Pipeline([
          ('scaler', StandardScaler()),
          # ('clf', AdaBoostRegressor()),
@@ -185,20 +188,34 @@ for col in ['AP']:#, 'COP', 'AP', 'LS', 'MA']:#, 'PPR', '2X', '3X', '4X', '5X', 
       #print(X[indic])
       
       y_pred=[]
+      norm_dist=[]
       for i in range(0,len(Y)):
         #print 'I am in the loop'
         dist,indic=k_clf.kneighbors(X[i])
 
         indic= indic.tolist()[0]
-        weights= weight_vector(geo_points[i][0],geo_points[i][1],geo_points[indic[1:]].tolist(),vari)
+        weights,distance= weight_vector(geo_points[i][0],geo_points[i][1],geo_points[indic[1:]].tolist(),vari)
+      
+        
         weights_array=np.array(weights)
+        dist_array=np.array(distance)
         y_pred.append(np.dot(weights_array,Y[indic[1:]])/weights_array.sum())
         #y_pred.append(Y[indic[1:]].mean())
+        norm_dist.append(np.dot(dist_array,weights_array)/weights_array.sum())
+        #norm_dist.append(dist_array.mean())
+        # if norm_dist[i]>3:
+        #   print distance
+        #   print Y[indic[1:]]
+        #   print weights
+        #   print Y[i]
+        #   print y_pred[i]
+        #   print Y[indic[1:]].mean()
 
-
+        #print norm_dist[i]
+        #print Y[i]
+        #print y_pred[i]
         #print y_pred[i]
         #print y_pred_all[i]
-        
 
         # rmse = math.sqrt(metrics.mean_squared_error(preds, Y_test))
         # corr = pearsonr(preds, Y_test)
@@ -215,6 +232,7 @@ for col in ['AP']:#, 'COP', 'AP', 'LS', 'MA']:#, 'PPR', '2X', '3X', '4X', '5X', 
         #   break
       print 'got it all'
       y_pred=np.array(y_pred)
+      norm_dist=np.array(norm_dist)
       #print type(y_pred),y_pred.shape
       #print type(Y),Y.shape
 
@@ -224,4 +242,39 @@ for col in ['AP']:#, 'COP', 'AP', 'LS', 'MA']:#, 'PPR', '2X', '3X', '4X', '5X', 
       print "RMSE: ", rmse
       print "corr: ", corr
       print "%diff: ", diff
+      #plt.plot(range(len(norm_dist)),norm_dist)
+      #plt.show()
+      total=0;
+      thresh_plot=[]
+      diff_plot=[]
+      maxi=20
+      for i in range(1,maxi):
+        thresh_low=(i-1)/(maxi/2.0)
+        thresh_high=i/(maxi/2.0)
+        thresh=i/(maxi/2.0)
+        thresh_plot.append(thresh_high)
+        # indic1=norm_dist>thresh
+        
+        # indic2=norm_dist<thresh
+        
+        # y_pred1=y_pred[indic1]
+        # Y1=Y[indic1]
+        # print 'greater than thresh ',thresh,' : ',len(Y1)
+        # y_pred2=y_pred[indic2]
+        # Y2=Y[indic2]
+        # print 'less than thresh ',thresh,' : ',len(Y2)
+        # diff = np.array([abs(p-a)/a for (p,a) in zip(y_pred1,Y1)]).mean()
+        # print "%diff: ", diff
+        # diff = np.array([abs(p-a)/a for (p,a) in zip(y_pred2,Y2)]).mean()
+        # print "%diff: ", diff
+        indic=np.logical_and(norm_dist>thresh_low ,norm_dist<thresh_high)
+        y_pred_bin=y_pred[indic]
+        Y_bin=Y[indic]
+        total=total+len(Y_bin)
+        diff = np.array([abs(p-a)/a for (p,a) in zip(y_pred_bin,Y_bin)]).mean()
+        diff_plot.append(diff)
+        print "%diff: ", diff,' ', total,'distance: ', thresh_high
+      plt.plot(thresh_plot,diff_plot)
+      plt.show()
+
 
