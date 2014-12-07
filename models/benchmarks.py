@@ -171,126 +171,147 @@ numerical_columns = [
   'FireDist'
   ]
 
-for col in ['AP']:#, 'COP', 'AP', 'LS', 'MA']:#, 'PPR', '2X', '3X', '4X', '5X', 'AU', 'UNI', 'MEM']:
-  print "*" * 80
-  print col
+def benchmark(clf=None, hidden_size=10):
+  for col in ['AP']:#, 'COP', 'AP', 'LS', 'MA']:#, 'PPR', '2X', '3X', '4X', '5X', 'AU', 'UNI', 'MEM']:
+    print "*" * 80
+    print type(clf)
+    print col
 
-  X = merged[numerical_columns + ['LivingArea']]
-  #X = merged.drop(['MlsNumber', 'Lat', 'Lng', 'BuyPrice'], axis=1, inplace=False)
-  X_cat = merged[categorical_columns]
-  Y = merged[['BuyPrice']]
+    X = merged[numerical_columns + ['LivingArea']]
+    #X = merged.drop(['MlsNumber', 'Lat', 'Lng', 'BuyPrice'], axis=1, inplace=False)
+    X_cat = merged[categorical_columns]
+    Y = merged[['BuyPrice']]
 
-  mask = merged[col]==1
-  X, X_cat, Y = X[mask], X_cat[mask], Y[mask]
-  print 'X.shape: ', X.shape
-  print 'Y.shape: ', Y.shape
+    mask = merged[col]==1
+    X, X_cat, Y = X[mask], X_cat[mask], Y[mask]
+    print 'X.shape: ', X.shape
+    print 'Y.shape: ', Y.shape
 
-  # filter rows with NaN
-  mask = ~np.isnan(X).any(axis=1)
-  X, X_cat, Y = X[mask], X_cat[mask], Y[mask]
+    # filter rows with NaN
+    mask = ~np.isnan(X).any(axis=1)
+    X, X_cat, Y = X[mask], X_cat[mask], Y[mask]
 
-  mask = ~np.isnan(Y).any(axis=1)
-  X, X_cat, Y = X[mask], X_cat[mask], Y[mask]
-  print 'After NaN filter: ', X.shape
+    mask = ~np.isnan(Y).any(axis=1)
+    X, X_cat, Y = X[mask], X_cat[mask], Y[mask]
+    print 'After NaN filter: ', X.shape
 
-  X, X_cat, Y = np.array(X), np.array(X_cat), np.array(Y)
-  if USE_LOG:
-    Y = np.log(Y)
-  Y = Y.reshape(Y.shape[0])
-
-  print "mean: ", np.mean(Y)
-  print "median: ", np.median(Y)
-  print "std: ", Y.std()
-
-  # remove outliers
-  mask = Y > 10**5
-  X, X_cat, Y = X[mask], X_cat[mask], Y[mask]
-  mask = Y < 10**6
-  X, X_cat, Y = X[mask], X_cat[mask], Y[mask]
-
-  # one-hot encode categorical features
-  X_cat_enc = []
-  for i, cat in enumerate(categorical_columns):
-    col = X_cat[:,i]
-    col = LabelEncoder().fit_transform(col).reshape((-1,1))
-    col_enc = OneHotEncoder(sparse=False).fit_transform(col)
-    X_cat_enc.append(col_enc)
-  X_cat = np.concatenate(X_cat_enc, axis=1)
-  print 'X_cat.shape: ', X_cat.shape
-
-  skf = KFold(n=X.shape[0], n_folds=10, shuffle=True, random_state=42)
-  L = { 'rmse': [], 'corr': [], 'r2': [], 'diff': [], 'mae': [], 'explained_var': [], 'var': []}
-  for train_indices, test_indices in skf:
-    X_train, X_train_cat, Y_train = X[train_indices], X_cat[train_indices], Y[train_indices]
-    X_test, X_test_cat, Y_test = X[test_indices], X_cat[test_indices], Y[test_indices]
-
-    scaler = StandardScaler()
-    X_train = scaler.fit_transform(X_train)
-    X_test = scaler.transform(X_test)
-
-    X_train = np.concatenate([X_train, X_train_cat], axis=1)
-    X_test = np.concatenate([X_test, X_test_cat], axis=1)
-
-    if USE_NEURALNET:
-      Y_train, Y_test = Y_train.reshape(-1, 1), Y_test.reshape(-1, 1)
-      hidden_size = 10
-
-      train_ds = SupervisedDataSet(X_train.shape[1], Y_train.shape[1])
-      train_ds.setField('input', X_train)
-      train_ds.setField('target', Y_train)
-      net = buildNetwork(X_train.shape[1], hidden_size, Y_train.shape[1], bias=True)
-      trainer = BackpropTrainer(net, train_ds)
-
-      epochs = 100
-      for i in xrange(epochs):
-        mse = trainer.train()
-        rmse = math.sqrt(mse)
-        print "epoch: %d, rmse: %f" % (i, rmse)
-
-      test_ds = SupervisedDataSet(X_test.shape[1], Y_test.shape[1])
-      test_ds.setField('input', X_test)
-      test_ds.setField('target', Y_test)
-      preds = net.activateOnDataset(test_ds)
-    else:
-      #clf = AdaBoostRegressor()
-      #clf = ARDRegression()
-      #clf = BaggingRegressor()
-      #clf = BayesianRidge()
-      #clf = ElasticNet()
-      clf = GradientBoostingRegressor()
-      #clf = KNeighborsRegressor(n_neighbors=5)
-      #clf = RandomForestRegressor()
-      #clf = Ridge(alpha=0.5, normalize=True)
-      #clf = SVR()
-      clf.fit(X_train, Y_train)
-      preds = clf.predict(X_test).astype(float)
-
+    X, X_cat, Y = np.array(X), np.array(X_cat), np.array(Y)
     if USE_LOG:
-      Y_test_10 = np.exp(Y_test)
-      preds_10 = np.exp(preds)
-    else:
-      Y_test_10 = Y_test
-      preds_10 = preds
+      Y = np.log(Y)
+    Y = Y.reshape(Y.shape[0])
 
-    rmse = math.sqrt(metrics.mean_squared_error(Y_test_10, preds_10))
-    corr = pearsonr(preds_10, Y_test_10)
-    diff = np.array([abs(p-a)/a for (p,a) in zip(Y_test_10, preds_10)])
-    mae = metrics.mean_absolute_error(Y_test_10, preds_10)
-    explained_var = metrics.explained_variance_score(Y_test_10, preds_10)
-    r2 = metrics.r2_score(Y_test_10, preds_10)
-    var = np.var(diff)
+    print "mean: ", np.mean(Y)
+    print "median: ", np.median(Y)
+    print "std: ", Y.std()
 
-    L['rmse'].append(rmse)
-    L['corr'].append(corr[0])
-    L['diff'].append(diff.mean())
-    L['mae'].append(mae)
-    L['explained_var'].append(explained_var)
-    L['r2'].append(r2)
-    L['var'].append(var)
+    # remove outliers
+    mask = Y > 10**5
+    X, X_cat, Y = X[mask], X_cat[mask], Y[mask]
+    mask = Y < 10**6
+    X, X_cat, Y = X[mask], X_cat[mask], Y[mask]
 
-    if GENERATE_PLOTS:
-      plt.plot(Y_test_10, preds_10, 'ro')
-      plt.show()
-      break
-  for key in L.keys():
-    print "Mean %s: %f" % (key, np.array(L[key]).mean())
+    # one-hot encode categorical features
+    X_cat_enc = []
+    for i, cat in enumerate(categorical_columns):
+      col = X_cat[:,i]
+      col = LabelEncoder().fit_transform(col).reshape((-1,1))
+      col_enc = OneHotEncoder(sparse=False).fit_transform(col)
+      X_cat_enc.append(col_enc)
+    X_cat = np.concatenate(X_cat_enc, axis=1)
+    print 'X_cat.shape: ', X_cat.shape
+
+    skf = KFold(n=X.shape[0], n_folds=10, shuffle=True, random_state=42)
+    L = { 'rmse': [], 'corr': [], 'r2': [], 'diff': [], 'mae': [], 'explained_var': [], 'var': []}
+    for train_indices, test_indices in skf:
+      X_train, X_train_cat, Y_train = X[train_indices], X_cat[train_indices], Y[train_indices]
+      X_test, X_test_cat, Y_test = X[test_indices], X_cat[test_indices], Y[test_indices]
+
+      scaler = StandardScaler()
+      X_train = scaler.fit_transform(X_train)
+      X_test = scaler.transform(X_test)
+
+      X_train = np.concatenate([X_train, X_train_cat], axis=1)
+      X_test = np.concatenate([X_test, X_test_cat], axis=1)
+
+      if USE_NEURALNET:
+        print 'hidden_size: %d' % hidden_size
+        Y_train, Y_test = Y_train.reshape(-1, 1), Y_test.reshape(-1, 1)
+
+        train_ds = SupervisedDataSet(X_train.shape[1], Y_train.shape[1])
+        train_ds.setField('input', X_train)
+        train_ds.setField('target', Y_train)
+        net = buildNetwork(X_train.shape[1], hidden_size, Y_train.shape[1], bias=True)
+        trainer = BackpropTrainer(net, train_ds)
+
+        epochs = 20
+        for i in xrange(epochs):
+          mse = trainer.train()
+          rmse = math.sqrt(mse)
+          print "epoch: %d, rmse: %f" % (i, rmse)
+
+        test_ds = SupervisedDataSet(X_test.shape[1], Y_test.shape[1])
+        test_ds.setField('input', X_test)
+        test_ds.setField('target', Y_test)
+        preds = net.activateOnDataset(test_ds)
+      else:
+        clf.fit(X_train, Y_train)
+        preds = clf.predict(X_test).astype(float)
+
+      if USE_LOG:
+        Y_test_10 = np.exp(Y_test)
+        preds_10 = np.exp(preds)
+      else:
+        Y_test_10 = Y_test
+        preds_10 = preds
+
+      rmse = math.sqrt(metrics.mean_squared_error(Y_test_10, preds_10))
+      corr = pearsonr(preds_10, Y_test_10)
+      diff = np.array([abs(p-a)/a for (p,a) in zip(Y_test_10, preds_10)])
+      mae = metrics.mean_absolute_error(Y_test_10, preds_10)
+      explained_var = metrics.explained_variance_score(Y_test_10, preds_10)
+      r2 = metrics.r2_score(Y_test_10, preds_10)
+      var = np.var(diff)
+
+      L['rmse'].append(rmse)
+      L['corr'].append(corr[0])
+      L['diff'].append(diff.mean())
+      L['mae'].append(mae)
+      L['explained_var'].append(explained_var)
+      L['r2'].append(r2)
+      L['var'].append(var)
+
+      if GENERATE_PLOTS:
+        plt.plot(Y_test_10, preds_10, 'ro')
+        plt.show()
+        break
+      if USE_NEURALNET:
+        break
+    for key in L.keys():
+      print "Mean %s: %f" % (key, np.array(L[key]).mean())
+    return L
+
+def main():
+  classifiers = [
+    AdaBoostRegressor(n_estimators=100),
+    ARDRegression(),
+    BaggingRegressor(n_estimators=100),
+    BayesianRidge(),
+    ElasticNet(),
+    GradientBoostingRegressor(),
+    KNeighborsRegressor(n_neighbors=5),
+    RandomForestRegressor(n_estimators=100),
+    Ridge(alpha=0.5, normalize=True),
+    SVR()
+  ]
+  if USE_NEURALNET:
+    L = []
+    for h in range(1, 100):
+      res = benchmark(None, hidden_size=h)
+      L.append(res)
+    joblib.dump(L, 'NN_hidden_results.pkl')
+  else:
+    for clf in classifiers:
+      benchmark(clf)
+
+if __name__ == '__main__':
+  main()
