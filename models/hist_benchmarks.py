@@ -54,7 +54,8 @@ for category in ['Condominium']:
   print "*" * 80
   print category
 
-  X = merged[['NumberBedrooms', 'NumberBathrooms', 'LivingArea', 'DaysOnMarket', 'Composite_HPI']]
+  X = merged[['NumberBedrooms', 'NumberBathrooms', 'LivingArea', 'DaysOnMarket', 'Composite_HPI', 'AskingPrice']]
+  #X = merged.drop(['Borough', 'Category', 'Address', 'LotSize', 'Lat', 'Lng', 'AskingPrice', 'PriceSold'], axis=1, inplace=False)
   X_cat = merged[categorical_columns]
   Y = merged[['PriceSold']]
 
@@ -107,7 +108,7 @@ for category in ['Condominium']:
     X_train = np.concatenate([X_train, X_train_cat], axis=1)
     X_test = np.concatenate([X_test, X_test_cat], axis=1)
 
-    clf = GradientBoostingRegressor()
+    clf = GradientBoostingRegressor(n_estimators=100)
     clf.fit(X_train, Y_train)
     preds = clf.predict(X_test).astype(float)
 
