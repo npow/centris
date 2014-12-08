@@ -90,7 +90,7 @@ for col in ['AP']:#, 'COP', 'AP', 'LS', 'MA']:#, 'PPR', '2X', '3X', '4X', '5X', 
   geo_points=merged[['Lat','Lng']]
   X = merged.drop(['MlsNumber', 'Lat', 'Lng', 'BuyPrice'], axis=1, inplace=False)
   Y = merged[['BuyPrice']]
-  #X=X[['LivingArea','NbChambres','NbSallesBains']]
+  X=X[['LivingArea','NbChambres','NbSallesBains']]
   X = X[merged[col]==1]
   Y = Y[merged[col]==1]
   geo_points=geo_points[merged[col]==1]
@@ -106,7 +106,7 @@ for col in ['AP']:#, 'COP', 'AP', 'LS', 'MA']:#, 'PPR', '2X', '3X', '4X', '5X', 
   print 'After NaN filter: ', X.shape
 
   # remove high-end listings
-  mask = Y['BuyPrice'] < 500000
+  mask = Y['BuyPrice'] < 1000000
   X = X[mask]
   Y = Y[mask]
   geo_points=geo_points[mask]
@@ -136,11 +136,15 @@ for col in ['AP']:#, 'COP', 'AP', 'LS', 'MA']:#, 'PPR', '2X', '3X', '4X', '5X', 
   geo_points=np.array(geo_points)
   skf = KFold(n=X.shape[0], n_folds=10, shuffle=True, random_state=42)
 
-  var_num=1.6
-  num_neigh=range(7,8)
-  var_range=np.array(range(16,80))/20.0
+  var_num=1
+  num_neigh=range(2,75)
+  #var_range=np.array(range(16,80))/20.0
+  var_range=np.array([1,1.5,2])
+  knn_plot=[],[],[]
   for neigh in num_neigh:
-    #for var_num in np.nditer(var_range):
+    j=-1
+    for var_num in np.nditer(var_range):
+      j=j+1
       print neigh
       print var_num
       L_rmse = []
@@ -150,42 +154,27 @@ for col in ['AP']:#, 'COP', 'AP', 'LS', 'MA']:#, 'PPR', '2X', '3X', '4X', '5X', 
       vari=var_num
     #clf=KNeighborsRegressor(n_neighbors=8)
       scaler=StandardScaler()
-      pca=PCA(n_components=2)
+
       clf = Pipeline([
          ('scaler', StandardScaler()),
-         # ('clf', AdaBoostRegressor()),
-         # ('clf', ARDRegression()),
-         # ('clf', BaggingRegressor()),
-         # ('clf', BayesianRidge()),
-         # ('clf', ElasticNet()),
-         # ('clf', ExtraTreesRegressor()),
-         #('clf', GradientBoostingRegressor()),
+
          ('clf', k_clf),
-         # ('clf', Lasso()),
-         # ('clf', LinearRegression()),
-         # ('clf', PassiveAggressiveRegressor()),
-         # ('clf', RandomForestRegressor()),
-         # ('clf', Ridge(alpha=0.5, normalize=False)),
-         # ('clf', SVR()),
+
       ])
       num=1229
       X=scaler.fit_transform(X,Y)
+      #X=pca.fit_transform(X)
       #clf.fit(X,Y)
       k_clf.fit(X,Y)
       y_pred_all=k_clf.predict(X).astype(float)
       dist,indic= k_clf.kneighbors(X[num])
       #print type(indic)
       indic= indic.tolist()[0]
-      #print Y[indic]
-      #print Y[num]
-      #print geo_points[indic]
-      #print geo_points[indic].tolist()
+
       weights= weight_vector(geo_points[num][0],geo_points[num][1],geo_points[indic].tolist(),5)
       #print Y[indic].mean()
       weights_array=np.array(weights)
-      #print np.dot(weights_array,Y[indic])/weights_array.sum()
-      #print(X[num])
-      #print(X[indic])
+
       
       y_pred=[]
       norm_dist=[]
@@ -203,33 +192,7 @@ for col in ['AP']:#, 'COP', 'AP', 'LS', 'MA']:#, 'PPR', '2X', '3X', '4X', '5X', 
         #y_pred.append(Y[indic[1:]].mean())
         norm_dist.append(np.dot(dist_array,weights_array)/weights_array.sum())
         #norm_dist.append(dist_array.mean())
-        # if norm_dist[i]>3:
-        #   print distance
-        #   print Y[indic[1:]]
-        #   print weights
-        #   print Y[i]
-        #   print y_pred[i]
-        #   print Y[indic[1:]].mean()
 
-        #print norm_dist[i]
-        #print Y[i]
-        #print y_pred[i]
-        #print y_pred[i]
-        #print y_pred_all[i]
-
-        # rmse = math.sqrt(metrics.mean_squared_error(preds, Y_test))
-        # corr = pearsonr(preds, Y_test)
-        # diff = np.array([abs(p-a)/a for (p,a) in zip(preds,Y_test)]).mean()
-
-        # print rmse, corr
-        # L_rmse.append(rmse)
-        # L_corr.append(corr[0])
-        # L_diff.append(diff)
-
-        # if GENERATE_PLOTS:
-        #   plt.plot(Y_test, preds, 'ro')
-        #   plt.show()
-        #   break
       print 'got it all'
       y_pred=np.array(y_pred)
       norm_dist=np.array(norm_dist)
@@ -239,19 +202,20 @@ for col in ['AP']:#, 'COP', 'AP', 'LS', 'MA']:#, 'PPR', '2X', '3X', '4X', '5X', 
       rmse = math.sqrt(metrics.mean_squared_error(y_pred, Y))
       corr = pearsonr(y_pred, Y)
       diff = np.array([abs(p-a)/a for (p,a) in zip(y_pred,Y)]).mean()
+      knn_plot[j].append(diff)
       print "RMSE: ", rmse
       print "corr: ", corr
       print "%diff: ", diff
-      #plt.plot(range(len(norm_dist)),norm_dist)
-      #plt.show()
+      # plt.plot(y_pred,Y,'ro')
+      # plt.show()
       total=0;
       thresh_plot=[]
       diff_plot=[]
-      maxi=20
+      maxi=50
       for i in range(1,maxi):
-        thresh_low=(i-1)/(maxi/2.0)
-        thresh_high=i/(maxi/2.0)
-        thresh=i/(maxi/2.0)
+        thresh_low=(i-1)/(maxi/1.0)
+        thresh_high=i/(maxi/1.0)
+        thresh=i/(maxi/1.0)
         thresh_plot.append(thresh_high)
         # indic1=norm_dist>thresh
         
@@ -274,7 +238,19 @@ for col in ['AP']:#, 'COP', 'AP', 'LS', 'MA']:#, 'PPR', '2X', '3X', '4X', '5X', 
         diff = np.array([abs(p-a)/a for (p,a) in zip(y_pred_bin,Y_bin)]).mean()
         diff_plot.append(diff)
         print "%diff: ", diff,' ', total,'distance: ', thresh_high
-      plt.plot(thresh_plot,diff_plot)
-      plt.show()
+      # plt.plot(thresh_plot,diff_plot)
+      # plt.xlabel('Weighted average distance of neighbors (km)')
+      # plt.ylabel('Average error')
+      # plt.show()
+  print knn_plot
+  print range(1,3)
+  x_range=range(1,len(num_neigh)+1)
+  line1,=plt.plot(range(1,len(num_neigh)+1),knn_plot[0],'r--',label='Var 1')
+  line2,=plt.plot(range(1,len(num_neigh)+1),knn_plot[1],'b--',label='Var 1.5')
+  line3,=plt.plot(range(1,len(num_neigh)+1),knn_plot[2],'g--',label='Var 2')
+  plt.xlabel('Number of nearest neighbors')
+  plt.ylabel('Average error')
+  plt.legend([line1,line2,line3],["Var 1","Var 1.5","Var 2"])
+  plt.show()
 
 
